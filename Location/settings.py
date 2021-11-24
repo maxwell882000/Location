@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-pr*4%ih^@99k7zy4@8_1rc_6@4el558-bgkziwzr$e0wd^iszd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['31.44.4.27']
+ALLOWED_HOSTS = ['31.44.4.27', '127.0.0.1']
 
 # Application definition
 
@@ -65,6 +65,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
 }
 
 GOOGLE_MAPS_API_KEY = "AIzaSyAeAR8WuoU3_K3XNaeFJfMGqu_JOLnXGlc"
@@ -94,18 +96,18 @@ WSGI_APPLICATION = 'Location.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'locationdb',
-        'USER': 'vid',
-        'PASSWORD': '123Aa123',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
     # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'locationdb',
+    #     'USER': 'vid',
+    #     'PASSWORD': '123Aa123',
+    #     'HOST': 'localhost',
+    #     'PORT': '',
     # }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 # Password validation

@@ -69,7 +69,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = "phone"
     REQUIRED_FIELDS = ('firstname', 'lastname')
     object = UserManager()
-
+    @property
+    def fullname(self):
+        return "{} {}".format(self.firstname, self.lastname)
     def __str__(self):
         return self.fullname
 
@@ -90,9 +92,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         """
         return self.fullname
 
-    @property
-    def fullname(self):
-        return "{} {}".format(self.firstname, self.lastname)
+
 
     def _generate_token(self):
         return Token.objects.get_or_create(user=self)

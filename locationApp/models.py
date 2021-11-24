@@ -47,6 +47,14 @@ class Location(models.Model, GeoItem):
     class Meta:
         verbose_name_plural = "Локации"
 
+    @property
+    def country_str(self):
+        return str(self.city.country)
+
+    @property
+    def city_str(self):
+        return str(self.city)
+
     def __str__(self):
         return "{} {} {}".format(self.city.country, self.city, self.district)
 

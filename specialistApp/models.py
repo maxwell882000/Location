@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models import Avg
+
 from Location.settings import AUTH_USER_MODEL
 from Location.snippets import name_of_file
 
@@ -18,13 +20,15 @@ class Specialist(models.Model):
     category = models.ManyToManyField('Category',
                                       verbose_name="Виды деятельности специалиста")
 
+    @property
+    def review_avg(self):
+        return self.reviews.all().aggregate(Avg("review"))['review__avg']
+
     class Meta:
         verbose_name_plural = "Специалист"
 
     def __str__(self):
-        return self.user
-
-
+        return self.user.fullname
 
 
 class Category(models.Model):
