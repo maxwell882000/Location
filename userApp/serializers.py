@@ -7,6 +7,20 @@ from userApp.models import User
 import re
 
 
+class UserSpecialistCard(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = (
+            'firstname',
+            'lastname',
+            'phone'
+        )
+
+
+class SerializerWithUser(serializers.ModelSerializer):
+    user = UserSpecialistCard()
+
+
 class RegisterSerializer(serializers.ModelSerializer):
     token = serializers.CharField(max_length=255, allow_null=True, required=False)
 

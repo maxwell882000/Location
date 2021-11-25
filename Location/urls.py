@@ -22,8 +22,8 @@ urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('auth/', include('userApp.urls')),
                   path('add/', include('userApp.urls')),
-                  path('comment/', include('userApp.urls')),
-                  path('location/', include('userApp.urls')),
+                  path('comment/', include('commentApp.urls')),
+                  path('location/', include('locationApp.urls')),
                   path('specialist/', include('specialistApp.urls')),
 
               ] \

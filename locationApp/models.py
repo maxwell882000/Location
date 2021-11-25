@@ -26,15 +26,24 @@ class LocationCity(models.Model):
 
 
 class Location(models.Model, GeoItem):
-    is_active = models.BooleanField(verbose_name="Локация активна", default=True)
-    city = models.ForeignKey(LocationCity, verbose_name="Город", on_delete=models.CASCADE)
-    district = models.CharField(max_length=150, verbose_name="Район")
+    is_active = models.BooleanField(verbose_name="Локация активна", default=False)
+    city = models.ForeignKey(LocationCity, verbose_name="Город", on_delete=models.CASCADE, blank=True, null=True)
+    district = models.CharField(max_length=150, verbose_name="Район/Метро/Улица")
     description = models.TextField(max_length=500, verbose_name="Описание")
+    parking = models.BooleanField(default=False, verbose_name="Парковка")
+    comfort = models.TextField(max_length=300, verbose_name="Удобства")
+    function_less = models.BooleanField(default=False, verbose_name="доступность малообильных людей")
     latitude = models.FloatField(
         verbose_name="Широта", )
     longitude = models.FloatField(
         verbose_name="Долгота")
     images = models.ManyToManyField('Images', verbose_name="Картинки для локации", )
+
+    @property
+    def category(self):
+        # return  "sad"
+        from specialistApp.models import Category
+        return Category.objects.filter(specialist__location=self.id).distinct()
 
     @property
     def geomap_longitude(self):

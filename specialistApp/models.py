@@ -3,6 +3,7 @@ from django.db.models import Avg
 
 from Location.settings import AUTH_USER_MODEL
 from Location.snippets import name_of_file
+import locationApp.models
 
 
 class Specialist(models.Model):
@@ -13,7 +14,9 @@ class Specialist(models.Model):
                                 related_name="user_specialist",
                                 on_delete=models.CASCADE)
     is_deactivated = models.BooleanField(default=False, verbose_name="Скрыть карточку специалиста")
+
     location = models.ForeignKey('locationApp.Location',
+                                 related_name='specialist',
                                  verbose_name="Локация специалиста",
                                  on_delete=models.CASCADE
                                  )
@@ -32,10 +35,17 @@ class Specialist(models.Model):
 
 
 class Category(models.Model):
+    folder = "category"
+    image = models.ImageField(verbose_name="Фото специалиста", upload_to=name_of_file)
     category_name = models.CharField(max_length=100, verbose_name="Названия вида деятельности")
+    description = models.TextField(max_length=500, verbose_name="Описание для вида деятельности")
 
     def __str__(self):
         return self.category_name
+
+    @property
+    def location(self):
+        return models.Location.objects.filter(specialist__category=self.id).distinct()
 
     class Meta:
         verbose_name_plural = "Виды деятельности"

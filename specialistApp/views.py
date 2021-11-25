@@ -1,15 +1,45 @@
 from django.shortcuts import render
-from rest_framework import generics
+
 from rest_framework.permissions import AllowAny
-
-from specialistApp.models import Specialist
-from specialistApp.serializers import SpecialistSerializerCard
-
-
-class SpecialistCardView(generics.ListAPIView):
-    queryset = Specialist.objects.all()
-    serializer_class = SpecialistSerializerCard
-    permission_classes =  [AllowAny]
+from rest_framework import generics
+from rest_framework import mixins
+from specialistApp.models import Specialist, Category
+from specialistApp.serializers import *
 
 
-card_specialist = SpecialistCardView.as_view()
+class SpecialistListView(generics.ListAPIView):
+    queryset = Specialist.objects.all().order_by("-id")
+    serializer_class = SpecialistSerializer
+    permission_classes = [AllowAny]
+
+
+class SpecialistView(generics.GenericAPIView, mixins.RetrieveModelMixin):
+    queryset = Specialist.objects.all().order_by("-id")
+    serializer_class = SpecialistSerializer
+    permission_classes = [AllowAny]
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
+
+
+specialist_list = SpecialistListView.as_view()
+specialist = SpecialistView.as_view()
+
+
+class CategoryListView(generics.ListAPIView):
+    queryset = Category.objects.all().order_by('-id')
+    serializer_class = CategorySerializer
+    permission_classes = [AllowAny]
+
+
+class CategoryView(generics.GenericAPIView, mixins.RetrieveModelMixin):
+    queryset = Category.objects.all().order_by('-id')
+    serializer_class = CategorySerializer
+    permission_classes = [AllowAny]
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
+
+
+category_list = CategoryListView.as_view()
+category = CategoryView.as_view()

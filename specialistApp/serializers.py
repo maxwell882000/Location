@@ -1,23 +1,12 @@
 from rest_framework import serializers
-
-from locationApp.models import Location
-from specialistApp.models import Specialist
-from userApp.models import User
-
-
-class UserSpecialistCard(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = (
-            'firstname',
-            'lastname',
-            'phone'
-        )
+import locationApp.serializers as s
+from specialistApp.models import Specialist, Category
+from userApp.serializers import SerializerWithUser
 
 
-class SpecialistSerializerCard(serializers.ModelSerializer):
+class SpecialistSerializer(SerializerWithUser):
     review_avg = serializers.FloatField(default=0.0)
-    user = UserSpecialistCard()
+    location = s.LocationSerializerCard()
 
     class Meta:
         model = Specialist
@@ -31,5 +20,7 @@ class SpecialistSerializerCard(serializers.ModelSerializer):
         depth = 2
 
 
-class SpecialistSerializer(serializers.ModelSerializer):
-    pass
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = '__all__'
