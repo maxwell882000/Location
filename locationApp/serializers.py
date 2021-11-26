@@ -7,7 +7,7 @@ from specialistApp.models import Category
 class LocationCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Location
-        fields = ('__all__')
+        fields = '__all__'
 
 
 class CategoryLocationSerializer(serializers.ModelSerializer):
@@ -18,6 +18,7 @@ class CategoryLocationSerializer(serializers.ModelSerializer):
 
 class LocationSerializerCard(serializers.ModelSerializer):
     city = serializers.CharField(source="city_str")
+    review_avg = serializers.FloatField(default=0.0)
     country = serializers.CharField(source="country_str")
     category = CategoryLocationSerializer(many=True)
 
