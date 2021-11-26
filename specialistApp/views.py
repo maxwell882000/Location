@@ -3,6 +3,7 @@ from django.shortcuts import render
 from rest_framework.permissions import AllowAny
 from rest_framework import generics
 from rest_framework import mixins
+from specialistApp.builders import specialist_builder
 from specialistApp.models import Specialist, Category
 from specialistApp.serializers import *
 
@@ -11,6 +12,11 @@ class SpecialistListView(generics.ListAPIView):
     queryset = Specialist.objects.all().order_by("-id")
     serializer_class = SpecialistSerializer
     permission_classes = [AllowAny]
+
+    def get_queryset(self):
+        print(self.request.query_params)
+        query_set = specialist_builder(self.request.query_params)
+        return query_set.order_by("id")
 
 
 class SpecialistView(generics.GenericAPIView, mixins.RetrieveModelMixin):
