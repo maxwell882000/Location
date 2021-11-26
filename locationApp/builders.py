@@ -16,4 +16,8 @@ def location_builder(filter_by: dict):
         builder = builder & Q(radius_sqr__lte=pow(rad / 9, 2))
     if 'search' in filter_by:
         builder = builder & Q(district__contains=filter_by['search'][0])
+
+    if 'category' in filter_by:
+        id = int(filter_by['category'])
+        builder = builder & Q(specialist__category=id)
     return location.filter(builder)
