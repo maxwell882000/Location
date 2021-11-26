@@ -24,3 +24,4 @@ class LocationSerializerCard(serializers.ModelSerializer):
     class Meta:
         model = Location
         fields = '__all__'
+        depth = 1
