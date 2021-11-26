@@ -5,15 +5,20 @@ from rest_framework.permissions import AllowAny
 from locationApp.builders import location_builder
 from locationApp.models import Location
 from locationApp.serializers import *
+from rest_framework.pagination import PageNumberPagination
+
+
+class CustomPageNumberPagination(PageNumberPagination):
+    page_size_query_param = 'size'  # items per page
 
 
 class LocationListView(generics.ListAPIView):
     queryset = Location.objects.all().order_by("id")
     serializer_class = LocationSerializerCard
     permission_classes = [AllowAny]
+    pagination_class = CustomPageNumberPagination
 
     def get_queryset(self):
-        print(self.request.query_params)
         query_set = location_builder(self.request.query_params)
         return query_set.order_by("id")
 
