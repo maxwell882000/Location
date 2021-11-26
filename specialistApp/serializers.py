@@ -10,13 +10,7 @@ class SpecialistSerializer(SerializerWithUser):
 
     class Meta:
         model = Specialist
-        fields = ("id",
-                  "image",
-                  "review_avg",
-                  'category',
-                  "location",
-                  'user'
-                  )
+        fields = '__all__'
         depth = 2
 
 
