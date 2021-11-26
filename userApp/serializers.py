@@ -11,6 +11,7 @@ class UserSpecialistCard(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = (
+            'id',
             'firstname',
             'lastname',
             'phone'
