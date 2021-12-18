@@ -25,6 +25,7 @@ urlpatterns = [
                   path('comment/', include('commentApp.urls')),
                   path('location/', include('locationApp.urls')),
                   path('specialist/', include('specialistApp.urls')),
+                  path('common/', include('commonApp.urls'))
 
               ] \
               + static(settings.STATIC_ROOT,
