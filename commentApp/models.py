@@ -2,7 +2,7 @@ from django.db import models
 
 
 class CommentLocation(models.Model):
-    comment = models.CharField(max_length=255)
+    comment = models.TextField()
     user = models.ForeignKey("userApp.User", on_delete=models.CASCADE,
                              verbose_name="Пользователь оставивший коментарий")
     location = models.ForeignKey(
@@ -24,7 +24,7 @@ class ReviewLocation(models.Model):
 
 
 class CommentSpecialist(models.Model):
-    comment = models.CharField(max_length=255)
+    comment = models.TextField()
     user = models.ForeignKey("userApp.User", on_delete=models.CASCADE,
                              verbose_name="Пользователь оставивший коментарий")
     specialist = models.ForeignKey("specialistApp.Specialist",
