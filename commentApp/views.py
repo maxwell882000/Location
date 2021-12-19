@@ -37,7 +37,8 @@ class CustomCreateModelMixin:
         )
         if object.exists(): 
             new_request.data['id'] = object.first().id
-        return self.create(new_request, *args, **kwargs)
+            return self.update(new_request, *args, **kwargs)
+        return self.create(new_request, *args,**kwargs)
 
 
 class SpecialistCommentView(generics.GenericAPIView,
@@ -63,6 +64,7 @@ class SpecialistCommentView(generics.GenericAPIView,
 
 class SpecialistReviewView(generics.GenericAPIView,
                            mixins.CreateModelMixin,
+                           mixins.UpdateModelMixin,
                            CustomCreateModelMixin):
 
     serializer_class = ReviewSpecialistSerializer
