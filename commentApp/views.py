@@ -2,6 +2,7 @@ from django.shortcuts import render
 from rest_framework import generics
 from rest_framework import mixins
 from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
 
 from commentApp.serializers import *
 from locationApp.models import Location
@@ -36,8 +37,10 @@ class CustomCreateModelMixin:
             specialist_id=new_request.data[field_name]
         )
         if object.exists(): 
-            new_request.data['id'] = object.first().id
-            return self.update(new_request, *args, **kwargs)
+            instance = object.first()
+            serializer = self.get_serializer(instance, data=new_request.data)
+            serializer.is_valid(raise_exception=True)
+            return Response(serializer.data)
         return self.create(new_request, *args,**kwargs)
 
 
