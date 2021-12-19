@@ -36,7 +36,7 @@ class CustomCreateModelMixin:
             specialist=new_request[field_name]
         )
         if object.exists():
-            new_request['id'] = object.id
+            new_request.data['id'] = object.id
         return self.create_custom(request, *args, **kwargs)
 
 
