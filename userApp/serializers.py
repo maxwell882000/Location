@@ -6,8 +6,7 @@ from rest_framework.exceptions import ValidationError
 from userApp.models import User
 import re
 
-
-class UserSpecialistCard(serializers.ModelSerializer):
+class UserSerilalizer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = (
@@ -15,6 +14,17 @@ class UserSpecialistCard(serializers.ModelSerializer):
             'firstname',
             'lastname',
             'user_specialist',
+            'phone'
+        )
+        depth = 2
+        
+class UserSpecialistCard(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = (
+            'id',
+            'firstname',
+            'lastname',
             'phone'
         )
 
