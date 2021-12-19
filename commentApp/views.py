@@ -33,7 +33,7 @@ class CustomCreateModelMixin:
         new_request = self.get_mutable_with_user(request)
         object = self.object_class.objects.filter(
             user=request.user,
-            specialist=new_request[field_name]
+            specialist=new_request.data[field_name]
         )
         if object.exists():
             new_request.data['id'] = object.id
