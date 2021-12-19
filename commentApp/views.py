@@ -37,7 +37,7 @@ class CustomCreateModelMixin:
         )
         if object.exists():
             new_request.data['id'] = object.first().id
-        return self.create_custom(request, *args, **kwargs)
+        return self.create(request, *args, **kwargs)
 
 
 class SpecialistCommentView(generics.GenericAPIView,
