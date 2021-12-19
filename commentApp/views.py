@@ -40,6 +40,7 @@ class CustomCreateModelMixin:
             instance = object.first()
             serializer = self.get_serializer(instance, data=new_request.data)
             serializer.is_valid(raise_exception=True)
+            serializer.save()
             return Response(serializer.data)
         return self.create(new_request, *args,**kwargs)
 
