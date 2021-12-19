@@ -19,7 +19,7 @@ class VerifyCode(APIView):
 
 
 class UserView(APIView):
-    serializer_class = UserSpecialistCard
+    serializer_class = UserSerilalizer
     def get(self, request, *args, **kwargs):
         serializers = self.serializer_class(request.user)
         return Response(serializers.data)
