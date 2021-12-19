@@ -33,7 +33,7 @@ class CustomCreateModelMixin:
         new_request = self.get_mutable_with_user(request)
         object = self.object_class.objects.filter(
             user=request.user,
-            specialist=new_request.data[field_name]
+            specialist_id=new_request.data[field_name]
         )
         if object.exists(): 
             new_request.data['id'] = object.first().id
@@ -66,7 +66,6 @@ class SpecialistReviewView(generics.GenericAPIView,
                            CustomCreateModelMixin):
 
     serializer_class = ReviewSpecialistSerializer
-    permission_classes = [AllowAny]
     object_class = ReviewSpecialist
 
     def post(self, request, *args, **kwargs):
