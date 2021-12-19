@@ -14,12 +14,12 @@ class SpecialistCommentView(generics.GenericAPIView,
     queryset = Specialist.objects.all()
     serializer_class = SpecialistCommentSerializer
     pagination_class = None
-    permission_classes = [AllowAny]
 
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
+        request.data['user'] = request.user
         self.serializer_class = CreateCommentSpecialistSerializer
         return self.create(request, *args, **kwargs)
 
@@ -42,7 +42,6 @@ class LocationCommentView(generics.GenericAPIView,
                           mixins.CreateModelMixin):
     queryset = Location.objects.all()
     serializer_class = LocationCommentSerializer
-    permission_classes = [AllowAny]
     pagination_class = None
 
     def get(self, request, *args, **kwargs):
@@ -56,7 +55,6 @@ class LocationCommentView(generics.GenericAPIView,
 class LocationReviewView(generics.GenericAPIView,
                          mixins.CreateModelMixin):
     serializer_class = ReviewLocationSerializer
-    permission_classes = [AllowAny]
 
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
