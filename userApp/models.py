@@ -78,6 +78,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     class Meta:
         verbose_name_plural = "Пользователи"
 
+    
     @property
     def token(self):
         return self._generate_token()

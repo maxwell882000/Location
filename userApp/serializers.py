@@ -14,6 +14,7 @@ class UserSpecialistCard(serializers.ModelSerializer):
             'id',
             'firstname',
             'lastname',
+            'user_specialist',
             'phone'
         )
 
