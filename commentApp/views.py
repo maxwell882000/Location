@@ -18,6 +18,8 @@ class RequestCustom:
 
 
 class CustomCreateModelMixin:
+    object_class = None
+
     def get_mutable_with_user(self, request):
         new_request = RequestCustom(request.data)
         new_request.data['user'] = request.user.id
@@ -26,6 +28,16 @@ class CustomCreateModelMixin:
     def create_custom(self, request, *args, **kwargs):
         new_request = self.get_mutable_with_user(request)
         return self.create(new_request, *args, **kwargs)
+
+    def review_create(self, request, field_name, *args, **kwargs):
+        new_request = self.get_mutable_with_user(request)
+        object = self.object_class.objects.filter(
+            user=request.user,
+            specialist=new_request[field_name]
+        )
+        if object.exists():
+            new_request['id'] = object.id
+        return self.create_custom(request, *args, **kwargs)
 
 
 class SpecialistCommentView(generics.GenericAPIView,
@@ -39,7 +51,7 @@ class SpecialistCommentView(generics.GenericAPIView,
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
-    def post(self, request, pk:int=0, *args, **kwargs):
+    def post(self, request, pk: int = 0, *args, **kwargs):
         self.serializer_class = CreateCommentSpecialistSerializer
         return self.create_specialist(request, pk, *args, **kwargs)
 
@@ -52,11 +64,13 @@ class SpecialistCommentView(generics.GenericAPIView,
 class SpecialistReviewView(generics.GenericAPIView,
                            mixins.CreateModelMixin,
                            CustomCreateModelMixin):
+
     serializer_class = ReviewSpecialistSerializer
     permission_classes = [AllowAny]
+    object_class = ReviewSpecialist
 
     def post(self, request, *args, **kwargs):
-        return self.create_custom(request, *args, **kwargs)
+        return self.review_create(request, 'specialist', *args, **kwargs)
 
 
 specialist_comment = SpecialistCommentView.as_view()
@@ -74,7 +88,7 @@ class LocationCommentView(generics.GenericAPIView,
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
-    def post(self, request, pk:int, *args, **kwargs):
+    def post(self, request, pk: int, *args, **kwargs):
         self.serializer_class = CreateCommentLocationSerializer
         return self.create_locations(request, pk, *args, **kwargs)
 
@@ -88,9 +102,10 @@ class LocationReviewView(generics.GenericAPIView,
                          mixins.CreateModelMixin,
                          CustomCreateModelMixin):
     serializer_class = ReviewLocationSerializer
+    object_class = ReviewLocation
 
     def post(self, request, *args, **kwargs):
-        return self.create_custom(request, *args, **kwargs)
+        return self.review_create(request, 'location', *args, **kwargs)
 
 
 location_comment = LocationCommentView.as_view()
