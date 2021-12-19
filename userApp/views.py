@@ -23,7 +23,7 @@ class UserView(APIView):
     permission_classes = (AllowAny,)
 
     def get(self, request, *args, **kwargs):
-        serializes = UserSpecialistCard(request.user)
+        serializers = UserSpecialistCard(request.user)
         return Response(serializers.data)
 
     def post(self, request):
