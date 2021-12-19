@@ -9,14 +9,14 @@ from userApp.serializers import SerializerWithUser
 class CommentSpecialistSerializer(SerializerWithUser):
     class Meta:
         model = CommentSpecialist
-        fields = ('comment', 'user')
+        fields = ('comment', 'user', 'date')
         depth = 0
 
 
 class CommentLocationSerializer(SerializerWithUser):
     class Meta:
         model = CommentLocation
-        fields = ('comment', 'user')
+        fields = ('comment', 'user','date')
         depth = 0
 
 
@@ -24,18 +24,21 @@ class CreateCommentSpecialistSerializer(serializers.ModelSerializer):
     class Meta:
         model = CommentSpecialist
         fields = '__all__'
+        depth = 1
 
 
 class ReviewSpecialistSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReviewSpecialist
         fields = '__all__'
+        depth = 1
 
 
 class ReviewLocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReviewLocation
         fields = '__all__'
+        depth = 1
 
 
 class SpecialistCommentSerializer(serializers.ModelSerializer):
@@ -52,6 +55,7 @@ class CreateCommentLocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = CommentLocation
         fields = '__all__'
+        depth = 1
 
 
 class LocationCommentSerializer(serializers.ModelSerializer):
