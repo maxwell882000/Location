@@ -31,7 +31,6 @@ class ReviewSpecialistSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReviewSpecialist
         fields = '__all__'
-        depth = 1
 
 
 class ReviewLocationSerializer(serializers.ModelSerializer):
