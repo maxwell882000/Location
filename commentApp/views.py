@@ -39,7 +39,7 @@ class SpecialistCommentView(generics.GenericAPIView,
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
-    def post(self, request, pk=0, *args, **kwargs):
+    def post(self, request, pk:int=0, *args, **kwargs):
         self.serializer_class = CreateCommentSpecialistSerializer
         return self.create_specialist(request, pk, *args, **kwargs)
 
@@ -74,7 +74,7 @@ class LocationCommentView(generics.GenericAPIView,
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
-    def post(self, request, pk, *args, **kwargs):
+    def post(self, request, pk:int, *args, **kwargs):
         self.serializer_class = CreateCommentLocationSerializer
         return self.create_locations(request, pk, *args, **kwargs)
 
