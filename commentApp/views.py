@@ -7,12 +7,14 @@ from commentApp.serializers import *
 from locationApp.models import Location
 from specialistApp.models import Specialist
 
+from django.http import QueryDict
+
 
 class RequestCustom:
     data = {}
 
     def __init__(self, data: dict) -> None:
-        self.data = data
+        self.data = QueryDict("").copy(data)
 
 
 class CustomCreateModelMixin:
