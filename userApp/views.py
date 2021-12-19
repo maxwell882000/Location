@@ -19,12 +19,16 @@ class VerifyCode(APIView):
 
 
 class UserView(APIView):
+    serializer_class = UserSpecialistCard
+    def get(self, request, *args, **kwargs):
+        serializers = self.serializer_class(request.user)
+        return Response(serializers.data)
+
+
+
+class RegisterUser(APIView):
     serializer_class = RegisterSerializer
     permission_classes = (AllowAny,)
-
-    def get(self, request, *args, **kwargs):
-        serializers = UserSpecialistCard(request.user)
-        return Response(serializers.data)
 
     def post(self, request):
         try:
@@ -37,8 +41,8 @@ class UserView(APIView):
             return Response(AppLog.object.create(request, traceback.format_exc(), self),
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-
 user_view = UserView.as_view()
+register = RegisterUser.as_view()
 
 
 
