@@ -55,7 +55,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
 
 class TokenSerializer(serializers.Serializer):
-    email = serializers.CharField(
+    phone = serializers.CharField(
         label=_("Phone"),
         write_only=True
     )
