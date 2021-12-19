@@ -23,7 +23,8 @@ class SerializerWithUser(serializers.ModelSerializer):
 
 
 class RegisterSerializer(serializers.ModelSerializer):
-    token = serializers.CharField(max_length=255, allow_null=True, required=False)
+    token = serializers.CharField(
+        max_length=255, allow_null=True, required=False)
 
     class Meta:
         model = User
@@ -82,11 +83,13 @@ class TokenSerializer(serializers.Serializer):
             # users. (Assuming the default ModelBackend authentication
             # backend.)
             if not user:
-                msg = _('Unable to log in with provided credentials.')
-                raise serializers.ValidationError(msg, code='authorization')
+                msg = _('Не правильный ввод данных')
+                raise serializers.ValidationError(
+                    {"errors": msg}, code='authorization')
         else:
-            msg = _('Must include "username" and "password".')
-            raise serializers.ValidationError(msg, code='authorization')
+            msg = _('Должны ввести пароль и телефонный номер')
+            raise serializers.ValidationError(
+                {"errors": msg}, code='authorization')
 
         attrs['user'] = user
         return attrs
