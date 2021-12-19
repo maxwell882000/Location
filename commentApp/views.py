@@ -19,7 +19,7 @@ class SpecialistCommentView(generics.GenericAPIView,
         return self.retrieve(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
-        request.data['user'] = request.user
+        request.data['user'] = request.user.id
         self.serializer_class = CreateCommentSpecialistSerializer
         return self.create(request, *args, **kwargs)
 
@@ -30,6 +30,7 @@ class SpecialistReviewView(generics.GenericAPIView,
     permission_classes = [AllowAny]
 
     def post(self, request, *args, **kwargs):
+        request.data['user'] = request.user.id
         return self.create(request, *args, **kwargs)
 
 
@@ -48,6 +49,7 @@ class LocationCommentView(generics.GenericAPIView,
         return self.retrieve(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
+        request.data['user'] = request.user.id
         self.serializer_class = CreateCommentLocationSerializer
         return self.create(request, *args, **kwargs)
 
@@ -57,6 +59,7 @@ class LocationReviewView(generics.GenericAPIView,
     serializer_class = ReviewLocationSerializer
 
     def post(self, request, *args, **kwargs):
+        request.data['user'] = request.user.id
         return self.create(request, *args, **kwargs)
 
 
