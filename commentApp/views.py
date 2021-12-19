@@ -14,7 +14,7 @@ class RequestCustom:
     data = {}
 
     def __init__(self, data: dict) -> None:
-        self.data = QueryDict("").copy(data)
+        self.data = QueryDict.copy(data)
 
 
 class CustomCreateModelMixin:
