@@ -18,9 +18,13 @@ class RequestCustom:
 
 
 class CustomCreateModelMixin:
-    def create_custom(self, request, *args, **kwargs):
+    def get_mutable_with_user(self, request):
         new_request = RequestCustom(request.data)
         new_request.data['user'] = request.user.id
+        return new_request
+
+    def create_custom(self, request, *args, **kwargs):
+        new_request = self.get_mutable_with_user(request)
         return self.create(new_request, *args, **kwargs)
 
 
@@ -37,7 +41,12 @@ class SpecialistCommentView(generics.GenericAPIView,
 
     def post(self, request, pk=0, *args, **kwargs):
         self.serializer_class = CreateCommentSpecialistSerializer
-        return self.create_custom(request, *args, **kwargs)
+        return self.create_specialist(request, pk, *args, **kwargs)
+
+    def create_specialist(self, request, pk, *args, **kwargs):
+        new_request = self.get_mutable_with_user(request)
+        new_request['specialist'] = pk
+        return self.create(new_request, *args, **kwargs)
 
 
 class SpecialistReviewView(generics.GenericAPIView,
@@ -65,9 +74,14 @@ class LocationCommentView(generics.GenericAPIView,
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request, pk, *args, **kwargs):
         self.serializer_class = CreateCommentLocationSerializer
-        return self.create_custom(request, *args, **kwargs)
+        return self.create_locations(request, pk, *args, **kwargs)
+
+    def create_locations(self, request, pk, *args, **kwargs):
+        new_request = self.get_mutable_with_user(request)
+        new_request['location'] = pk
+        return self.create(new_request, *args, **kwargs)
 
 
 class LocationReviewView(generics.GenericAPIView,
