@@ -1,8 +1,8 @@
 from django.urls import path
 
-from userApp.views import obtain_token, register
+from userApp.views import obtain_token, user_view
 
 urlpatterns = [
     path('api-token/', obtain_token),
-    path('register/', register)
+    path('register/', user_view)
 ]

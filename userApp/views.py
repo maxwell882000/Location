@@ -18,9 +18,13 @@ class VerifyCode(APIView):
         pass
 
 
-class RegisterUser(APIView):
+class UserView(APIView):
     serializer_class = RegisterSerializer
     permission_classes = (AllowAny,)
+
+    def get(self, request, *args, **kwargs):
+        serializes = UserSpecialistCard(request.user)
+        return Response(serializers.data)
 
     def post(self, request):
         try:
@@ -34,7 +38,8 @@ class RegisterUser(APIView):
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
-register = RegisterUser.as_view()
+user_view = UserView.as_view()
+
 
 
 class VerifyPhone(APIView):
@@ -44,7 +49,8 @@ class VerifyPhone(APIView):
 class ObtainAuthToken(APIView):
     throttle_classes = ()
     permission_classes = ()
-    parser_classes = (parsers.FormParser, parsers.MultiPartParser, parsers.JSONParser,)
+    parser_classes = (parsers.FormParser,
+                      parsers.MultiPartParser, parsers.JSONParser,)
     renderer_classes = (renderers.JSONRenderer,)
     serializer_class = TokenSerializer
 
