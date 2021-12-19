@@ -45,7 +45,7 @@ class SpecialistCommentView(generics.GenericAPIView,
 
     def create_specialist(self, request, pk, *args, **kwargs):
         new_request = self.get_mutable_with_user(request)
-        new_request['specialist'] = pk
+        new_request.data['specialist'] = pk
         return self.create(new_request, *args, **kwargs)
 
 
@@ -80,7 +80,7 @@ class LocationCommentView(generics.GenericAPIView,
 
     def create_locations(self, request, pk, *args, **kwargs):
         new_request = self.get_mutable_with_user(request)
-        new_request['location'] = pk
+        new_request.data['location'] = pk
         return self.create(new_request, *args, **kwargs)
 
 
