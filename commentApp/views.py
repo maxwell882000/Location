@@ -3,6 +3,7 @@ from rest_framework import generics
 from rest_framework import mixins
 from rest_framework.permissions import AllowAny
 from Location.mixin import CustomCreateModelMixin, WithReviewMixin
+from Location.permissions import CheckPhone
 
 from commentApp.serializers import *
 from locationApp.models import Location
@@ -74,6 +75,7 @@ class LocationReviewView(generics.GenericAPIView,
                          mixins.CreateModelMixin,
                          CustomCreateModelMixin,
                          WithReviewMixin):
+    permission_classes = [CheckPhone]
     queryset = Location.objects.all()
     serializer_class = ReviewLocationSerializer
     object_class = ReviewLocation

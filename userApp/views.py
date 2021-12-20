@@ -14,16 +14,22 @@ import traceback
 
 
 class VerifyCode(APIView):
+    def get(self, request, *args, **kwargs):
+        pass
+
     def post(self, request):
         pass
 
 
+verify_code = VerifyCode.as_view()
+
+
 class UserView(APIView):
     serializer_class = UserSerilalizer
+
     def get(self, request, *args, **kwargs):
         serializers = self.serializer_class(request.user)
         return Response(serializers.data)
-
 
 
 class RegisterUser(APIView):
@@ -41,9 +47,9 @@ class RegisterUser(APIView):
             return Response(AppLog.object.create(request, traceback.format_exc(), self),
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+
 user_view = UserView.as_view()
 register = RegisterUser.as_view()
-
 
 
 class VerifyPhone(APIView):
