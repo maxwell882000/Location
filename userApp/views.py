@@ -1,3 +1,4 @@
+from functools import partial
 import sys
 
 from django.shortcuts import render
@@ -48,11 +49,12 @@ class RegisterUser(APIView):
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
-class UpdateUser(APIView):
+class UpdateUser(APIView,):
     serializer_class = UpdateUserSerializer
 
     def put(self, request, *args, **kwargs):
-        serializer = self.serializer_class(request.user, data=request.data)
+        serializer = self.serializer_class(
+            request.user, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
