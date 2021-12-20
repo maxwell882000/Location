@@ -53,7 +53,7 @@ class SerializerWithUser(serializers.ModelSerializer):
 
 class RegisterSerializer(serializers.ModelSerializer):
     token = serializers.CharField(
-        max_length=255, allow_null=True, required=False)
+        max_length=700, allow_null=True, required=False)
 
     class Meta:
         model = User
