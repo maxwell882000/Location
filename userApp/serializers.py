@@ -90,8 +90,9 @@ class RegisterSerializer(serializers.ModelSerializer):
 class UpdateUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
+        fields = '__all__'
         optional_fields = ["firstname",
-                           "lastname", "token", "password",
+                           "lastname", "password",
                            "phone"]
 
     # def get_validation_exclusions(self):
