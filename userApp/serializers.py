@@ -57,7 +57,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ["id", "firstname",   "phone"
+        fields = ["id", "firstname",   "phone",
                   "lastname", "token", "password",
                   ]
         extra_kwargs = {'password': {'write_only': True}}
@@ -72,7 +72,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         user = User.object.create_user(phone, password, **validated_data)
         self.add_token(user)
         validated_data['phone'] = phone
-        
+
         return validated_data
 
     def update(self, instance, validated_data):
