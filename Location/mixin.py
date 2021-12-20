@@ -1,10 +1,11 @@
 from django.http import QueryDict
 from rest_framework.response import Response
 
-class RequestCustom:
-    data = {}
 
-    def __init__(self, data: dict) -> None:
+class RequestCustom:
+    data = None
+
+    def __init__(self, data) -> None:
         self.data = QueryDict.copy(data)
 
 
@@ -26,17 +27,21 @@ class CustomCreateModelMixin:
             user=request.user,
             specialist_id=new_request.data[field_name]
         )
-        if object.exists(): 
+        if object.exists():
             instance = object.first()
-            serializer = self.get_serializer(instance, data=new_request.data)
+            serializer = self.get_serializer(
+                            instance,
+                            data=new_request.data)
             serializer.is_valid(raise_exception=True)
             serializer.save()
             return Response(serializer.data)
-        return self.create(new_request, *args,**kwargs)
+        return self.create(new_request, *args, **kwargs)
+
+
 class WithReviewMixin:
     review_serializer_class = None
 
-    def retrieve(self, request, *arg,**kwargs):
+    def retrieve(self, request, *arg, **kwargs):
         instance = self.get_object()
         review = instance.reviews.filter(user=request.user)
         if review.exists():
