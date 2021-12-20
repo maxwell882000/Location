@@ -36,7 +36,7 @@ class LocationCreateView(generics.GenericAPIView, mixins.CreateModelMixin):
 location_create = LocationCreateView.as_view()
 
 
-class LocationView(generics.GenericAPIView, WithReviewMixin):
+""" class LocationView(generics.GenericAPIView, WithReviewMixin):
     queryset = Location.objects.all().order_by("-id")
     serializer_class = ReviewLocationSerializer
 
@@ -44,4 +44,4 @@ class LocationView(generics.GenericAPIView, WithReviewMixin):
         return self.retrieve(request, *args, **kwargs)
 
 
-location = LocationView.as_view()
+location = LocationView.as_view() """

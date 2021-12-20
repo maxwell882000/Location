@@ -4,7 +4,9 @@ from commentApp.views import specialist_comment, specialist_review, location_com
 
 urlpatterns = [
     path("specialist/<int:pk>/", specialist_comment),
-    path('specialist/review/', specialist_review),
     path("location/<int:pk>/", location_comment),
-    path('location/review/', location_review)
+    path('specialist/review/', specialist_review),
+    path('location/review/', location_review),
+    path('specialist/review/<int:pk>/', specialist_review),
+    path('location/review/<int:pk>/', location_review)
 ]

@@ -2,14 +2,11 @@ from django.shortcuts import render
 from rest_framework import generics
 from rest_framework import mixins
 from rest_framework.permissions import AllowAny
-from Location.mixin import CustomCreateModelMixin
+from Location.mixin import CustomCreateModelMixin, WithReviewMixin
 
 from commentApp.serializers import *
 from locationApp.models import Location
 from specialistApp.models import Specialist
-
-
-
 
 
 class SpecialistCommentView(generics.GenericAPIView,
@@ -35,11 +32,14 @@ class SpecialistCommentView(generics.GenericAPIView,
 
 class SpecialistReviewView(generics.GenericAPIView,
                            mixins.CreateModelMixin,
-                           mixins.UpdateModelMixin,
-                           CustomCreateModelMixin):
-
+                           CustomCreateModelMixin,
+                           WithReviewMixin):
+    queryset = Specialist.objects.all().order_by("-id")
     serializer_class = ReviewSpecialistSerializer
     object_class = ReviewSpecialist
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         return self.review_create(request, 'specialist', *args, **kwargs)
@@ -72,9 +72,14 @@ class LocationCommentView(generics.GenericAPIView,
 
 class LocationReviewView(generics.GenericAPIView,
                          mixins.CreateModelMixin,
-                         CustomCreateModelMixin):
+                         CustomCreateModelMixin,
+                         WithReviewMixin):
+    queryset = Location.objects.all()
     serializer_class = ReviewLocationSerializer
     object_class = ReviewLocation
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         return self.review_create(request, 'location', *args, **kwargs)

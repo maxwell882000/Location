@@ -22,17 +22,17 @@ class SpecialistListView(generics.ListAPIView):
         return query_set.order_by("id")
 
 
-class SpecialistView(generics.GenericAPIView, WithReviewMixin):
+""" class SpecialistView(generics.GenericAPIView, WithReviewMixin):
     queryset = Specialist.objects.all().order_by("-id")
     serializer_class = ReviewSpecialistSerializer
 
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
-
+ """
 
 specialist_list = SpecialistListView.as_view()
-specialist = SpecialistView.as_view()
-
+""" specialist = SpecialistView.as_view()
+ """
 
 class CategoryListView(generics.ListAPIView):
     queryset = Category.objects.all().order_by('-id')
