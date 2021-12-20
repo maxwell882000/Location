@@ -1,4 +1,6 @@
 from django.contrib.auth import authenticate
+from django.db import models
+from django.db.models import fields
 from rest_framework import serializers
 from django.utils.translation import gettext_lazy as _
 from rest_framework.exceptions import ValidationError
@@ -80,6 +82,27 @@ class RegisterSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         password = validated_data.pop('password')
         instance.set_password(password)
+        instance.update(**validated_data)
+        instance.save()
+        return instance
+
+
+class UpdateUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["id", "firstname",
+                  "lastname", "token", "password",
+                  "phone"]
+
+    def get_validation_exclusions(self):
+        exclusions = super(UpdateUserSerializer,
+                           self).get_validation_exclusions()
+        return exclusions + self.Meta.fields
+
+    def update(self, instance, validated_data):
+        password = validated_data.pop('password')
+        if password != None:
+            instance.set_password(password)
         instance.update(**validated_data)
         instance.save()
         return instance

@@ -49,7 +49,7 @@ class RegisterUser(APIView):
 
 
 class UpdateUser(APIView):
-    serializer_class = RegisterSerializer
+    serializer_class = UpdateUserSerializer
 
     def put(self, request, *args, **kwargs):
         serializer = self.serializer_class(request.user, data=request.data)
