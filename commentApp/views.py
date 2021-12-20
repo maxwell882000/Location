@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
 from rest_framework import mixins
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from Location.mixin import CustomCreateModelMixin, WithReviewMixin
 from Location.permissions import CheckPhone
 
@@ -75,7 +75,7 @@ class LocationReviewView(generics.GenericAPIView,
                          mixins.CreateModelMixin,
                          CustomCreateModelMixin,
                          WithReviewMixin):
-    permission_classes = [CheckPhone]
+    permission_classes = [IsAuthenticated,CheckPhone]
     queryset = Location.objects.all()
     serializer_class = ReviewLocationSerializer
     object_class = ReviewLocation
