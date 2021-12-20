@@ -8,7 +8,8 @@ from commonApp.serializers import CommonIconSerializer, CommonLogoSerializer
 
 
 class CommonApiView(views.APIView):
-    permission_classes = [AllowAny]
+    permission_classes = (AllowAny,)
+
     def get(self, request, *args, **kwargs):
         icon = CommonIcon.objects.all()
         logo = CommonLogo.objects.first()
