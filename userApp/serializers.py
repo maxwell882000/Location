@@ -71,8 +71,6 @@ class RegisterSerializer(serializers.ModelSerializer):
         password = validated_data.pop('password')
         user = User.object.create_user(phone, password, **validated_data)
         self.add_token(user)
-        validated_data['phone'] = phone
-
         return validated_data
 
     def update(self, instance, validated_data):

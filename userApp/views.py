@@ -41,7 +41,8 @@ class RegisterUser(APIView):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return Response({'token': serializer.data}, status=status.HTTP_200_OK)
+        serializer.data['token'] = serializer.token
+        return Response(serializer.data, status=status.HTTP_200_OK)
   
 
 
