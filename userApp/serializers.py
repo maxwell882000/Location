@@ -8,6 +8,7 @@ from specialistApp.models import Specialist
 from userApp.models import User
 import re
 
+
 class SpecialistSerializer(serializers.ModelSerializer):
     review_avg = serializers.FloatField(default=0.0)
     location = s.LocationSerializerCard()
@@ -31,6 +32,7 @@ class UserSerilalizer(serializers.ModelSerializer):
             'phone'
         )
         depth = 2
+
 
 class UserSpecialistCard(serializers.ModelSerializer):
     class Meta:
@@ -72,12 +74,15 @@ class RegisterSerializer(serializers.ModelSerializer):
         phone = validated_data.pop("phone")
         password = validated_data.pop('password')
         user = User.object.create_user(phone, password, **validated_data)
-        # user.send_code()
         self.add_token(user)
         return validated_data
 
     def update(self, instance, validated_data):
-        raise Exception("Cannot be Updated")
+        password = validated_data.pop('password')
+        instance.set_password(password)
+        instance.update(**validated_data)
+        instance.save()
+        return instance
 
 
 class TokenSerializer(serializers.Serializer):

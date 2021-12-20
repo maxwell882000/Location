@@ -1,7 +1,7 @@
 import sys
 
 from django.shortcuts import render
-from rest_framework import parsers, renderers, status
+from rest_framework import mixins, parsers, renderers, status
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -32,7 +32,7 @@ class UserView(APIView):
         return Response(serializers.data)
 
 
-class RegisterUser(APIView):
+class RegisterUser(APIView, mixins.UpdateModelMixin):
     serializer_class = RegisterSerializer
     permission_classes = (AllowAny,)
 
@@ -46,6 +46,12 @@ class RegisterUser(APIView):
         except Exception as e:
             return Response(AppLog.object.create(request, traceback.format_exc(), self),
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def put(self, request, *args, **kwargs):
+        serializer = self.serializer_class(request.user, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
 user_view = UserView.as_view()
