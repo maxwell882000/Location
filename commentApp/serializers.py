@@ -24,7 +24,6 @@ class CreateCommentSpecialistSerializer(serializers.ModelSerializer):
     class Meta:
         model = CommentSpecialist
         fields = '__all__'
-        depth = 1
 
 
 class ReviewSpecialistSerializer(serializers.ModelSerializer):
@@ -37,7 +36,6 @@ class ReviewLocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReviewLocation
         fields = '__all__'
-        depth = 1
 
 
 class SpecialistCommentSerializer(serializers.ModelSerializer):
@@ -54,7 +52,6 @@ class CreateCommentLocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = CommentLocation
         fields = '__all__'
-        depth = 1
 
 
 class LocationCommentSerializer(serializers.ModelSerializer):

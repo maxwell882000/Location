@@ -3,6 +3,9 @@ from django.shortcuts import render
 from rest_framework.permissions import AllowAny
 from rest_framework import generics
 from rest_framework import mixins
+from rest_framework.response import Response
+from Location.mixin import WithReviewMixin
+from commentApp.serializers import ReviewSpecialistSerializer
 from specialistApp.builders import specialist_builder
 from specialistApp.models import Specialist, Category
 from specialistApp.serializers import *
@@ -19,10 +22,10 @@ class SpecialistListView(generics.ListAPIView):
         return query_set.order_by("id")
 
 
-class SpecialistView(generics.GenericAPIView, mixins.RetrieveModelMixin):
+class SpecialistView(generics.GenericAPIView, WithReviewMixin):
     queryset = Specialist.objects.all().order_by("-id")
     serializer_class = SpecialistSerializer
-    permission_classes = [AllowAny]
+    review_serializer_class = ReviewSpecialistSerializer
 
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
