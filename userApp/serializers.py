@@ -94,11 +94,11 @@ class TokenSerializer(serializers.Serializer):
             # users. (Assuming the default ModelBackend authentication
             # backend.)
             if not user:
-                msg = _('Не правильный ввод данных')
+                msg = 'Не правильный ввод данных'
                 raise serializers.ValidationError(
                     {"errors": msg}, code='authorization')
         else:
-            msg = _('Должны ввести пароль и телефонный номер')
+            msg = 'Должны ввести пароль и телефонный номер'
             raise serializers.ValidationError(
                 {"errors": msg}, code='authorization')
 
