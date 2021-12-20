@@ -6,7 +6,7 @@ class CommentLocation(models.Model):
     user = models.ForeignKey("userApp.User", on_delete=models.CASCADE,
                              verbose_name="Пользователь оставивший коментарий")
     location = models.ForeignKey(
-        "locationApp.Location", on_delete=models.CASCADE)
+        "locationApp.Location", on_delete=models.CASCADE, related_name="comments")
     date = models.DateField(auto_now=True)
 
     def __str__(self):
