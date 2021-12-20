@@ -101,8 +101,8 @@ class UpdateUserSerializer(serializers.ModelSerializer):
     #     return exclusions + self.Meta.fields
 
     def update(self, instance, validated_data):
-        password = validated_data.pop('password')
-        if password != None:
+        if "password" in validated_data:
+            password = validated_data.pop("password")
             instance.set_password(password)
         instance.update(**validated_data)
         instance.save()
