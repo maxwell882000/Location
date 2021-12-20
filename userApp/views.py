@@ -32,7 +32,7 @@ class UserView(APIView):
         return Response(serializers.data)
 
 
-class RegisterUser(APIView, mixins.UpdateModelMixin):
+class RegisterUser(APIView):
     serializer_class = RegisterSerializer
     permission_classes = (AllowAny,)
 
@@ -47,6 +47,10 @@ class RegisterUser(APIView, mixins.UpdateModelMixin):
             return Response(AppLog.object.create(request, traceback.format_exc(), self),
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+
+class UpdateUser(APIView):
+    serializer_class = RegisterSerializer
+
     def put(self, request, *args, **kwargs):
         serializer = self.serializer_class(request.user, data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -54,6 +58,7 @@ class RegisterUser(APIView, mixins.UpdateModelMixin):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
+update = UpdateUser.as_view()
 user_view = UserView.as_view()
 register = RegisterUser.as_view()
 
