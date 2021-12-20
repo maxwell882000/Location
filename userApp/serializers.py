@@ -72,15 +72,9 @@ class RegisterSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         phone = validated_data.pop("phone")
         password = validated_data.pop('password')
-        user = User.object.create_user(phone, password, **validated_data)
+        User.object.create_user(phone, password, **validated_data)
         return validated_data
 
-    def update(self, instance, validated_data):
-        password = validated_data.pop('password')
-        instance.set_password(password)
-        instance.update(**validated_data)
-        instance.save()
-        return instance
 
 
 class UpdateUserSerializer(serializers.ModelSerializer):
