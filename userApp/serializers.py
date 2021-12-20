@@ -54,11 +54,12 @@ class SerializerWithUser(serializers.ModelSerializer):
 class RegisterSerializer(serializers.ModelSerializer):
     token = serializers.CharField(
         max_length=700, allow_null=True, required=False)
+
     class Meta:
         model = User
-        fields = ["id", "firstname",
+        fields = ["id", "firstname",   "phone"
                   "lastname", "token", "password",
-                  "phone"]
+                  ]
         extra_kwargs = {'password': {'write_only': True}}
 
     def add_token(self, user):
@@ -70,6 +71,8 @@ class RegisterSerializer(serializers.ModelSerializer):
         password = validated_data.pop('password')
         user = User.object.create_user(phone, password, **validated_data)
         self.add_token(user)
+        validated_data['phone'] = phone
+        
         return validated_data
 
     def update(self, instance, validated_data):
