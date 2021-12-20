@@ -104,9 +104,7 @@ class UpdateUserSerializer(serializers.ModelSerializer):
         if "password" in validated_data:
             password = validated_data.pop("password")
             instance.set_password(password)
-        instance.update(**validated_data)
-        instance.save()
-        return instance
+        return super(UpdateUserSerializer,self).update(instance,validated_data)
 
 
 class TokenSerializer(serializers.Serializer):
