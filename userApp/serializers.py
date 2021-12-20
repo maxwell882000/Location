@@ -54,10 +54,6 @@ class SerializerWithUser(serializers.ModelSerializer):
 class RegisterSerializer(serializers.ModelSerializer):
     token = serializers.CharField(
         max_length=700, allow_null=True, required=False)
-    phone = serializers.CharField(
-        max_length=20
-    )
-
     class Meta:
         model = User
         fields = ["id", "firstname",

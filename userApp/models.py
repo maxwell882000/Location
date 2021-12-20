@@ -61,7 +61,7 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser, PermissionsMixin):
     firstname = models.CharField(db_index=True, max_length=50)
     lastname = models.CharField(db_index=True, max_length=50)
-    phone = models.CharField(db_index=True,unique=True, max_length=20)
+    phone = models.CharField(db_index=True,unique=True, max_length=50)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_phone_validated = models.BooleanField(default=False)
