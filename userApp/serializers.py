@@ -8,6 +8,30 @@ from specialistApp.models import Specialist
 from userApp.models import User
 import re
 
+class SpecialistSerializer(serializers.ModelSerializer):
+    review_avg = serializers.FloatField(default=0.0)
+    location = s.LocationSerializerCard()
+
+    class Meta:
+        model = Specialist
+        exclude = ('user', )
+        depth = 2
+
+
+class UserSerilalizer(serializers.ModelSerializer):
+    user_specialist = SpecialistSerializer()
+
+    class Meta:
+        model = User
+        fields = (
+            'id',
+            'firstname',
+            'lastname',
+            'user_specialist',
+            'phone'
+        )
+        depth = 2
+
 class UserSpecialistCard(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -19,29 +43,9 @@ class UserSpecialistCard(serializers.ModelSerializer):
         )
 
 
+class SerializerWithUser(serializers.ModelSerializer):
+    user = UserSpecialistCard()
 
-class SpecialistSerializer(serializers.ModelSerializer):
-    review_avg = serializers.FloatField(default=0.0)
-    location = s.LocationSerializerCard()
-
-    class Meta:
-        model = Specialist
-        exclude = ('user', )
-        depth = 2
-        
-class UserSerilalizer(serializers.ModelSerializer):
-    user_specialist =  SpecialistSerializer()
-    class Meta:
-        model = User
-        fields = (
-            'id',
-            'firstname',
-            'lastname',
-            'user_specialist',
-            'phone'
-        )
-        depth = 2
-        
 
 class RegisterSerializer(serializers.ModelSerializer):
     token = serializers.CharField(
