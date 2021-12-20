@@ -22,7 +22,7 @@ class CommonIcon(models.Model):
         verbose_name_plural = "Общие иконки"
 
     def __str__(self):
-        return "Иконка №{}".format(self.id)
+        return CHOICES[self.type][1]
 
 
 class CommonLogo(models.Model):
