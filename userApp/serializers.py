@@ -61,12 +61,6 @@ class RegisterSerializer(serializers.ModelSerializer):
                   "phone"]
         extra_kwargs = {'password': {'write_only': True}}
 
-    def validate_phone(self, phone):
-        pattern = re.compile("^(\+\d*|\d*)$")
-        if not pattern.match(phone):
-            raise ValidationError("Incorrectly Formed")
-        return phone
-
     def add_token(self, user):
         self.token = user.token[0].key
         self._validated_data['token'] = self.token

@@ -38,14 +38,11 @@ class RegisterUser(APIView):
     permission_classes = (AllowAny,)
 
     def post(self, request):
-        try:
-            serializer = self.serializer_class(data=request.data)
-            serializer.is_valid(raise_exception=True)
-            serializer.save()
-            return Response({'token': serializer.data['firstname']}, status=status.HTTP_200_OK)
-        except Exception as e:
-            return Response(AppLog.object.create(request, traceback.format_exc(), self),
-                            status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response({'token': serializer.data['firstname']}, status=status.HTTP_200_OK)
+  
 
 
 class UpdateUser(APIView,):
