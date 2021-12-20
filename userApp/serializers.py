@@ -90,14 +90,14 @@ class RegisterSerializer(serializers.ModelSerializer):
 class UpdateUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["id", "firstname",
-                  "lastname", "token", "password",
-                  "phone"]
+        optional_fields = ["firstname",
+                           "lastname", "token", "password",
+                           "phone"]
 
-    def get_validation_exclusions(self):
-        exclusions = super(UpdateUserSerializer,
-                           self).get_validation_exclusions()
-        return exclusions + self.Meta.fields
+    # def get_validation_exclusions(self):
+    #     exclusions = super(UpdateUserSerializer,
+    #                        self).get_validation_exclusions()
+    #     return exclusions + self.Meta.fields
 
     def update(self, instance, validated_data):
         password = validated_data.pop('password')
