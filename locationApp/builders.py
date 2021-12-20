@@ -19,6 +19,5 @@ def location_builder(filter_by: dict):
 
     if 'category' in filter_by:
         id = int(filter_by['category'])
-        print("ASD {}".format(id))
         builder = builder & Q(specialist__category=id)
     return location.filter(builder).distinct()

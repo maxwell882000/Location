@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from rest_framework import generics, mixins
 from rest_framework.permissions import AllowAny
+from Location.mixin import WithReviewMixin
+from commentApp.serializers import ReviewLocationSerializer
 
 from locationApp.builders import location_builder
 from locationApp.models import Location
 from locationApp.paginator import CustomPageNumberPagination
 from locationApp.serializers import *
+
 
 class LocationListView(generics.ListAPIView):
     queryset = Location.objects.all().order_by("id")
@@ -31,11 +34,14 @@ class LocationCreateView(generics.GenericAPIView, mixins.CreateModelMixin):
 
 
 location_create = LocationCreateView.as_view()
-# class LocationCardSearch(generics.ListAPIView):
-#     serializer_class = LocationSerializerCard
-#     model = serializer_class.Meta.model
-#     permission_classes = [AllowAny]
-#     paginate_by = 10
 
 
-# location_search = LocationCardSearch().as_view()
+class LocationView(generics.GenericAPIView, WithReviewMixin):
+    queryset = Location.objects.all().order_by("-id")
+    serializer_class = ReviewLocationSerializer
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
+
+
+location = LocationView.as_view()

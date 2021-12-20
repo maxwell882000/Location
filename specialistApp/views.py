@@ -24,8 +24,7 @@ class SpecialistListView(generics.ListAPIView):
 
 class SpecialistView(generics.GenericAPIView, WithReviewMixin):
     queryset = Specialist.objects.all().order_by("-id")
-    serializer_class = SpecialistSerializer
-    review_serializer_class = ReviewSpecialistSerializer
+    serializer_class = ReviewSpecialistSerializer
 
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)

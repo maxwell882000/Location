@@ -38,8 +38,8 @@ class WithReviewMixin:
 
     def retrieve(self, request, *arg,**kwargs):
         instance = self.get_object()
-        serializer = self.serializer_class(instance)
         review = instance.reviews.filter(user=request.user)
+        serializer = {}
         if review.exists():
-            serializer.data['user_put'] = self.review_serializer(review.first()).data
+            serializer = self.serializer_class(review.first())
         return Response(serializer.data)
