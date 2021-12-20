@@ -24,10 +24,13 @@ class CustomCreateModelMixin:
 
     def review_create(self, request, field_name, *args, **kwargs):
         new_request = self.get_mutable_with_user(request)
-        object = self.object_class.objects.filter(
-            user=request.user,
-            specialist_id=new_request.data[field_name]
-        )
+        filters = {
+            "user":request.user,
+            "{}_id".format(field_name): new_request.data[field_name]
+        }
+        object = self.object_class.objects.filter(**filters)
+            #     """   user=request.user,
+            # specialist_id=new_request.data[field_name] """
         if object.exists():
             instance = object.first()
             serializer = self.get_serializer(
