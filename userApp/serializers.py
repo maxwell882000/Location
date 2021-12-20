@@ -63,15 +63,16 @@ class RegisterSerializer(serializers.ModelSerializer):
                   ]
         extra_kwargs = {'password': {'write_only': True}}
 
-    def add_token(self, user):
+    def add_token(self, user , validated_data):
         self.token = user.token[0].key
-        self._validated_data['token'] = self.token
+        validated_data['token'] = self.token
+
 
     def create(self, validated_data):
         phone = validated_data.pop("phone")
         password = validated_data.pop('password')
         user = User.object.create_user(phone, password, **validated_data)
-        self.add_token(user)
+        self.add_token(user, validated_data)
         validated_data['phone'] = phone
         validated_data['id']= user.id
         return validated_data

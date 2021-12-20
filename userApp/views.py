@@ -42,7 +42,6 @@ class RegisterUser(APIView):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         data  = serializer.data
-        data['token'] = serializer.token
         return Response(data, status=status.HTTP_200_OK)
   
 
