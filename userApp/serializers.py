@@ -91,8 +91,8 @@ class UpdateUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ["firstname",
-                           "lastname", "password",
-                           "phone"]
+                  "lastname", "password",
+                  "phone"]
 
     # def get_validation_exclusions(self):
     #     exclusions = super(UpdateUserSerializer,
@@ -103,7 +103,7 @@ class UpdateUserSerializer(serializers.ModelSerializer):
         if "password" in validated_data:
             password = validated_data.pop("password")
             instance.set_password(password)
-        return super(UpdateUserSerializer,self).update(instance,validated_data)
+        return super(UpdateUserSerializer, self).update(instance, validated_data)
 
 
 class TokenSerializer(serializers.Serializer):

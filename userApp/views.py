@@ -43,7 +43,7 @@ class RegisterUser(APIView):
             if not serializer.is_valid():
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             serializer.save()
-            return Response({'token': serializer.token}, status=status.HTTP_200_OK)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
             return Response(AppLog.object.create(request, traceback.format_exc(), self),
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
@@ -54,7 +54,7 @@ class UpdateUser(APIView,):
 
     def put(self, request, *args, **kwargs):
         serializer = self.serializer_class(
-            request.user, data=request.data, partial=True)
+        request.user, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
