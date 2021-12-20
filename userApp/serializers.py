@@ -2,22 +2,12 @@ from django.contrib.auth import authenticate
 from rest_framework import serializers
 from django.utils.translation import gettext_lazy as _
 from rest_framework.exceptions import ValidationError
+import locationApp.serializers as s
+from specialistApp.models import Specialist
 
 from userApp.models import User
 import re
 
-class UserSerilalizer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = (
-            'id',
-            'firstname',
-            'lastname',
-            'user_specialist',
-            'phone'
-        )
-        depth = 2
-        
 class UserSpecialistCard(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -29,9 +19,29 @@ class UserSpecialistCard(serializers.ModelSerializer):
         )
 
 
-class SerializerWithUser(serializers.ModelSerializer):
-    user = UserSpecialistCard()
 
+class SpecialistSerializer(serializers.ModelSerializer):
+    review_avg = serializers.FloatField(default=0.0)
+    location = s.LocationSerializerCard()
+
+    class Meta:
+        model = Specialist
+        exclude = ('user', )
+        depth = 2
+        
+class UserSerilalizer(serializers.ModelSerializer):
+    user_specialist =  SpecialistSerializer()
+    class Meta:
+        model = User
+        fields = (
+            'id',
+            'firstname',
+            'lastname',
+            'user_specialist',
+            'phone'
+        )
+        depth = 2
+        
 
 class RegisterSerializer(serializers.ModelSerializer):
     token = serializers.CharField(
