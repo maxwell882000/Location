@@ -1,12 +1,13 @@
 from django.http import QueryDict
 from rest_framework.response import Response
 
+import copy
 
 class RequestCustom:
     data = None
 
-    def __init__(self, data) -> None:
-        self.data = QueryDict.copy(data)
+    def __init__(self, data:dict) -> None:
+        self.data = copy.deepcopy(data)
 
 
 class CustomCreateModelMixin:
