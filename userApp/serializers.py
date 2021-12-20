@@ -90,8 +90,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 class UpdateUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
-        optional_fields = ["firstname",
+        fields = ["firstname",
                            "lastname", "password",
                            "phone"]
 
