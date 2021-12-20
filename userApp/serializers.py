@@ -68,15 +68,11 @@ class RegisterSerializer(serializers.ModelSerializer):
             raise ValidationError("Incorrectly Formed")
         return phone
 
-    def add_token(self, user):
-        self.token = user.token[0].key
-        self._validated_data['token'] = self.token
 
     def create(self, validated_data):
         phone = validated_data.pop("phone")
         password = validated_data.pop('password')
         user = User.object.create_user(phone, password, **validated_data)
-        self.add_token(user)
         return validated_data
 
     def update(self, instance, validated_data):
