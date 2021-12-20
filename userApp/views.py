@@ -40,10 +40,9 @@ class RegisterUser(APIView):
     def post(self, request):
         try:
             serializer = self.serializer_class(data=request.data)
-            if not serializer.is_valid():
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            serializer.is_valid(raise_exception=True)
             serializer.save()
-            return Response({'token': serializer.phone}, status=status.HTTP_200_OK)
+            return Response({'token': serializer.token}, status=status.HTTP_200_OK)
         except Exception as e:
             return Response(AppLog.object.create(request, traceback.format_exc(), self),
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
