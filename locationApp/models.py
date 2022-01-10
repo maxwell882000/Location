@@ -73,10 +73,12 @@ class Location(models.Model, GeoItem):
 
     @property
     def city_str(self):
-        return str(self.city)
+        if self.city:
+            return str(self.city)
+        return "Не выбран город"
 
     def __str__(self):
-        return "{} {} {}".format(self.city.country, self.city, self.district)
+        return "{} {}".format(self.city_str, self.district)
 
 
 class Images(models.Model):
