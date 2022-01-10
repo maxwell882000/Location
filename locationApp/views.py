@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics, mixins
 from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
 from Location.mixin import WithReviewMixin
 from commentApp.serializers import ReviewLocationSerializer
 
@@ -55,6 +56,21 @@ class LocationCreateView(generics.GenericAPIView, mixins.CreateModelMixin):
 
 
 location_create = LocationCreateView.as_view()
+
+
+class ImageLocationView(generics.GenericAPIView, mixins.CreateModelMixin, mixins.DestroyModelMixin):
+    queryset = Images.objects.all().order_by("id")
+    serializer_class = ImageLocationSerializer
+    permission_classes = [AllowAny]
+
+    def post(self, request, *args, **kwargs):
+        return self.create(request, *args, **kwargs)
+
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
+
+
+image_upload = ImageLocationView.as_view()
 
 """ class LocationView(generics.GenericAPIView, WithReviewMixin):
     queryset = Location.objects.all().order_by("-id")

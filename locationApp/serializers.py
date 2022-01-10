@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from locationApp.models import Location, LocationCity, LocationCountry
+from locationApp.models import Images, Location, LocationCity, LocationCountry
 from specialistApp.models import Category
 
 
@@ -29,6 +29,10 @@ class CountrySerializer(serializers.ModelSerializer):
         fields = "__all__"
         depth = 0
 
+class ImageLocationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Images
+        fields = "__all__"
 
 class LocationSerializerCard(serializers.ModelSerializer):
     city = serializers.CharField(source="city_str")
