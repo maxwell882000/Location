@@ -15,11 +15,19 @@ import traceback
 
 
 class VerifyCode(APIView):
+
     def get(self, request, *args, **kwargs):
-        pass
+        request.user.phone_validation.save()
+        return Response({
+            'status': True
+        })
 
     def post(self, request):
-        pass
+        code = request.data['code']
+        is_valid = request.user.phone_validation.validate(code)
+        return Response({
+            'status': is_valid
+        })
 
 
 verify_code = VerifyCode.as_view()
@@ -41,17 +49,16 @@ class RegisterUser(APIView):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        data  = serializer.data
+        data = serializer.data
         return Response(data, status=status.HTTP_200_OK)
-  
 
 
-class UpdateUser(APIView,):
+class UpdateUser(APIView, ):
     serializer_class = UpdateUserSerializer
 
     def put(self, request, *args, **kwargs):
         serializer = self.serializer_class(
-        request.user, data=request.data, partial=True)
+            request.user, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)

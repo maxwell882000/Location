@@ -25,6 +25,13 @@ class CommonIcon(models.Model):
         return CHOICES[self.type][1]
 
 
+class TempImage(models.Model):
+    folder = "specialists"
+    temp = models.ImageField(verbose_name="Темп фото", upload_to=name_of_file)
+
+    @property
+    def temp_url(self):
+        return self.temp.url
 class CommonLogo(models.Model):
     folder = "logo"
     logo = models.ImageField(

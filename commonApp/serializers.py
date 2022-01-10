@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from commonApp.models import CommonLogo, CommonIcon
+from commonApp.models import CommonLogo, CommonIcon, TempImage
 
 
 class CommonLogoSerializer(serializers.ModelSerializer):
@@ -8,6 +8,10 @@ class CommonLogoSerializer(serializers.ModelSerializer):
         model = CommonLogo
         fields = '__all__'
 
+class TempSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TempImage
+        fields = "__all__"
 
 class CommonIconSerializer(serializers.ModelSerializer):
     class Meta:

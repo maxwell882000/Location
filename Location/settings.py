@@ -56,7 +56,8 @@ INSTALLED_APPS = [
     'locationApp',
     'userApp',
     'commonApp',
-    'logApp'
+    'logApp',
+    'phoneApp'
 ]
 AUTH_USER_MODEL = 'userApp.User'
 MIDDLEWARE = [

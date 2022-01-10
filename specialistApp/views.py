@@ -1,10 +1,11 @@
+from django.db.models import query_utils
 from django.shortcuts import render
 
 from rest_framework.permissions import AllowAny
 from rest_framework import generics
 from rest_framework import mixins
 from rest_framework.response import Response
-from Location.mixin import WithReviewMixin
+from Location.mixin import CustomCreateModelMixin, WithReviewMixin
 from commentApp.serializers import ReviewSpecialistSerializer
 from specialistApp.builders import specialist_builder
 from specialistApp.models import Specialist, Category
@@ -33,6 +34,33 @@ class SpecialistListView(generics.ListAPIView):
 specialist_list = SpecialistListView.as_view()
 """ specialist = SpecialistView.as_view()
  """
+
+
+# temp for avatar
+class SpecialistCreateView(generics.GenericAPIView,
+                           mixins.CreateModelMixin,
+                           mixins.UpdateModelMixin,
+                           CustomCreateModelMixin):
+    queryset = Specialist.objects.all().order_by('-id')
+    permission_classes = [AllowAny]
+    serializer_class = SpecialistCreateSerializer
+
+    def post(self, request, *args, **kwargs):
+        return self.create_temp(request, 'image', *args, **kwargs)
+
+
+class SpecialistUpdateView(generics.GenericAPIView,
+                           mixins.UpdateModelMixin,
+                           ):
+
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+
+
+specialist_create = SpecialistCreateView.as_view()
+
+specialist_update = SpecialistUpdateView.as_view()
+
 
 class CategoryListView(generics.ListAPIView):
     queryset = Category.objects.all().order_by('-id')

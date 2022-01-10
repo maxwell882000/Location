@@ -1,9 +1,12 @@
 from django.db import models
 from django.db.models import fields
+from django.utils.functional import partition
 from rest_framework import serializers
 import locationApp.serializers as s
 from specialistApp.models import Specialist, Category
-from userApp.serializers import SerializerWithUser
+from userApp.serializers import RegisterSerializer, SerializerWithUser, UserSerilalizer
+from userApp.models import User
+from commonApp.models import TempImage
 
 
 class SpecialistSerializer(SerializerWithUser):
@@ -17,9 +20,25 @@ class SpecialistSerializer(SerializerWithUser):
 
 
 class SpecialistCreateSerializer(serializers.ModelSerializer):
+    user = RegisterSerializer()
+
     class Meta:
         model = Specialist
         fields = '__all__'
+
+    def create(self, validated_data):
+        user = validated_data.pop('user')
+        serialize = RegisterSerializer(data=user)
+        serialize.is_valid(raise_exception=True)
+        serialize.save()
+        validated_data['user'] = User.object.get(id=serialize.data['id'])
+        return super(SpecialistCreateSerializer, self).create(validated_data)
+
+
+class CategoryListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ['id', 'name']
 
 
 class CategorySerializer(serializers.ModelSerializer):

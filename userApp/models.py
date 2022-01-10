@@ -26,8 +26,6 @@ class UserManager(BaseUserManager):
 
         if not phone:
             raise ValueError('Данный адрес электронной почты должен быть установлен')
-
-        phone = self.normalize_email(phone)
         user = self.model(phone=phone, **extra_fields)
         user.set_password(password)
         user.save(using=self._db)
@@ -61,7 +59,7 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser, PermissionsMixin):
     firstname = models.CharField(db_index=True, max_length=50)
     lastname = models.CharField(db_index=True, max_length=50)
-    phone = models.CharField(db_index=True,unique=True, max_length=50)
+    phone = models.CharField(db_index=True, unique=True, max_length=50)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_phone_validated = models.BooleanField(default=False)
@@ -69,19 +67,20 @@ class User(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = "phone"
     REQUIRED_FIELDS = ('firstname', 'lastname')
     object = UserManager()
+
     @property
     def fullname(self):
         return "{} {}".format(self.firstname, self.lastname)
+
     def __str__(self):
         return self.fullname
 
     class Meta:
         verbose_name_plural = "Пользователи"
 
-    
     @property
     def token(self):
-        return self._generate_token()
+        return self._generate_token()[0].key
 
     def get_short_name(self):
         """
@@ -92,8 +91,6 @@ class User(AbstractBaseUser, PermissionsMixin):
         мы возвращаем его имя пользователя.
         """
         return self.fullname
-
-
 
     def _generate_token(self):
         return Token.objects.get_or_create(user=self)

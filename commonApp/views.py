@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from rest_framework import views, status
+from rest_framework import generics, mixins, views, status
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
-from commonApp.models import CommonIcon, CommonLogo
-from commonApp.serializers import CommonIconSerializer, CommonLogoSerializer
+from commonApp.models import CommonIcon, CommonLogo, TempImage
+from commonApp.serializers import CommonIconSerializer, CommonLogoSerializer, TempSerializer
 
 
 class CommonApiView(views.APIView):
@@ -24,3 +24,15 @@ class CommonApiView(views.APIView):
 
 
 common = CommonApiView.as_view()
+
+
+class TempImageStore(generics.GenericAPIView, mixins.CreateModelMixin):
+    queryset = TempImage.objects.all().order_by('-id')
+    permission_classes = [AllowAny]
+    serializer_class = TempSerializer
+
+    def post(self, request, *args, **kwargs):
+        return self.create(request, *args, **kwargs)
+
+
+temp_view = TempImageStore.as_view()

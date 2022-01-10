@@ -44,7 +44,7 @@ class Location(models.Model, GeoItem):
     longitude = models.FloatField(
         verbose_name="Долгота")
     images = models.ManyToManyField(
-        'Images', verbose_name="Картинки для локации", )
+        'Images', verbose_name="Картинки для локации")
 
     @property
     def review_avg(self):

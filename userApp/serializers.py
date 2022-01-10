@@ -64,7 +64,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         extra_kwargs = {'password': {'write_only': True}}
 
     def add_token(self, user , validated_data):
-        self.token = user.token[0].key
+        self.token = user.token
         validated_data['token'] = self.token
 
 

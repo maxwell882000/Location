@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from locationApp.models import Location
+from locationApp.models import Location, LocationCity, LocationCountry
 from specialistApp.models import Category
 
 
@@ -14,6 +14,20 @@ class CategoryLocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = "__all__"
+
+
+class CitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LocationCity
+        fields = "__all__"
+        depth = 0
+
+
+class CountrySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LocationCountry
+        fields = "__all__"
+        depth = 0
 
 
 class LocationSerializerCard(serializers.ModelSerializer):
