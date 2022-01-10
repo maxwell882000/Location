@@ -15,7 +15,7 @@ class CountryLocationView(generics.ListAPIView):
     queryset = LocationCountry.objects.all().order_by("country")
     serializer_class = CountrySerializer
     pagination_class = None
-
+    
 
 country_list = CountryLocationView.as_view()
 
