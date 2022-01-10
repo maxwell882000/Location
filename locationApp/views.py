@@ -13,7 +13,7 @@ from locationApp.serializers import *
 class CountryLocationView(generics.ListAPIView):
     queryset = LocationCountry.objects.all().order_by("country")
     serializer_class = CountrySerializer
-    pagination_class = CustomPageNumberPagination
+    pagination_class = None
 
 
 country_list = CountryLocationView.as_view()
@@ -22,10 +22,10 @@ country_list = CountryLocationView.as_view()
 class CityLocationView(generics.ListAPIView):
     queryset = LocationCity.objects.all().order_by("city")
     serializer_class = CitySerializer
-    pagination_class = CustomPageNumberPagination
+    pagination_class = None
 
     def get_queryset(self):
-        return self.queryset.filter(country_id=self.request.data['country_id']).order_by('city')
+        return self.queryset.filter(country_id=self.request.query_params['country_id']).order_by('city')
 
 
 city_list = CityLocationView.as_view()
