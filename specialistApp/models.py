@@ -9,7 +9,9 @@ import locationApp.models
 class Specialist(models.Model):
     folder = "specialists"
     image = models.ImageField(verbose_name="Фото специалиста", upload_to=name_of_file)
+    
     description = models.TextField(verbose_name="Описание")
+
     user = models.OneToOneField(AUTH_USER_MODEL, verbose_name="Аккаунт специалиста",
                                 related_name="user_specialist",
                                 on_delete=models.CASCADE)

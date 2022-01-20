@@ -26,7 +26,7 @@ class CommonApiView(views.APIView):
 common = CommonApiView.as_view()
 
 
-class TempImageStore(generics.GenericAPIView, mixins.CreateModelMixin):
+class TempImageStore(generics.GenericAPIView, mixins.CreateModelMixin, mixins.DestroyModelMixin):
     queryset = TempImage.objects.all().order_by('-id')
     permission_classes = [AllowAny]
     serializer_class = TempSerializer
@@ -34,5 +34,7 @@ class TempImageStore(generics.GenericAPIView, mixins.CreateModelMixin):
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
 
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request,*args,**kwargs)
 
 temp_view = TempImageStore.as_view()

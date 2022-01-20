@@ -45,3 +45,9 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'
+
+
+class CategorySelectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ['id',  'category_name']

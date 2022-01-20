@@ -7,6 +7,7 @@ from rest_framework import mixins
 from rest_framework.response import Response
 from Location.mixin import CustomCreateModelMixin, WithReviewMixin
 from commentApp.serializers import ReviewSpecialistSerializer
+from locationApp.paginator import CustomPageNumberPagination
 from specialistApp.builders import specialist_builder
 from specialistApp.models import Specialist, Category
 from specialistApp.serializers import *
@@ -50,8 +51,7 @@ class SpecialistCreateView(generics.GenericAPIView,
 
 
 class SpecialistUpdateView(generics.GenericAPIView,
-                           mixins.UpdateModelMixin,
-                           ):
+                           mixins.UpdateModelMixin,):
 
     def put(self, request, *args, **kwargs):
         return self.update(request, *args, **kwargs)
@@ -67,6 +67,11 @@ class CategoryListView(generics.ListAPIView):
     serializer_class = CategorySerializer
     permission_classes = [AllowAny]
 
+class CategorySelectListView(generics.ListAPIView):
+    queryset = Category.objects.all().order_by('-id')
+    serializer_class = CategorySerializer
+    permission_classes = [AllowAny]
+    pagination_class = None
 
 class CategoryView(generics.GenericAPIView, mixins.RetrieveModelMixin):
     queryset = Category.objects.all().order_by('-id')
@@ -79,3 +84,4 @@ class CategoryView(generics.GenericAPIView, mixins.RetrieveModelMixin):
 
 category_list = CategoryListView.as_view()
 category = CategoryView.as_view()
+category_select_list = CategorySelectListView.as_view()
