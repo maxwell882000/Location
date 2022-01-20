@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from phoneApp.models import PhoneVerifier
+
+admin.site.register(PhoneVerifier)
