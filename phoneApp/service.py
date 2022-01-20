@@ -13,8 +13,8 @@ class PhoneException(Exception):
 
 
 class PhoneService:
-    login = ""
-    password = ""
+    login = "MSK_iplmshp"
+    password = "uFAZ35VK"
     URL = "https://a2p-api.megalabs.ru/sms/v1/sms"
     FROM = "Location"
 
@@ -29,6 +29,7 @@ class PhoneService:
                                         'to': phone,
                                         'message': message,
                                     }, url=self.URL)
+        print(response.text)
         if response.status_code == 200:
             content = response.json()
             if content['result']['status']['code'] == 0:
@@ -38,7 +39,7 @@ class PhoneService:
 
 
 @receiver(post_save, sender=PhoneVerifier)
-def sendRequiredCode(sender, instance, *args,**kwargs):
+def sendRequiredCode(sender, instance, *args, **kwargs):
     MESSAGE_SEND: str = "Код подтверждения для регистрации {}".format(instance.code)
     service = PhoneService()
     service.sendCode(int(instance.user.phone), MESSAGE_SEND)
