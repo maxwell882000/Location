@@ -1,3 +1,5 @@
+import json
+
 from django.utils.baseconv import base64
 import requests
 
@@ -24,12 +26,11 @@ class PhoneService:
     def sendCode(self, phone: int, message: str) -> bool:
         response = requests.request("POST",
                                     auth=(self.login, self.password),
-                                    data={
+                                    data=json.dumps({
                                         'from': self.FROM,
                                         'to': phone,
                                         'message': message,
-                                    }, url=self.URL)
-        print(response.text)
+                                    }), url=self.URL)
         if response.status_code == 200:
             content = response.json()
             if content['result']['status']['code'] == 0:
