@@ -18,7 +18,7 @@ class PhoneVerifier(models.Model):
         return super(PhoneVerifier, self).save(*args, **kwargs)
 
     def validate(self, code):
-        if self.code == code:
+        if self.code == int(code):
             self.user.is_phone_validated = True
             self.user.save()
             return True
