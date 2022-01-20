@@ -71,7 +71,7 @@ class CategorySelectListView(generics.ListAPIView):
     queryset = Category.objects.all().order_by('-id')
     serializer_class = CategorySerializer
     permission_classes = [AllowAny]
-    pagination_class = None
+    pagination_class = CustomPageNumberPagination
 
 class CategoryView(generics.GenericAPIView, mixins.RetrieveModelMixin):
     queryset = Category.objects.all().order_by('-id')
