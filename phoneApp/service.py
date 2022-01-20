@@ -18,7 +18,7 @@ class PhoneService:
     login = "MSK_iplmshp"
     password = "uFAZ35VK"
     URL = "https://a2p-api.megalabs.ru/sms/v1/sms"
-    FROM = "Location"
+    FROM = "IPLemeshkin"
 
     # def __init__(self):
     #     self.base_64 = base64("{}:{}".format(self.login, self.password))
