@@ -51,6 +51,7 @@ class SpecialistCreateView(generics.GenericAPIView,
 
 
 class SpecialistUpdateView(generics.GenericAPIView,
+                           CustomCreateModelMixin,
                            mixins.UpdateModelMixin,):
     queryset = Specialist.objects.all().order_by('-id')
     permission_classes = [AllowAny]
