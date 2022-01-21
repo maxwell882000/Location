@@ -32,7 +32,7 @@ class CustomCreateModelMixin:
         if field_name in new_request.data:
             new_request.data[field_name] = TempImage.objects.get(
                 id=request.data[field_name]).temp
-        return self.update(new_request, *args, **kwargs)
+        return self.partial_update(new_request, *args, **kwargs)
 
     def create_custom(self, request, *args, **kwargs):
         new_request = self.get_mutable_with_user(request)
