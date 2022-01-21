@@ -21,8 +21,16 @@ class SpecialistSerializer(SerializerWithUser):
         depth = 2
 
 
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = '__all__'
+
+
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
+    location = s.LocationSerializerCard()
+    category = CategorySerializer()
 
     class Meta:
         model = Specialist
@@ -44,6 +52,7 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
         model = Specialist
         fields = '__all__'
         depth = 2
+
     def update(self, instance, validated_data):
         user = validated_data.pop('user', None)
         if user:
@@ -58,12 +67,6 @@ class CategoryListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = ['id', 'name']
-
-
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
-        fields = '__all__'
 
 
 class CategorySelectSerializer(serializers.ModelSerializer):
