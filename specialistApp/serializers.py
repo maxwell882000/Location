@@ -3,6 +3,7 @@ from pkgutil import read_code
 from statistics import mode
 from django.db import models
 from django.db.models import fields
+from django.forms import DateField
 from django.utils.functional import partition
 from rest_framework import serializers
 from Location.settings import SITE
@@ -55,9 +56,11 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
     def get_image(self, specialist):
         return "{}{}".format(SITE, specialist.image.url)
 
-
+class UserField(serializers.DictField):
+    def to_representation(self, value):
+        return RegisterSerializer(value).data
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
-    user = serializers.DictField()
+    user = serializers.UserField()
     image = serializers.SerializerMethodField()
 
     class Meta:
