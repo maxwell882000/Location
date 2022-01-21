@@ -39,8 +39,6 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         user = validated_data.pop('user')
-        location = validated_data.pop("location")
-        category = validated_data.pop('category')
         serialize = RegisterSerializer(data=user)
         serialize.is_valid(raise_exception=True)
         serialize.save()
