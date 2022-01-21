@@ -4,6 +4,7 @@ from django.db import models
 from django.db.models import fields
 from django.utils.functional import partition
 from rest_framework import serializers
+from locationApp.models import Location
 import locationApp.serializers as s
 from specialistApp.models import Specialist, Category
 from userApp.serializers import RegisterSerializer, SerializerWithUser, UserSerilalizer
@@ -38,10 +39,14 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         user = validated_data.pop('user')
+        location = validated_data.pop("location")
+        category = validated_data.pop('category')
         serialize = RegisterSerializer(data=user)
         serialize.is_valid(raise_exception=True)
         serialize.save()
         validated_data['user'] = User.object.get(id=serialize.data['id'])
+        validated_data['location'] = s.LocationSerializerCard(location)
+        validated_data['category'] = CategorySerializer(category, many=True)
         return super(SpecialistCreateSerializer, self).create(validated_data)
 
 
