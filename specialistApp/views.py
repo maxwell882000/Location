@@ -57,7 +57,7 @@ class SpecialistUpdateView(generics.GenericAPIView,
     permission_classes = [AllowAny]
     serializer_class = SpecialistUpdateSerializer
 
-    def patch(self, request, *args, **kwargs):
+    def put(self, request, *args, **kwargs):
         return self.update_temp(request, 'image', *args, **kwargs)
 
 
