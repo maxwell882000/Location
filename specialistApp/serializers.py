@@ -26,6 +26,7 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Specialist
         fields = '__all__'
+        depth = 2
 
     def create(self, validated_data):
         user = validated_data.pop('user')
@@ -38,7 +39,8 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         user = validated_data.pop('user', None)
         if user:
-            serialize = RegisterSerializer(instance.user, data=user, partial=True)
+            serialize = RegisterSerializer(
+                instance.user, data=user, partial=True)
             serialize.is_valid(raise_exception=True)
             serialize.save()
         return super().update(instance, validated_data)
