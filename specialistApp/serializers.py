@@ -1,3 +1,4 @@
+from functools import partial
 from django.db import models
 from django.db.models import fields
 from django.utils.functional import partition
@@ -33,6 +34,13 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
         serialize.save()
         validated_data['user'] = User.object.get(id=serialize.data['id'])
         return super(SpecialistCreateSerializer, self).create(validated_data)
+
+    def update(self, instance, validated_data):
+        user = validated_data.pop('user')
+        serialize = RegisterSerializer(instance.user, data=user, partial=True)
+        serialize.is_valid(raise_exception=True)
+        serialize.save()
+        return super().update(instance, validated_data)
 
 
 class CategoryListSerializer(serializers.ModelSerializer):

@@ -49,6 +49,10 @@ class SpecialistCreateView(generics.GenericAPIView,
     def post(self, request, *args, **kwargs):
         return self.create_temp(request, 'image', *args, **kwargs)
 
+    def put(self, request, *args, **kwargs):
+        kwargs['partial'] = True
+        return self.update_temp(request, 'image', *args, **kwargs)
+
 
 class SpecialistUpdateView(generics.GenericAPIView,
                            mixins.UpdateModelMixin,):
@@ -67,11 +71,13 @@ class CategoryListView(generics.ListAPIView):
     serializer_class = CategorySerializer
     permission_classes = [AllowAny]
 
+
 class CategorySelectListView(generics.ListAPIView):
     queryset = Category.objects.all().order_by('-id')
     serializer_class = CategorySerializer
     permission_classes = [AllowAny]
     pagination_class = CustomPageNumberPagination
+
 
 class CategoryView(generics.GenericAPIView, mixins.RetrieveModelMixin):
     queryset = Category.objects.all().order_by('-id')
