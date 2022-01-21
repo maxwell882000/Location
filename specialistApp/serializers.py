@@ -98,6 +98,7 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
             # instance.user.firstname = validated_data.pop('firstname')
             # instance.user.lastname = validated_data.pop('lastname')
             # instance.user.save()
+        raise Exception(validated_data.pop('category'))
         instance.category.clear()
         instance.category.add(*validated_data.pop('category', []))
         return super().update(instance, validated_data)
