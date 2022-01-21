@@ -64,6 +64,12 @@ class UserField(serializers.DictField):
         return RegisterSerializer(value).data
 
 
+class CategoryField(serializers.ListField):
+    def to_representation(self, data):
+        return CategorySerializer(
+            Category.objects.filter(id__in=data), many=True).data
+
+
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
     category = serializers.ListField()
@@ -77,8 +83,6 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
         render = super().to_representation(instance)
         render['location'] = s.LocationSerializerCard(
             Location.objects.get(id=render['location'])).data
-        render['category'] = CategorySerializer(
-            Category.objects.filter(id__in=render['category']), many=True).data
         return render
 
     def update(self, instance, validated_data):
