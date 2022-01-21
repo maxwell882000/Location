@@ -28,10 +28,20 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class LocationField(serializers.RelatedField):
+    def to_representation(self, value):
+        return s.LocationSerializerCard(Location.objects.get(id=value)).data
+
+
+class CategoryField(serializers.RelatedField):
+    def to_representation(self, value):
+        return CategorySerializer(Category.objects.get(id=value)).data
+
+
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
-    location = s.LocationSerializerCard(read_only= True)
-    category = CategorySerializer(many=True, read_only = True)
+    location = LocationField()
+    category = CategoryField(many=True)
 
     class Meta:
         model = Specialist
@@ -39,14 +49,10 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         user = validated_data.pop('user')
-        location = validated_data.pop("location")
-        category = validated_data.pop('category')
         serialize = RegisterSerializer(data=user)
         serialize.is_valid(raise_exception=True)
         serialize.save()
         validated_data['user'] = User.object.get(id=serialize.data['id'])
-        validated_data['location'] = Location.objects.get(id = location)
-        validated_data['category'] = Category.objects.filter(id__in = category)
         return super(SpecialistCreateSerializer, self).create(validated_data)
 
 
