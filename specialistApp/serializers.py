@@ -5,6 +5,7 @@ from django.db import models
 from django.db.models import fields
 from django.utils.functional import partition
 from rest_framework import serializers
+from Location.settings import SITE
 from locationApp.models import Location
 import locationApp.serializers as s
 from specialistApp.models import Specialist, Category
@@ -31,6 +32,7 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
+    image = serializers.SerializerMethodField()
 
     class Meta:
         model = Specialist
@@ -51,10 +53,13 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
         render['category'] = CategorySerializer(
             Category.objects.filter(id__in=render['category']), many=True).data
         return render
+    def get_image(self, specialist):
+        return "{}{}".format(SITE, specialist.image.url)
 
 
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
+    image = serializers.SerializerMethodField()
 
     class Meta:
         model = Specialist
@@ -69,6 +74,9 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
             serialize.is_valid(raise_exception=True)
             serialize.save()
         return super().update(instance, validated_data)
+
+    def get_image(self, specialist):
+        return "{}{}".format(SITE, specialist.image.url)
 
 
 class CategoryListSerializer(serializers.ModelSerializer):
