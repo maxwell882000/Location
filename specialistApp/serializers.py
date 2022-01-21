@@ -68,6 +68,10 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         user = validated_data.pop('user', None)
         if user:
+            if validated_data['phone'] == instance.phone:
+                instance.user.phone = validated_data.pop('phone')
+            instance.user.firstname = validated_data.pop('firstname')
+            instance.user.lastname = validated_data.pop('lastname')
             instance.user.save()
         return super().update(instance, validated_data)
 
