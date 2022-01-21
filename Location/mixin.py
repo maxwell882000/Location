@@ -29,7 +29,7 @@ class CustomCreateModelMixin:
 
     def update_temp(self, request, field_name, *args, **kwargs):
         new_request = RequestCustom(request.data)
-        if field_name in new_request:
+        if field_name in new_request.data:
             new_request.data[field_name] = TempImage.objects.get(
                 id=request.data[field_name]).temp
         return self.update(new_request, *args, **kwargs)
