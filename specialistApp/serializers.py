@@ -66,6 +66,7 @@ class UserField(serializers.DictField):
 
 class CategoryField(serializers.ListField):
     def to_representation(self, data):
+        raise Exception(data)
         return CategorySerializer(
             Category.objects.filter(id__in=data), many=True).data
 
