@@ -49,7 +49,7 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
         render['location'] = s.LocationSerializerCard(
             Location.objects.get(id=render['location'])).data
         render['category'] = CategorySerializer(
-            Category.objects.filter(id__in=render['category'])).data
+            Category.objects.filter(id__in=render['category']), many=True).data
         return render
 
 
