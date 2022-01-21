@@ -73,7 +73,7 @@ class CategoryField(serializers.ListField):
 
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
-    category = CategoryField()
+    # category = CategoryField()
     image = serializers.SerializerMethodField()
 
     class Meta:
@@ -98,7 +98,7 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
             # instance.user.firstname = validated_data.pop('firstname')
             # instance.user.lastname = validated_data.pop('lastname')
             # instance.user.save()
-        instance.category.clear()
+        # instance.category.clear()
         return super().update(instance, validated_data)
 
     def get_image(self, specialist):
