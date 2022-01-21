@@ -50,8 +50,7 @@ class SpecialistCreateView(generics.GenericAPIView,
         return self.create_temp(request, 'image', *args, **kwargs)
 
     def put(self, request, *args, **kwargs):
-        kwargs['partial'] = True
-        return self.update_temp(request, 'image', *args, **kwargs)
+        return self.update_temp(request, 'image', partial=True *args, **kwargs)
 
 
 class SpecialistUpdateView(generics.GenericAPIView,
