@@ -57,7 +57,7 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
 
 
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
-    # user = RegisterSerializer()
+    user = RegisterSerializer(partial=True)
     image = serializers.SerializerMethodField()
 
     class Meta:
