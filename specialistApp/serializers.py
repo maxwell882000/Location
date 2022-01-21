@@ -57,7 +57,7 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
 
 
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
-    user = serializers.ModelField()
+    user = serializers.DictField()
     image = serializers.SerializerMethodField()
 
     class Meta:
