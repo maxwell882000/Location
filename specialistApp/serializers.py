@@ -33,7 +33,7 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
-    
+
     class Meta:
         model = Specialist
         fields = '__all__'
@@ -66,11 +66,18 @@ class UserField(serializers.DictField):
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
     image = serializers.SerializerMethodField()
-    location = s.LocationSerializerCard()
+
     class Meta:
         model = Specialist
         fields = '__all__'
-        depth = 2
+
+    def to_representation(self, instance):
+        render = super().to_representation(instance)
+        render['location'] = s.LocationSerializerCard(
+            Location.objects.get(id=render['location'])).data
+        render['category'] = CategorySerializer(
+            Category.objects.filter(id__in=render['category']), many=True).data
+        return render
 
     def update(self, instance, validated_data):
         user = validated_data.pop('user', None)
