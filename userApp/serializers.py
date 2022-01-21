@@ -88,8 +88,9 @@ class RegisterSerializer(serializers.ModelSerializer):
         return validated_data
 
     def update(self, instance, validated_data):
-        password = validated_data.pop('password')
-        instance.set_password(password)
+        if 'password' in validated_data: 
+            password = validated_data.pop('password')
+            instance.set_password(password)
         instance.firstname = validated_data.pop('firstname')
         instance.phone = validated_data.pop('phone')
         instance.lastname = validated_data.pop('lastname')
