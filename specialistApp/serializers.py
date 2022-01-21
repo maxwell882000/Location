@@ -70,7 +70,7 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
         user = validated_data.pop('user', None)
         if user:
             serialize = RegisterSerializer(
-                instance.user, data=user, partial=True)
+                User.object.filter(id = instance.user.id), data=user, partial=True)
             serialize.is_valid(raise_exception=True)
             serialize.save()
         return super().update(instance, validated_data)
