@@ -72,7 +72,7 @@ class CategoryField(serializers.ListField):
 
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
-    category = serializers.ListField()
+    category = CategoryField()
     image = serializers.SerializerMethodField()
 
     class Meta:
