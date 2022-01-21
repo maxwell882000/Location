@@ -82,7 +82,7 @@ class ChangePasswordView(APIView):
 
         def put(self, request, *args, **kwargs):
             self.object = self.get_object()
-            serializer = self.get_serializer(data=request.data)
+            serializer = self.serializer_class(data=request.data)
 
             if serializer.is_valid():
                 # Check old password
