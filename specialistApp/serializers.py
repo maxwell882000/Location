@@ -1,6 +1,7 @@
 from functools import partial
 from pkgutil import read_code
 from statistics import mode
+from unicodedata import category
 from django.db import models
 from django.db.models import fields
 from django.forms import DateField
@@ -65,6 +66,7 @@ class UserField(serializers.DictField):
 
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
+    category = serializers.ListField()
     image = serializers.SerializerMethodField()
 
     class Meta:
@@ -91,6 +93,7 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
             # instance.user.firstname = validated_data.pop('firstname')
             # instance.user.lastname = validated_data.pop('lastname')
             # instance.user.save()
+        instance.category.set(validated_data.pop('category', []))
         return super().update(instance, validated_data)
 
     def get_image(self, specialist):
