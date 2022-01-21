@@ -69,10 +69,7 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         user = validated_data.pop('user', None)
         if user:
-            serialize = RegisterSerializer(
-                instance=instance.user, data=user, partial=True)
-            serialize.is_valid(raise_exception=True)
-            serialize.save()
+            instance.user.save()
         return super().update(instance, validated_data)
 
     def get_image(self, specialist):
