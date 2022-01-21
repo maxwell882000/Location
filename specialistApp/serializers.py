@@ -1,4 +1,5 @@
 from functools import partial
+from pkgutil import read_code
 from statistics import mode
 from django.db import models
 from django.db.models import fields
@@ -40,8 +41,8 @@ class CategoryField(serializers.RelatedField):
 
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
-    location = LocationField()
-    category = CategoryField(many=True)
+    location = LocationField(read_only= True)
+    category = CategoryField(many=True, read_only= True)
 
     class Meta:
         model = Specialist
