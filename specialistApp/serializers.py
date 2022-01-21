@@ -57,7 +57,7 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
 
 
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
-    user = RegisterSerializer(partial=True)
+    # user = RegisterSerializer(partial=True)
     image = serializers.SerializerMethodField()
 
     class Meta:
@@ -67,11 +67,8 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         user = validated_data.pop('user', None)
-        # if user:
-        #     serialize = RegisterSerializer(
-        #         instance.user, data=user, partial=True)
-        #     serialize.is_valid(raise_exception=True)
-        #     serialize.save()
+        if user:
+            instance.user.save()
         return super().update(instance, validated_data)
 
     def get_image(self, specialist):
