@@ -36,10 +36,11 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
         return super(SpecialistCreateSerializer, self).create(validated_data)
 
     def update(self, instance, validated_data):
-        user = validated_data.pop('user')
-        serialize = RegisterSerializer(instance.user, data=user, partial=True)
-        serialize.is_valid(raise_exception=True)
-        serialize.save()
+        user = validated_data.pop('user', None)
+        if user:
+            serialize = RegisterSerializer(instance.user, data=user, partial=True)
+            serialize.is_valid(raise_exception=True)
+            serialize.save()
         return super().update(instance, validated_data)
 
 
