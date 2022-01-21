@@ -1,4 +1,5 @@
 from unicodedata import category
+from django.conf import settings
 from django.contrib.auth import authenticate
 from django.db import models
 from django.db.models import fields
@@ -7,22 +8,29 @@ from django.utils.translation import gettext_lazy as _
 from rest_framework.exceptions import ValidationError
 import locationApp.serializers as s
 from specialistApp.models import Category, Specialist
-
+from Location.settings import SITE
 from userApp.models import User
 import re
+
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'
-        
+
+
 class SpecialistSerializer(serializers.ModelSerializer):
     review_avg = serializers.FloatField(default=0.0)
     location = s.LocationSerializerCard()
     category = CategorySerializer(many=True)
+    image = serializers.SerializerMethodField()
+
     class Meta:
         model = Specialist
         exclude = ('user', )
+
+    def get_image(self, specialist):
+        return "{}{}".format(SITE, specialist.image.url)
 
 
 class UserSerilalizer(serializers.ModelSerializer):
@@ -61,15 +69,14 @@ class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = [
-                  "id", "firstname",   "phone",
+            "id", "firstname",   "phone",
                   "lastname", "token", "password",
-                  ]
+        ]
         extra_kwargs = {'password': {'write_only': True}}
 
-    def add_token(self, user , validated_data):
+    def add_token(self, user, validated_data):
         self.token = user.token
         validated_data['token'] = self.token
-
 
     def create(self, validated_data):
         phone = validated_data.pop("phone")
@@ -77,7 +84,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         user = User.object.create_user(phone, password, **validated_data)
         self.add_token(user, validated_data)
         validated_data['phone'] = phone
-        validated_data['id']= user.id
+        validated_data['id'] = user.id
         return validated_data
 
     def update(self, instance, validated_data):
@@ -91,10 +98,9 @@ class RegisterSerializer(serializers.ModelSerializer):
 class UpdateUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["id","firstname",
+        fields = ["id", "firstname",
                   "lastname", "password",
                   "phone"]
-        
 
     # def get_validation_exclusions(self):
     #     exclusions = super(UpdateUserSerializer,
