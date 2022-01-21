@@ -1,3 +1,4 @@
+from unicodedata import category
 from django.contrib.auth import authenticate
 from django.db import models
 from django.db.models import fields
@@ -5,20 +6,23 @@ from rest_framework import serializers
 from django.utils.translation import gettext_lazy as _
 from rest_framework.exceptions import ValidationError
 import locationApp.serializers as s
-from specialistApp.models import Specialist
+from specialistApp.models import Category, Specialist
 
 from userApp.models import User
 import re
 
-
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = '__all__'
+        
 class SpecialistSerializer(serializers.ModelSerializer):
     review_avg = serializers.FloatField(default=0.0)
     location = s.LocationSerializerCard()
-
+    category = CategorySerializer(many=True)
     class Meta:
         model = Specialist
         exclude = ('user', )
-        depth = 2
 
 
 class UserSerilalizer(serializers.ModelSerializer):
@@ -33,7 +37,6 @@ class UserSerilalizer(serializers.ModelSerializer):
             'user_specialist',
             'phone'
         )
-        depth = 2
 
 
 class UserSpecialistCard(serializers.ModelSerializer):
