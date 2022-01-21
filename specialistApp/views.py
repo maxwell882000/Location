@@ -49,15 +49,15 @@ class SpecialistCreateView(generics.GenericAPIView,
     def post(self, request, *args, **kwargs):
         return self.create_temp(request, 'image', *args, **kwargs)
 
-    def put(self, request, *args, **kwargs):
-        return self.update_temp(request, 'image', *args, **kwargs)
-
 
 class SpecialistUpdateView(generics.GenericAPIView,
                            mixins.UpdateModelMixin,):
+    queryset = Specialist.objects.all().order_by('-id')
+    permission_classes = [AllowAny]
+    serializer_class = SpecialistUpdateSerializer
 
     def put(self, request, *args, **kwargs):
-        return self.update(request, *args, **kwargs)
+        return self.update_temp(request, 'image', *args, **kwargs)
 
 
 specialist_create = SpecialistCreateView.as_view()

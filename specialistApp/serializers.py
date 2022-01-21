@@ -1,4 +1,5 @@
 from functools import partial
+from statistics import mode
 from django.db import models
 from django.db.models import fields
 from django.utils.functional import partition
@@ -26,7 +27,6 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Specialist
         fields = '__all__'
-        depth = 2
 
     def create(self, validated_data):
         user = validated_data.pop('user')
@@ -36,6 +36,14 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
         validated_data['user'] = User.object.get(id=serialize.data['id'])
         return super(SpecialistCreateSerializer, self).create(validated_data)
 
+
+class SpecialistUpdateSerializer(serializers.ModelSerializer):
+    user = RegisterSerializer()
+
+    class Meta:
+        model = Specialist
+        fields = '__all__'
+        depth = 2
     def update(self, instance, validated_data):
         user = validated_data.pop('user', None)
         if user:

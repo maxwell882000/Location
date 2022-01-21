@@ -9,6 +9,6 @@ urlpatterns = [
 
     path('category/<int:pk>/', category),
     path('create/', specialist_create),
-    path('update/<int:pk>/', specialist_create),
+    path('update/<int:pk>/', specialist_update),
 
 ]
