@@ -60,7 +60,7 @@ class UserField(serializers.DictField):
     def to_representation(self, value):
         return RegisterSerializer(value).data
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
-    user = serializers.UserField()
+    user = UserField()
     image = serializers.SerializerMethodField()
 
     class Meta:
