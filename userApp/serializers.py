@@ -1,3 +1,4 @@
+from pyexpat import model
 from unicodedata import category
 from django.conf import settings
 from django.contrib.auth import authenticate
@@ -22,6 +23,7 @@ class CategorySerializer(serializers.ModelSerializer):
 class CustomImageField(serializers.ImageField):
     def to_representation(self, value):
         return "{}{}".format(SITE, value.url)
+
 
 class SpecialistSerializer(serializers.ModelSerializer):
     review_avg = serializers.FloatField(default=0.0)
@@ -89,7 +91,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         return validated_data
 
     def update(self, instance, validated_data):
-        if 'password' in validated_data: 
+        if 'password' in validated_data:
             password = validated_data.pop('password')
             instance.set_password(password)
         instance.firstname = validated_data.pop('firstname')
@@ -116,6 +118,11 @@ class UpdateUserSerializer(serializers.ModelSerializer):
             password = validated_data.pop("password")
             instance.set_password(password)
         return super(UpdateUserSerializer, self).update(instance, validated_data)
+
+
+class PasswordSerializer(serializers.Serializer):
+    old_password = serializers.CharField(required=True)
+    new_password = serializers.CharField(required=True)
 
 
 class TokenSerializer(serializers.Serializer):
