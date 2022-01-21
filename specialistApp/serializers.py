@@ -30,8 +30,8 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
-    location = s.LocationSerializerCard()
-    category = CategorySerializer(many=True)
+    location = s.LocationSerializerCard(read_only= True)
+    category = CategorySerializer(many=True, read_only= True)
 
     class Meta:
         model = Specialist
@@ -45,8 +45,6 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
         serialize.is_valid(raise_exception=True)
         serialize.save()
         validated_data['user'] = User.object.get(id=serialize.data['id'])
-        validated_data['location'] = Location.objects.get(id = location)
-        validated_data['category'] = Category.objects.filter(id__in = category)
         return super(SpecialistCreateSerializer, self).create(validated_data)
 
 
