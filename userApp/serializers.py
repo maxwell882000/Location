@@ -88,9 +88,10 @@ class RegisterSerializer(serializers.ModelSerializer):
 class UpdateUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["firstname",
+        fields = ["id","firstname",
                   "lastname", "password",
                   "phone"]
+        
 
     # def get_validation_exclusions(self):
     #     exclusions = super(UpdateUserSerializer,
