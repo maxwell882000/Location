@@ -71,10 +71,15 @@ class CategoryField(serializers.ListField):
             Category.objects.filter(id__in=data), many=True).data
 
 
+class CustomImageField(serializers.ImageField):
+    def to_representation(self, value):
+        return "{}{}".format(SITE, value.url)
+
+
 class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
     # category = CategoryField()
-    image = serializers.SerializerMethodField()
+    image = CustomImageField()
 
     class Meta:
         model = Specialist

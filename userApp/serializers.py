@@ -19,18 +19,19 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class CustomImageField(serializers.ImageField):
+    def to_representation(self, value):
+        return "{}{}".format(SITE, value.url)
+
 class SpecialistSerializer(serializers.ModelSerializer):
     review_avg = serializers.FloatField(default=0.0)
     location = s.LocationSerializerCard()
     category = CategorySerializer(many=True)
-    image = serializers.SerializerMethodField()
+    image = CustomImageField()
 
     class Meta:
         model = Specialist
         exclude = ('user', )
-
-    def get_image(self, specialist):
-        return "{}{}".format(SITE, specialist.image.url)
 
 
 class UserSerilalizer(serializers.ModelSerializer):
