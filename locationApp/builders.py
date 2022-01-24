@@ -34,7 +34,7 @@ def location_builder(filter_by: dict):
             output_field=FloatField(),
         ),
             rank=F("k1") + F("k2") + F("k3"),
-        )
+        ).order_by("-rank")
     if 'locations' in filter_by:
         builder = builder & ~Q(pk__in=filter_by.getlist('locations'))
     if 'category' in filter_by:
