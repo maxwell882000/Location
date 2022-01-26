@@ -8,3 +8,5 @@ class Confidential(models.Model):
 
     class Meta:
         verbose_name_plural = "Правила конфидециальности"
+    def __str__(self) -> str:
+        return "Конфедициальность"
