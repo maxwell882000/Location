@@ -14,6 +14,6 @@ class ConfidentialView(generics.GenericAPIView, mixins.RetrieveModelMixin):
         return self.retrieve(request, *args, **kwargs)
 
     def get_object(self):
-        return Confidential.objects.first()
+        return Confidential.objects.last()
 
 confidential = ConfidentialView.as_view()
