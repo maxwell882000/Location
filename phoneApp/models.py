@@ -42,4 +42,4 @@ def sendRequiredCode(sender, instance, *args, **kwargs):
     try:
         service.sendCode(int(instance.user.phone), MESSAGE_SEND)
     except PhoneException as e:
-        raise serializers.ValidationError(detail=e.args)
+        raise serializers.ValidationError(detail={"phone": e.args[0]})
