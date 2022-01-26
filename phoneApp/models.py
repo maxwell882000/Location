@@ -1,11 +1,12 @@
 import random
+from re import I
 
 from django.db import models
 
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from phoneApp.service import PhoneService
-
+from phoneApp.service import PhoneException, PhoneService
+from rest_framework import serializers
 # Create your models here.
 from userApp.models import User
 
@@ -38,4 +39,7 @@ def sendRequiredCode(sender, instance, *args, **kwargs):
     MESSAGE_SEND: str = "Код подтверждения для регистрации {}".format(
         instance.code)
     service = PhoneService()
-    service.sendCode(int(instance.user.phone), MESSAGE_SEND)
+    try:
+        service.sendCode(int(instance.user.phone), MESSAGE_SEND)
+    except PhoneException as e:
+        raise serializers.ValidationError(detail=e.args)
