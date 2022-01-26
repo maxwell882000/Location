@@ -92,8 +92,7 @@ TEMPLATES = [
         'DIRS': [
             BASE_DIR / 'templates',
             os.path.join(BASE_DIR, 'django_admin_geomap', 'templates'),
-        ]
-        ,
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -113,6 +112,7 @@ WSGI_APPLICATION = 'Location.wsgi.application'
 
 DATABASES = {
     'default': {
+        "ATOMIC_REQUESTS": True,
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'locationdb',
         'USER': 'vid',
