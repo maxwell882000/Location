@@ -22,4 +22,4 @@ def location_builder(filter_by: dict):
     if 'category' in filter_by:
         id = int(filter_by['category'])
         builder = builder & Q(specialist__category=id)
-    return location.filter(builder & ~Q(city=None)).distinct()
+    return location.filter(is_active=True).filter(builder & ~Q(city=None)).distinct()
