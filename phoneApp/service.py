@@ -28,7 +28,7 @@ class PhoneService:
                                         'to': phone,
                                         'message': message,
                                     }), url=self.URL)
-        
+        print(response.content)
         if response.status_code == 200:
             content = response.json()
             if content['result']['status']['code'] == 0:
