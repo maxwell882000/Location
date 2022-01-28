@@ -30,6 +30,13 @@ class VerifyCode(APIView):
             'status': is_valid
         })
 
+
+class CheckPhone(APIView):
+    permission_classes = phone_permission
+    def get(self, request,*args,**kwargs):
+        return Response({}, status=status.HTTP_200_OK)
+
+check_view = CheckPhone.as_view()
 verify_code = VerifyCode.as_view()
 
 
@@ -70,38 +77,42 @@ register = RegisterUser.as_view()
 
 
 class ChangePasswordView(APIView):
-        """
-        An endpoint for changing password.
-        """
-        serializer_class = PasswordSerializer
-        model = User
+    """
+    An endpoint for changing password.
+    """
+    serializer_class = PasswordSerializer
+    model = User
 
-        def get_object(self, queryset=None):
-            obj = self.request.user
-            return obj
+    def get_object(self, queryset=None):
+        obj = self.request.user
+        return obj
 
-        def put(self, request, *args, **kwargs):
-            self.object = self.get_object()
-            serializer = self.serializer_class(data=request.data)
+    def put(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        serializer = self.serializer_class(data=request.data)
 
-            if serializer.is_valid():
-                # Check old password
-                if not self.object.check_password(serializer.data.get("old_password")):
-                    return Response({"old_password": ["Wrong password."]}, status=status.HTTP_400_BAD_REQUEST)
-                # set_password also hashes the password that the user will get
-                self.object.set_password(serializer.data.get("new_password"))
-                self.object.save()
-                response = {
-                    'status': 'success',
-                    'code': status.HTTP_200_OK,
-                    'message': 'Password updated successfully',
-                    'data': []
-                }
+        if serializer.is_valid():
+            # Check old password
+            if not self.object.check_password(serializer.data.get("old_password")):
+                return Response({"old_password": ["Wrong password."]}, status=status.HTTP_400_BAD_REQUEST)
+            # set_password also hashes the password that the user will get
+            self.object.set_password(serializer.data.get("new_password"))
+            self.object.save()
+            response = {
+                'status': 'success',
+                'code': status.HTTP_200_OK,
+                'message': 'Password updated successfully',
+                'data': []
+            }
 
-                return Response(response, status=status.HTTP_200_OK,)
+            return Response(response, status=status.HTTP_200_OK,)
 
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
 password_change = ChangePasswordView.as_view()
+
+
 class ObtainAuthToken(APIView):
     throttle_classes = ()
     permission_classes = ()
