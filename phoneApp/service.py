@@ -3,6 +3,8 @@ import json
 from django.utils.baseconv import base64
 import requests
 
+from logApp.models import AppLog
+
 
 
 class PhoneException(Exception):
@@ -26,11 +28,13 @@ class PhoneService:
                                         'to': phone,
                                         'message': message,
                                     }), url=self.URL)
+        
         if response.status_code == 200:
             content = response.json()
             if content['result']['status']['code'] == 0:
                 return True
             raise PhoneException(content['result']['status']['description'])
+        
         return False
 
 

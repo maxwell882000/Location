@@ -9,6 +9,7 @@ from locationApp.builders import location_builder
 from locationApp.models import Location
 from locationApp.paginator import CustomPageNumberPagination
 from locationApp.serializers import *
+from Location.permissions import phone_permission
 
 
 class CountryLocationView(generics.ListAPIView):
@@ -35,8 +36,8 @@ city_list = CityLocationView.as_view()
 class LocationListView(generics.ListAPIView):
     queryset = Location.objects.all().order_by("id")
     serializer_class = LocationSerializerCard
-    permission_classes = [AllowAny]
     pagination_class = CustomPageNumberPagination
+    permission_classes = phone_permission
 
     def get_queryset(self):
         query_set = location_builder(self.request.query_params)
@@ -49,7 +50,7 @@ location_list = LocationListView.as_view()
 class LocationCreateView(generics.GenericAPIView, mixins.CreateModelMixin):
     queryset = Location.objects.all().order_by("id")
     serializer_class = LocationCreateSerializer
-    permission_classes = [AllowAny]
+    permission_classes = phone_permission
 
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)

@@ -19,7 +19,7 @@ class AppLogManager:
             log.save()
         serializers = LogSerializer(log)
         return LogSerializer(log).data
-
+    
 
 class AppLog(models.Model):
     time = models.DateTimeField(auto_now_add=True)
