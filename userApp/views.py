@@ -12,6 +12,7 @@ from userApp.serializers import *
 
 # import module
 import traceback
+from Location.permissions import phone_permission
 
 
 class VerifyCode(APIView):
@@ -28,7 +29,6 @@ class VerifyCode(APIView):
         return Response({
             'status': is_valid
         })
-
 
 verify_code = VerifyCode.as_view()
 
