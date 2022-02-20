@@ -23,16 +23,25 @@ class CitySerializer(serializers.ModelSerializer):
         depth = 0
 
 
+class CitySearchSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LocationCity
+        fields = "__all__"
+        depth = 1
+
+
 class CountrySerializer(serializers.ModelSerializer):
     class Meta:
         model = LocationCountry
         fields = "__all__"
         depth = 0
 
+
 class ImageLocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Images
         fields = "__all__"
+
 
 class LocationSerializerCard(serializers.ModelSerializer):
     city = serializers.CharField(source="city_str")

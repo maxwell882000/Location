@@ -15,7 +15,7 @@ class CountryLocationView(generics.ListAPIView):
     queryset = LocationCountry.objects.all().order_by("country")
     serializer_class = CountrySerializer
     pagination_class = None
-    
+
 
 country_list = CountryLocationView.as_view()
 
@@ -30,6 +30,19 @@ class CityLocationView(generics.ListAPIView):
 
 
 city_list = CityLocationView.as_view()
+
+
+class CitySearchLocationView(generics.ListAPIView):
+    queryset = LocationCity.objects.all().order_by("city")
+    serializer_class = CitySearchSerializer
+    pagination_class = None
+    permission_classes = [AllowAny]
+
+    def get_queryset(self):
+        return self.queryset.filter(city__icontains=self.request.query_params['city']).order_by('city')
+
+
+city_search_list = CitySearchLocationView.as_view()
 
 
 class LocationListView(generics.ListAPIView):
