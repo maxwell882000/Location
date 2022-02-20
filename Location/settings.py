@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django_celery_results',
     'django_celery_beat',
     'rest_framework.authtoken',
+    'import_export',
     'addApp',
     'commentApp',
     'specialistApp',
@@ -90,8 +91,10 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates',
-            os.path.join(BASE_DIR, 'django_admin_geomap', 'templates'),
+            'templates',
+            'C:/projects/Location/locationApp/templates/',
+            os.path.join(BASE_DIR, 'templates')
+            # os.path.join(BASE_DIR, 'django_admin_geomap', 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -111,19 +114,19 @@ WSGI_APPLICATION = 'Location.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     "ATOMIC_REQUESTS": True,
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'locationdb',
+    #     'USER': 'vid',
+    #     'PASSWORD': '123Aa123',
+    #     'HOST': 'localhost',
+    #     'PORT': '',
+    # }
     'default': {
-        "ATOMIC_REQUESTS": True,
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'locationdb',
-        'USER': 'vid',
-        'PASSWORD': '123Aa123',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-    #  'default': {
-    #      'ENGINE': 'django.db.backends.sqlite3',
-    #      'NAME': BASE_DIR / 'db.sqlite3',
-    #  }
 }
 SITE = "http://31.44.4.27"
 # Password validation

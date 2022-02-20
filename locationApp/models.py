@@ -45,6 +45,8 @@ class Location(models.Model, GeoItem):
         verbose_name="Долгота")
     images = models.ManyToManyField(
         'Images', verbose_name="Картинки для локации")
+    category_location = models.ManyToManyField('specialistApp.Category',
+                                               verbose_name="Виды деятельности локации", default=[])
 
     @property
     def review_avg(self):
@@ -52,9 +54,11 @@ class Location(models.Model, GeoItem):
 
     @property
     def category(self):
-        # return  "sad"
         from specialistApp.models import Category
-        return Category.objects.filter(specialist__location=self.id).distinct()
+        from_specialist = Category.objects.filter(specialist__location=self.id).distinct()
+        own_category = self.category_location.distinct().all()
+        result = from_specialist | own_category
+        return result
 
     @property
     def geomap_longitude(self):
@@ -83,11 +87,17 @@ class Location(models.Model, GeoItem):
 
 class Images(models.Model):
     folder = "location"
+    name = models.CharField(verbose_name="Название Картинки", max_length=55, default="", blank=True)
     images = models.ImageField(
         verbose_name="Картинки для локации", upload_to=name_of_file)
 
+    def save(self, *args, **kwargs):
+        if self.name == "":
+            self.name = self.images.name.split("_")[-1]
+        return super(Images, self).save(*args, **kwargs)
+
     def __str__(self):
-        return self.images.name
+        return self.name if self.name is not "" else self.images.name
 
     class Meta:
         verbose_name_plural = "Фото для локации"
