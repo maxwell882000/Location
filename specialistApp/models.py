@@ -9,7 +9,7 @@ import locationApp.models
 class Specialist(models.Model):
     folder = "specialists"
     image = models.ImageField(verbose_name="Фото специалиста", upload_to=name_of_file)
-    
+
     description = models.TextField(verbose_name="Описание")
 
     user = models.OneToOneField(AUTH_USER_MODEL, verbose_name="Аккаунт специалиста",
@@ -47,7 +47,8 @@ class Category(models.Model):
 
     @property
     def location(self):
-        return models.Location.objects.filter(specialist__category=self.id).distinct()
+        return self.location_cat.distinct() | \
+               locationApp.models.Location.objects.filter(specialist__category=self.id).distinct()
 
     class Meta:
         verbose_name_plural = "Виды деятельности"

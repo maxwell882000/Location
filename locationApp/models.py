@@ -46,6 +46,7 @@ class Location(models.Model, GeoItem):
     images = models.ManyToManyField(
         'Images', verbose_name="Картинки для локации")
     category_location = models.ManyToManyField('specialistApp.Category',
+                                               related_name="location_cat",
                                                verbose_name="Виды деятельности локации", default=[])
 
     @property
@@ -97,7 +98,7 @@ class Images(models.Model):
         return super(Images, self).save(*args, **kwargs)
 
     def __str__(self):
-        return self.name if self.name is not "" else self.images.name
+        return self.name if self.name != "" else self.images.name
 
     class Meta:
         verbose_name_plural = "Фото для локации"
