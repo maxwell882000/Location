@@ -42,7 +42,7 @@ class CitySearchLocationView(generics.ListAPIView):
         import re
         from django.db.models import Q
         city = self.request.query_params['city'] or ""
-        location = re.split(r"[,/]", city.replate(" ", ""))
+        location = re.split(r"[,/]", city.replace(" ", ""))
         result = Q()
         if len(location) >= 1:
             result = Q(city__icontains=location[0])
