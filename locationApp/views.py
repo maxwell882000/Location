@@ -39,7 +39,15 @@ class CitySearchLocationView(generics.ListAPIView):
     permission_classes = [AllowAny]
 
     def get_queryset(self):
-        return self.queryset.filter(city__icontains=self.request.query_params['city']).order_by('city')
+        import re
+        from django.db.models import Q
+        location = re.split(r"[,/]", self.request.query_params['city'])
+        result = Q()
+        if len(location) >= 1:
+            result = Q(city__icontains=location[0])
+        if len(location) >= 2:
+            result = result & Q(country__country__icontains=location[1])
+        return self.queryset.filter(result).order_by('city')
 
 
 city_search_list = CitySearchLocationView.as_view()
