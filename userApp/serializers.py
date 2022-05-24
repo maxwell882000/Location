@@ -17,7 +17,7 @@ import re
 class NewPasswordSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('password')
+        fields = ('password',)
 
     def update(self, instance, validated_data):
         password = validated_data.pop('password')
