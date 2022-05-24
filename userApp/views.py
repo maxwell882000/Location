@@ -95,8 +95,8 @@ register = RegisterUser.as_view()
 class ForgetPasswordView(generics.GenericAPIView, mixins.UpdateModelMixin):
     serializer_class = NewPasswordSerializer
     permission_classes = [AllowAny]
-    model = User
     lookup_field = 'phone'
+    queryset = User.object.order_by("-id")
 
     def put(self, request, *args, **kwargs):
         user = self.get_object()
