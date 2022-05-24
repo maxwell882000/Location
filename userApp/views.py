@@ -94,14 +94,20 @@ register = RegisterUser.as_view()
 
 class ForgetPasswordView(generics.GenericAPIView, mixins.UpdateModelMixin):
     serializer_class = NewPasswordSerializer
-    permission_classes = [AllowAny, ResetPermission]
+    permission_classes = [AllowAny]
     model = User
     lookup_field = 'phone'
 
     def put(self, request, *args, **kwargs):
+        user = self.get_object()
+        if not user.is_phone_reset_validate:
+            return Response({
+                'status': False,
+                'error': "Код не был подтвержден",
+            })
         self.partial_update(request, *args, **kwargs)
         return Response({
-            status: True
+            'status': True
         })
 
 
