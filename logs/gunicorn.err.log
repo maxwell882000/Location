@@ -18463,3 +18463,277 @@ Not Found: /
 [2022-05-24 11:31:42 +0000] [3959634] [INFO] Booting worker with pid: 3959634
 [2022-05-24 11:31:42 +0000] [3959635] [INFO] Booting worker with pid: 3959635
 [2022-05-24 11:31:42 +0000] [3959636] [INFO] Booting worker with pid: 3959636
+[2022-05-24 11:38:58 +0000] [3959632] [INFO] Handling signal: term
+[2022-05-24 11:38:58 +0000] [3959634] [INFO] Worker exiting (pid: 3959634)
+[2022-05-24 11:38:58 +0000] [3959635] [INFO] Worker exiting (pid: 3959635)
+[2022-05-24 11:38:58 +0000] [3959636] [INFO] Worker exiting (pid: 3959636)
+[2022-05-24 11:38:59 +0000] [3959632] [INFO] Shutting down: Master
+[2022-05-24 11:39:00 +0000] [3959809] [INFO] Starting gunicorn 20.1.0
+[2022-05-24 11:39:00 +0000] [3959809] [INFO] Listening at: http://127.0.0.1:8000 (3959809)
+[2022-05-24 11:39:00 +0000] [3959809] [INFO] Using worker: sync
+[2022-05-24 11:39:00 +0000] [3959811] [INFO] Booting worker with pid: 3959811
+[2022-05-24 11:39:00 +0000] [3959812] [INFO] Booting worker with pid: 3959812
+[2022-05-24 11:39:00 +0000] [3959813] [INFO] Booting worker with pid: 3959813
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+[2022-05-24 14:13:05 +0000] [3959809] [INFO] Handling signal: term
+[2022-05-24 14:13:05 +0000] [3959812] [INFO] Worker exiting (pid: 3959812)
+[2022-05-24 14:13:05 +0000] [3959813] [INFO] Worker exiting (pid: 3959813)
+[2022-05-24 14:13:05 +0000] [3959811] [INFO] Worker exiting (pid: 3959811)
+[2022-05-24 14:13:06 +0000] [3959809] [INFO] Shutting down: Master
+[2022-05-24 14:13:07 +0000] [3961699] [INFO] Starting gunicorn 20.1.0
+[2022-05-24 14:13:07 +0000] [3961699] [INFO] Listening at: http://127.0.0.1:8000 (3961699)
+[2022-05-24 14:13:07 +0000] [3961699] [INFO] Using worker: sync
+[2022-05-24 14:13:07 +0000] [3961701] [INFO] Booting worker with pid: 3961701
+[2022-05-24 14:13:07 +0000] [3961702] [INFO] Booting worker with pid: 3961702
+[2022-05-24 14:13:07 +0000] [3961703] [INFO] Booting worker with pid: 3961703
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/Location/urls.py", line 23, in <module>
+    path('auth/', include('userApp.urls')),
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/userApp/urls.py", line 11, in <module>
+    path('user/code/<phone>/'),
+TypeError: _path() missing 1 required positional argument: 'view'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/Location/urls.py", line 23, in <module>
+    path('auth/', include('userApp.urls')),
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/userApp/urls.py", line 11, in <module>
+    path('user/code/<phone>/'),
+TypeError: _path() missing 1 required positional argument: 'view'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/Location/urls.py", line 23, in <module>
+    path('auth/', include('userApp.urls')),
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/userApp/urls.py", line 11, in <module>
+    path('user/code/<phone>/'),
+TypeError: _path() missing 1 required positional argument: 'view'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/Location/urls.py", line 23, in <module>
+    path('auth/', include('userApp.urls')),
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/userApp/urls.py", line 11, in <module>
+    path('user/code/<phone>/'),
+TypeError: _path() missing 1 required positional argument: 'view'
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/Location/urls.py", line 23, in <module>
+    path('auth/', include('userApp.urls')),
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/userApp/urls.py", line 11, in <module>
+    path('user/code/<phone>/'),
+TypeError: _path() missing 1 required positional argument: 'view'
+[2022-05-24 14:15:08 +0000] [3961699] [INFO] Handling signal: term
+[2022-05-24 14:15:08 +0000] [3961701] [INFO] Worker exiting (pid: 3961701)
+[2022-05-24 14:15:08 +0000] [3961703] [INFO] Worker exiting (pid: 3961703)
+[2022-05-24 14:15:08 +0000] [3961702] [INFO] Worker exiting (pid: 3961702)
+[2022-05-24 14:15:09 +0000] [3961699] [INFO] Shutting down: Master
+[2022-05-24 14:15:10 +0000] [3961775] [INFO] Starting gunicorn 20.1.0
+[2022-05-24 14:15:10 +0000] [3961775] [INFO] Listening at: http://127.0.0.1:8000 (3961775)
+[2022-05-24 14:15:10 +0000] [3961775] [INFO] Using worker: sync
+[2022-05-24 14:15:10 +0000] [3961777] [INFO] Booting worker with pid: 3961777
+[2022-05-24 14:15:10 +0000] [3961778] [INFO] Booting worker with pid: 3961778
+[2022-05-24 14:15:10 +0000] [3961779] [INFO] Booting worker with pid: 3961779
+Not Found: /
+Not Found: /
+Internal Server Error: /auth/user/code/99/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/Location/userApp/views.py", line 27, in get
+    user.phone_validation.save()
+AttributeError: 'AnonymousUser' object has no attribute 'phone_validation'
