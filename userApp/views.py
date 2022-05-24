@@ -32,7 +32,12 @@ class VerifyCode(generics.GenericAPIView):
 
     def post(self, request, *args, **kwargs):
         code = request.data['code']
-        is_valid = request.user.phone_validation.validate(code)
+        user = request.user
+        if not user.is_authenticated:
+            user = self.get_object()
+            is_valid = user.phone_validation.password_validate(code)
+        else:
+            is_valid = user.phone_validation.validate(code)
         return Response({
             'status': is_valid
         })
