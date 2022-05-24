@@ -2,7 +2,7 @@ from functools import partial
 import sys
 
 from django.shortcuts import render
-from rest_framework import mixins, parsers, renderers, status
+from rest_framework import mixins, parsers, renderers, status, generics
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -12,13 +12,19 @@ from userApp.serializers import *
 
 # import module
 import traceback
-from Location.permissions import phone_permission
+from Location.permissions import phone_permission, ResetPermission
 
 
-class VerifyCode(APIView):
+class VerifyCode(generics.GenericAPIView):
+    permission_classes = [AllowAny]
+    model = User
+    lookup_field = 'phone'
 
     def get(self, request, *args, **kwargs):
-        request.user.phone_validation.save()
+        user = request.user
+        if user is None:
+            user = self.get_object()
+        user.phone_validation.save()
         return Response({
             'status': True
         })
@@ -26,6 +32,13 @@ class VerifyCode(APIView):
     def post(self, request):
         code = request.data['code']
         is_valid = request.user.phone_validation.validate(code)
+        return Response({
+            'status': is_valid
+        })
+
+    def put(self, request):
+        code = request.data['code']
+        is_valid = self.get_object().phone_validation.password_validate(code)
         return Response({
             'status': is_valid
         })
@@ -78,11 +91,20 @@ user_view = UserView.as_view()
 register = RegisterUser.as_view()
 
 
-class ForgetPasswordView(APIView):
+class ForgetPasswordView(generics.GenericAPIView, mixins.UpdateModelMixin):
+    serializer_class = NewPasswordSerializer
+    permission_classes = [AllowAny, ResetPermission]
     model = User
+    lookup_field = 'phone'
 
     def put(self, request, *args, **kwargs):
-        pass
+        self.partial_update(request, *args, **kwargs)
+        return Response({
+            status: True
+        })
+
+
+forget_password = ForgetPasswordView.as_view()
 
 
 class ChangePasswordView(APIView):
@@ -126,7 +148,7 @@ class ObtainAuthToken(APIView):
     throttle_classes = ()
     permission_classes = ()
     parser_classes = (parsers.FormParser,
-                      parsers.MultiPartParser, parsers.JSONParser,)
+                      parsers.MultiPartParser, parsers.JSONParser)
     renderer_classes = (renderers.JSONRenderer,)
     serializer_class = TokenSerializer
 
