@@ -1,6 +1,18 @@
 from rest_framework import permissions
 
 
+class ResetPermission(permissions.BasePermission):
+    message = 6666  # reset password exception number
+
+    def has_permission(self, request, view):
+        try:
+            if request.user.is_phone_reset_validate:
+                return True
+            return False
+        except:
+            return False
+
+
 class CheckPhone(permissions.BasePermission):
     message = 4444
 
@@ -13,5 +25,6 @@ class CheckPhone(permissions.BasePermission):
         except:
             CheckPhone.message = 5555
             return False
+
 
 phone_permission = [permissions.IsAuthenticated, CheckPhone]

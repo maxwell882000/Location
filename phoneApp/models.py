@@ -27,6 +27,13 @@ class PhoneVerifier(models.Model):
             return True
         return False
 
+    def password_validate(self, code):
+        if self.code == int(code):
+            self.user.is_phone_reset_validate = True
+            self.user.save()
+            return True
+        return False
+
 
 @receiver(post_save, sender=User)
 def createPhoneVerifier(sender, instance, created, *args, **kwargs):

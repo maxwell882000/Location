@@ -33,8 +33,10 @@ class VerifyCode(APIView):
 
 class CheckPhone(APIView):
     permission_classes = phone_permission
-    def get(self, request,*args,**kwargs):
+
+    def get(self, request, *args, **kwargs):
         return Response({}, status=status.HTTP_200_OK)
+
 
 check_view = CheckPhone.as_view()
 verify_code = VerifyCode.as_view()
@@ -76,6 +78,13 @@ user_view = UserView.as_view()
 register = RegisterUser.as_view()
 
 
+class ForgetPasswordView(APIView):
+    model = User
+
+    def put(self, request, *args, **kwargs):
+        pass
+
+
 class ChangePasswordView(APIView):
     """
     An endpoint for changing password.
@@ -105,7 +114,7 @@ class ChangePasswordView(APIView):
                 'data': []
             }
 
-            return Response(response, status=status.HTTP_200_OK,)
+            return Response(response, status=status.HTTP_200_OK)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

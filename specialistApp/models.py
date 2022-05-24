@@ -16,9 +16,16 @@ class Specialist(models.Model):
                                 related_name="user_specialist",
                                 on_delete=models.CASCADE)
     is_deactivated = models.BooleanField(default=False, verbose_name="Скрыть карточку специалиста")
-
+    custom_location = models.TextField(verbose_name="Ручная локация",
+                                       null=True,
+                                       blank=True,
+                                       max_length=255, )
+    # location_many = models.ManyToManyField('locationApp.Location',
+    #                                        verbose_name="Локации")
     location = models.ForeignKey('locationApp.Location',
                                  related_name='specialist',
+                                 null=True,
+                                 blank=True,
                                  verbose_name="Локация специалиста",
                                  on_delete=models.CASCADE
                                  )

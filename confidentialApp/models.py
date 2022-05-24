@@ -1,6 +1,5 @@
-from email import header
-from statistics import mode
 from django.db import models
+
 
 class Confidential(models.Model):
     header = models.CharField(max_length=100, verbose_name="Загаловок")
@@ -8,5 +7,14 @@ class Confidential(models.Model):
 
     class Meta:
         verbose_name_plural = "Правила конфидециальности"
+
     def __str__(self) -> str:
         return "Конфедициальность"
+
+
+class SaleText(Confidential):
+    class Meta:
+        verbose_name_plural = "Правила покупки услуг"
+
+    def __str__(self) -> str:
+        return "Покупка услуг"
