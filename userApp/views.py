@@ -12,7 +12,7 @@ from userApp.serializers import *
 
 # import module
 import traceback
-from Location.permissions import phone_permission, ResetPermission
+from Location.permissions import phone_permission
 
 
 class VerifyCode(generics.GenericAPIView):
