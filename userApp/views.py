@@ -22,7 +22,7 @@ class VerifyCode(generics.GenericAPIView):
 
     def get(self, request, *args, **kwargs):
         user = request.user
-        if user is None:
+        if not user.is_authenticated():
             user = self.get_object()
         user.phone_validation.save()
         return Response({
