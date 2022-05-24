@@ -64,13 +64,6 @@ class UserField(serializers.DictField):
         return RegisterSerializer(value).data
 
 
-class CategoryField(serializers.ListField):
-    def to_representation(self, data):
-        raise Exception(data)
-        return CategorySerializer(
-            Category.objects.filter(id__in=data), many=True).data
-
-
 class CustomImageField(serializers.ImageField):
     def to_representation(self, value):
         return "{}{}".format(SITE, value.url)
@@ -121,4 +114,4 @@ class CategoryListSerializer(serializers.ModelSerializer):
 class CategorySelectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ['id',  'category_name']
+        fields = ['id', 'category_name']

@@ -14,6 +14,19 @@ from userApp.models import User
 import re
 
 
+class NewPasswordSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('password')
+
+    def update(self, instance, validated_data):
+        password = validated_data.pop('password')
+        instance.set_password(password)
+        instance.is_phone_reset_validate = False
+        instance.save()
+        return instance
+
+
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
@@ -33,7 +46,7 @@ class SpecialistSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Specialist
-        exclude = ('user', )
+        exclude = ('user',)
 
 
 class UserSerilalizer(serializers.ModelSerializer):
@@ -72,8 +85,8 @@ class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = [
-            "id", "firstname",   "phone",
-                  "lastname", "token", "password",
+            "id", "firstname", "phone",
+            "lastname", "token", "password",
         ]
         extra_kwargs = {'password': {'write_only': True}}
 
