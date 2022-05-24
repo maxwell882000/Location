@@ -8,7 +8,7 @@ urlpatterns = [
     path('user/', user_view),
     path('check/', check_view),
     path('user/code/', verify_code),
-    path('user/code/<str:phone>/'),
+    path('user/code/<str:phone>/', verify_code),
     path('register/', register),
     path('update/', update),
     path('change_password/', password_change),
