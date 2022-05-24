@@ -19,7 +19,7 @@ class VerifyCode(generics.GenericAPIView):
     permission_classes = [AllowAny]
     model = User
     lookup_field = 'phone'
-    queryset = User.objects.order_by("-id")
+    queryset = User.object.order_by("-id")
 
     def get(self, request, *args, **kwargs):
         user = request.user
