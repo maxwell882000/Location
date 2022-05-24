@@ -30,14 +30,14 @@ class VerifyCode(generics.GenericAPIView):
             'status': True
         })
 
-    def post(self, request):
+    def post(self, request, *args, **kwargs):
         code = request.data['code']
         is_valid = request.user.phone_validation.validate(code)
         return Response({
             'status': is_valid
         })
 
-    def put(self, request):
+    def put(self, request, *args, **kwargs):
         code = request.data['code']
         is_valid = self.get_object().phone_validation.password_validate(code)
         return Response({
