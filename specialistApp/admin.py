@@ -5,8 +5,10 @@ from specialistApp.models import Specialist, Category
 
 
 class SpecialistAdmin(ModelAdmin):
-    filter_horizontal = ["category", ]
-
+    filter_horizontal = ["category"]
+    list_filter = [
+        'is_deactivated'
+    ]
 
 admin.site.register(Specialist, SpecialistAdmin)
 admin.site.register(Category)
