@@ -10,3 +10,8 @@ class ActiveSpecialistFilter(admin.SimpleListFilter):
             (True, "Активированые"),
             (False, "Не активированые"),
         )
+
+    def queryset(self, request, queryset):
+        if self.value() is not None:
+            return queryset.filter(is_deactivated=self.value())
+        return queryset
