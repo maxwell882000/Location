@@ -7,6 +7,7 @@ from django.utils.translation import gettext as _, ngettext
 
 from django import forms
 
+
 class CustomFilter(forms.SelectMultiple):
     option_inherits_attrs = True
     option_template_name = "django/select_option.html"
