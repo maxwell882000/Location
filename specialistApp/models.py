@@ -19,7 +19,7 @@ class Specialist(models.Model):
     custom_location = models.TextField(verbose_name="Ручная локация",
                                        null=True,
                                        blank=True,
-                                       max_length=255, )
+                                       max_length=255)
     # location_many = models.ManyToManyField('locationApp.Location',
     #                                        verbose_name="Локации")
     location = models.ForeignKey('locationApp.Location',
