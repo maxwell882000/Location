@@ -72,10 +72,7 @@ class CategoryListView(generics.ListAPIView):
     permission_classes = [AllowAny]
 
 
-class CategorySelectListView(generics.ListAPIView):
-    queryset = Category.objects.all().order_by('-id')
-    serializer_class = CategorySerializer
-    permission_classes = [AllowAny]
+class CategorySelectListView(CategoryListView):
     pagination_class = CustomPageNumberPagination
 
 
