@@ -19,7 +19,6 @@ class SpecialistListView(generics.ListAPIView):
     permission_classes = [AllowAny]
 
     def get_queryset(self):
-        print(self.request.query_params)
         query_set = specialist_builder(self.request.query_params)
         return query_set.order_by("id")
 

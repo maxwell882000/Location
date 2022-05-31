@@ -7,8 +7,8 @@ class ActiveSpecialistFilter(admin.SimpleListFilter):
 
     def lookups(self, request, model_admin):
         return (
-            (True, "Активированые"),
-            (False, "Не активированые"),
+            (False, "Активированые"),
+            (True, "Не активированые"),
         )
 
     def queryset(self, request, queryset):
