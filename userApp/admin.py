@@ -7,8 +7,7 @@ from userApp.models import User
 
 class UserAdmin(ModelAdmin):
     def get_queryset(self, request):
-        qs = super(UserAdmin, self).get_queryset(request)
-        return qs.exclude(pk__in=Specialist.objects.values_list('user_id', flat=True))
+        return User.object.exclude(pk__in=Specialist.objects.values_list('user_id', flat=True)).order_by('-id')
 
 
 admin.site.register(User)
