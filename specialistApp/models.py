@@ -43,6 +43,8 @@ class Specialist(models.Model):
         return self.user.fullname
 
 
+
+
 class Category(models.Model):
     folder = "category"
     image = models.ImageField(verbose_name="Фото специалиста", upload_to=name_of_file)
