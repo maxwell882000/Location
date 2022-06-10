@@ -18,3 +18,11 @@ class SaleText(Confidential):
 
     def __str__(self) -> str:
         return "Покупка услуг"
+
+
+class Instructions(Confidential):
+    class Meta:
+        verbose_name_plural = "Инструкции"
+
+    def __str__(self) -> str:
+        return "Инструкции"

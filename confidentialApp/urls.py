@@ -4,5 +4,6 @@ from confidentialApp.views import *
 
 urlpatterns = [
     path('get/', confidential),
-    path('sales/get/', sale_text)
+    path('sales/get/', sale_text),
+    path('instructions/get/')
 ]
