@@ -26,8 +26,8 @@ urlpatterns = [
                   path('location/', include('locationApp.urls')),
                   path('specialist/', include('specialistApp.urls')),
                   path('common/', include('commonApp.urls')),
-                  path('confidential/', include('confidentialApp.urls'))
-
+                  path('confidential/', include('confidentialApp.urls'), ),
+                  path("plan/", include('planApp.urls'))
               ] \
               + static(settings.STATIC_ROOT,
                        document_root=settings.STATIC_ROOT) \

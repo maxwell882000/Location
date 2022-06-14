@@ -59,7 +59,8 @@ INSTALLED_APPS = [
     'commonApp',
     'logApp',
     'phoneApp',
-    'confidentialApp'
+    'confidentialApp',
+    'planApp',
 ]
 AUTH_USER_MODEL = 'userApp.User'
 MIDDLEWARE = [

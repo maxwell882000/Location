@@ -15,6 +15,11 @@ class Specialist(models.Model):
     user = models.OneToOneField(AUTH_USER_MODEL, verbose_name="Аккаунт специалиста",
                                 related_name="user_specialist",
                                 on_delete=models.CASCADE)
+    plan = models.ForeignKey("planApp.Plan", related_name='specialist',
+                             null=True,
+                             blank=True,
+                             verbose_name="Тариф специалиста",
+                             on_delete=models.CASCADE)
     is_deactivated = models.BooleanField(default=True, verbose_name="Скрыть карточку специалиста")
     custom_location = models.TextField(verbose_name="Ручная локация",
                                        null=True,
@@ -41,8 +46,6 @@ class Specialist(models.Model):
 
     def __str__(self):
         return self.user.fullname
-
-
 
 
 class Category(models.Model):
