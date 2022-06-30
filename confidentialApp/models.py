@@ -12,7 +12,10 @@ class Confidential(models.Model):
         return "Конфедициальность"
 
 
-class SaleText(Confidential):
+class SaleText(models.Model):
+    header = models.CharField(max_length=100, verbose_name="Загаловок")
+    body = models.TextField(verbose_name="Описание правил")
+
     class Meta:
         verbose_name_plural = "Правила покупки услуг"
 
@@ -20,7 +23,10 @@ class SaleText(Confidential):
         return "Покупка услуг"
 
 
-class Instructions(Confidential):
+class Instructions(models.Model):
+    header = models.CharField(max_length=100, verbose_name="Загаловок")
+    body = models.TextField(verbose_name="Описание правил")
+
     class Meta:
         verbose_name_plural = "Инструкции"
 
