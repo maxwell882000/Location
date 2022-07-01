@@ -18737,3 +18737,3971 @@ Traceback (most recent call last):
   File "/var/www/Location/userApp/views.py", line 27, in get
     user.phone_validation.save()
 AttributeError: 'AnonymousUser' object has no attribute 'phone_validation'
+[2022-05-31 04:28:02 +0000] [4182230] [INFO] Starting gunicorn 20.1.0
+[2022-05-31 04:28:02 +0000] [4182230] [INFO] Listening at: http://127.0.0.1:8000 (4182230)
+[2022-05-31 04:28:02 +0000] [4182230] [INFO] Using worker: sync
+[2022-05-31 04:28:02 +0000] [4182234] [INFO] Booting worker with pid: 4182234
+[2022-05-31 04:28:02 +0000] [4182235] [INFO] Booting worker with pid: 4182235
+[2022-05-31 04:28:02 +0000] [4182236] [INFO] Booting worker with pid: 4182236
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /favicon.ico
+Unauthorized: /common/app/
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Unauthorized: /common/app/
+Not Found: /console/
+Not Found: /portal/redlion
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /actuator/health
+Not Found: /hudson
+Not Found: /config/getuser
+Not Found: /editBlackAndWhiteList
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+[2022-05-31 15:33:33 +0000] [4182230] [INFO] Handling signal: term
+[2022-05-31 15:33:33 +0000] [4182234] [INFO] Worker exiting (pid: 4182234)
+[2022-05-31 15:33:33 +0000] [4182235] [INFO] Worker exiting (pid: 4182235)
+[2022-05-31 15:33:33 +0000] [4182236] [INFO] Worker exiting (pid: 4182236)
+[2022-05-31 15:33:34 +0000] [4182230] [INFO] Shutting down: Master
+[2022-05-31 15:33:36 +0000] [835] [INFO] Starting gunicorn 20.1.0
+[2022-05-31 15:33:36 +0000] [835] [INFO] Listening at: http://127.0.0.1:8000 (835)
+[2022-05-31 15:33:36 +0000] [835] [INFO] Using worker: sync
+[2022-05-31 15:33:36 +0000] [837] [INFO] Booting worker with pid: 837
+[2022-05-31 15:33:36 +0000] [838] [INFO] Booting worker with pid: 838
+[2022-05-31 15:33:36 +0000] [839] [INFO] Booting worker with pid: 839
+Not Found: /favicon.ico
+[2022-05-31 17:00:54 +0000] [835] [INFO] Handling signal: term
+[2022-05-31 17:00:54 +0000] [837] [INFO] Worker exiting (pid: 837)
+[2022-05-31 17:00:54 +0000] [838] [INFO] Worker exiting (pid: 838)
+[2022-05-31 17:00:54 +0000] [839] [INFO] Worker exiting (pid: 839)
+[2022-05-31 17:00:55 +0000] [835] [INFO] Shutting down: Master
+[2022-05-31 17:00:56 +0000] [2370] [INFO] Starting gunicorn 20.1.0
+[2022-05-31 17:00:56 +0000] [2370] [INFO] Listening at: http://127.0.0.1:8000 (2370)
+[2022-05-31 17:00:56 +0000] [2370] [INFO] Using worker: sync
+[2022-05-31 17:00:56 +0000] [2373] [INFO] Booting worker with pid: 2373
+[2022-05-31 17:00:56 +0000] [2374] [INFO] Booting worker with pid: 2374
+[2022-05-31 17:00:56 +0000] [2375] [INFO] Booting worker with pid: 2375
+[2022-05-31 17:04:27 +0000] [2370] [INFO] Handling signal: term
+[2022-05-31 17:04:27 +0000] [2373] [INFO] Worker exiting (pid: 2373)
+[2022-05-31 17:04:27 +0000] [2374] [INFO] Worker exiting (pid: 2374)
+[2022-05-31 17:04:27 +0000] [2375] [INFO] Worker exiting (pid: 2375)
+[2022-05-31 17:04:28 +0000] [2370] [INFO] Shutting down: Master
+[2022-05-31 17:04:29 +0000] [2476] [INFO] Starting gunicorn 20.1.0
+[2022-05-31 17:04:29 +0000] [2476] [INFO] Listening at: http://127.0.0.1:8000 (2476)
+[2022-05-31 17:04:29 +0000] [2476] [INFO] Using worker: sync
+[2022-05-31 17:04:29 +0000] [2478] [INFO] Booting worker with pid: 2478
+[2022-05-31 17:04:29 +0000] [2479] [INFO] Booting worker with pid: 2479
+[2022-05-31 17:04:29 +0000] [2480] [INFO] Booting worker with pid: 2480
+[2022-05-31 17:06:50 +0000] [2476] [INFO] Handling signal: term
+[2022-05-31 17:06:50 +0000] [2478] [INFO] Worker exiting (pid: 2478)
+[2022-05-31 17:06:50 +0000] [2480] [INFO] Worker exiting (pid: 2480)
+[2022-05-31 17:06:50 +0000] [2479] [INFO] Worker exiting (pid: 2479)
+[2022-05-31 17:06:51 +0000] [2476] [INFO] Shutting down: Master
+[2022-05-31 17:06:52 +0000] [2555] [INFO] Starting gunicorn 20.1.0
+[2022-05-31 17:06:52 +0000] [2555] [INFO] Listening at: http://127.0.0.1:8000 (2555)
+[2022-05-31 17:06:52 +0000] [2555] [INFO] Using worker: sync
+[2022-05-31 17:06:52 +0000] [2557] [INFO] Booting worker with pid: 2557
+[2022-05-31 17:06:52 +0000] [2558] [INFO] Booting worker with pid: 2558
+[2022-05-31 17:06:52 +0000] [2559] [INFO] Booting worker with pid: 2559
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /configuracion/phpmyadmin/scripts/setup.php
+Not Found: /~phpmyadmin/scripts/setup.php
+Not Found: /MySQL/scripts/setup.php
+Not Found: /phpmyadmin_/scripts/setup.php
+Not Found: /php/scripts/setup.php
+Not Found: /wp-phpmyadmin/phpmyadmin/scripts/setup.php
+Not Found: /phpmy/scripts/setup.php
+Not Found: /scripts/setup.php
+Not Found: /db/scripts/setup.php
+Not Found: /dbadmin/scripts/setup.php
+Not Found: /mysql/scripts/setup.php
+Not Found: /mysqladmin/scripts/setup.php
+Not Found: /typo3/phpmyadmin/scripts/setup.php
+Not Found: /phpadmin/scripts/setup.php
+Not Found: /web/phpMyAdmin/scripts/setup.php
+Not Found: /xampp/phpmyadmin/scripts/setup.php
+Not Found: /web/scripts/setup.php
+Not Found: /php-my-admin/scripts/setup.php
+Not Found: /websql/scripts/setup.php
+Not Found: /phpMyAdmin-2/scripts/setup.php
+Not Found: /_phpmyadmin/scripts/setup.php
+Not Found: /administrator/components/com_joommyadmin/phpmyadmin/scripts/setup.php
+Not Found: /apache-default/phpmyadmin/scripts/setup.php
+Not Found: /blog/phpmyadmin/scripts/setup.php
+Not Found: /cpanelphpmyadmin/scripts/setup.php
+Not Found: /cpphpmyadmin/scripts/setup.php
+Not Found: /forum/phpmyadmin/scripts/setup.php
+Not Found: /php/phpmyadmin/scripts/setup.php
+Not Found: /editBlackAndWhiteList
+Not Found: /phpmyadmin2017/index.php
+Not Found: /_phpMyAdmin/index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /phpmy/index.php
+Not Found: /phpMyAdmin-3/index.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /sql/phpmyadmin3/index.php
+Not Found: /mysqladmin/index.php
+Not Found: /phpMyAdmin-5.1.0/index.php
+Not Found: /
+Bad Request: /auth/api-token/
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /editBlackAndWhiteList
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /manager/html
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /.aws/credentials
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /solr/admin/info/system
+Not Found: /boaform/admin/formLogin
+Not Found: /index.php
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /.env
+Not Found: /portal/redlion
+Not Found: /actuator/health
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /config/getuser
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /
+Not Found: /index.php
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: ///.env
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /Public/home/js/check.js
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /actuator/gateway/routes
+Not Found: /boaform/admin/formLogin
+Not Found: /mysql/sqlmanager/index.php
+Not Found: /_phpMyAdmin/index.php
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.aws/credentials
+Not Found: /
+Not Found: /administrator/admin/index.php
+Not Found: /PMA/index.php
+Not Found: /db/phpMyAdmin-3/index.php
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /editBlackAndWhiteList
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /index.php
+Not Found: /editBlackAndWhiteList
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /configuracion/phpmyadmin/scripts/setup.php
+Not Found: /~phpmyadmin/scripts/setup.php
+Not Found: /MySQL/scripts/setup.php
+Not Found: /phpmyadmin_/scripts/setup.php
+Not Found: /php/scripts/setup.php
+Not Found: /wp-phpmyadmin/phpmyadmin/scripts/setup.php
+Not Found: /phpmy/scripts/setup.php
+Not Found: /scripts/setup.php
+Not Found: /db/scripts/setup.php
+Not Found: /dbadmin/scripts/setup.php
+Not Found: /mysql/scripts/setup.php
+Not Found: /mysqladmin/scripts/setup.php
+Not Found: /typo3/phpmyadmin/scripts/setup.php
+Not Found: /phpadmin/scripts/setup.php
+Not Found: /web/phpMyAdmin/scripts/setup.php
+Not Found: /xampp/phpmyadmin/scripts/setup.php
+Not Found: /web/scripts/setup.php
+Not Found: /php-my-admin/scripts/setup.php
+Not Found: /websql/scripts/setup.php
+Not Found: /phpMyAdmin-2/scripts/setup.php
+Not Found: /_phpmyadmin/scripts/setup.php
+Not Found: /administrator/components/com_joommyadmin/phpmyadmin/scripts/setup.php
+Not Found: /apache-default/phpmyadmin/scripts/setup.php
+Not Found: /blog/phpmyadmin/scripts/setup.php
+Not Found: /cpanelphpmyadmin/scripts/setup.php
+Not Found: /cpphpmyadmin/scripts/setup.php
+Not Found: /forum/phpmyadmin/scripts/setup.php
+Not Found: /php/phpmyadmin/scripts/setup.php
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /etc/passwd
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.DS_Store
+Not Found: /v2/_catalog
+Not Found: /s/lkx/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Not Found: /server-status
+Not Found: /ReportServer
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /manager/text/list
+Not Found: /
+Not Found: /manager/html
+Not Found: /
+Bad Request: /auth/api-token/
+Bad Request: /auth/register/
+Not Found: /favicon.ico
+Bad Request: /auth/register/
+Bad Request: /auth/register/
+Bad Request: /auth/register/
+Not Found: /
+Not Found: /HNAP1/
+Bad Request: /auth/user/code/99/
+Not Found: /.env
+Not Found: /
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Not Found: /boaform/admin/formLogin
+Not Found: /portal/redlion
+Not Found: /
+Not Found: /
+Not Found: /hudson
+Not Found: /
+Not Found: /
+Not Found: /muieblackcat
+Not Found: //phpMyAdmin/scripts/setup.php
+Not Found: //phpmyadmin/scripts/setup.php
+Not Found: //pma/scripts/setup.php
+Not Found: //myadmin/scripts/setup.php
+Not Found: //MyAdmin/scripts/setup.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /favicon.ico
+Not Found: /solr/admin/info/system
+Not Found: /favicon.ico
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /robots.txt
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /boaform/admin/formLogin
+[2022-06-07 02:10:02 +0000] [2555] [INFO] Handling signal: term
+[2022-06-07 02:10:02 +0000] [2557] [INFO] Worker exiting (pid: 2557)
+[2022-06-07 02:10:02 +0000] [2558] [INFO] Worker exiting (pid: 2558)
+[2022-06-07 02:10:02 +0000] [2559] [INFO] Worker exiting (pid: 2559)
+[2022-06-07 02:10:03 +0000] [2555] [INFO] Shutting down: Master
+[2022-06-07 02:10:04 +0000] [274882] [INFO] Starting gunicorn 20.1.0
+[2022-06-07 02:10:04 +0000] [274882] [INFO] Listening at: http://127.0.0.1:8000 (274882)
+[2022-06-07 02:10:04 +0000] [274882] [INFO] Using worker: sync
+[2022-06-07 02:10:04 +0000] [274884] [INFO] Booting worker with pid: 274884
+[2022-06-07 02:10:04 +0000] [274885] [INFO] Booting worker with pid: 274885
+[2022-06-07 02:10:05 +0000] [274886] [INFO] Booting worker with pid: 274886
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Internal Server Error: /admin/userApp/user/add/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1586, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1099, in save_model
+    obj.save()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/var/www/Location/phoneApp/models.py", line 41, in createPhoneVerifier
+    PhoneVerifier.objects.create(user=instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/Location/phoneApp/models.py", line 21, in save
+    return super(PhoneVerifier, self).save(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/var/www/Location/phoneApp/models.py", line 50, in sendRequiredCode
+    service.sendCode(int(instance.user.phone), MESSAGE_SEND)
+ValueError: invalid literal for int() with base 10: 'asfsafssfa'
+Internal Server Error: /admin/userApp/user/add/
+Traceback (most recent call last):
+  File "/var/www/Location/phoneApp/models.py", line 50, in sendRequiredCode
+    service.sendCode(int(instance.user.phone), MESSAGE_SEND)
+  File "/var/www/Location/phoneApp/service.py", line 36, in sendCode
+    raise PhoneException(content['result']['status']['description'])
+phoneApp.service.PhoneException: Отправка в данный регион недоступна для данной компании
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1586, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1099, in save_model
+    obj.save()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/var/www/Location/phoneApp/models.py", line 41, in createPhoneVerifier
+    PhoneVerifier.objects.create(user=instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/Location/phoneApp/models.py", line 21, in save
+    return super(PhoneVerifier, self).save(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/var/www/Location/phoneApp/models.py", line 52, in sendRequiredCode
+    raise serializers.ValidationError(detail={"phone_sms": e.args[0]})
+rest_framework.exceptions.ValidationError: {'phone_sms': ErrorDetail(string='Отправка в данный регион недоступна для данной компании', code='invalid')}
+Not Found: /
+Not Found: /
+Not Found: /nmaplowercheck1654569180
+Not Found: /Portal/Portal.mwsl
+Not Found: /
+Not Found: /Portal0000.htm
+Not Found: /scripts/WPnBr.dll
+Not Found: /sdk
+Not Found: /CSS/Miniweb.css
+Not Found: /
+Not Found: /home.php
+Not Found: /pools/default/buckets
+Not Found: /ORVe
+Not Found: /docs/cplugError.html/
+Not Found: /
+Not Found: /
+Not Found: /__Additional
+Not Found: /HNAP1
+Not Found: /base.pl
+Not Found: /pools
+Not Found: /
+Not Found: /base.jsa
+Not Found: /favicon.ico
+Not Found: /base.inc
+Not Found: /readme.txt
+Not Found: /home.cfm
+Not Found: /index.cfm
+Not Found: /home.html
+Not Found: /inicio.aspx
+Not Found: /default.asp
+Not Found: /admin.pl
+Not Found: /index.pl
+Not Found: /localstart.cfm
+Not Found: /admin.php
+Not Found: /admin.jsp
+Not Found: /localstart.cgi
+Not Found: /default.cfm
+Not Found: /admin.jsa
+Not Found: /admin.jhtml
+Not Found: /index.aspx
+Not Found: /main.jsa
+Not Found: /admin.html
+Not Found: /main.cgi
+Not Found: /admin.cgi
+Not Found: /inicio.html
+Not Found: /admin.cfm
+Not Found: /indice.cfm
+Not Found: /home.asp
+Not Found: /start.jhtml
+Not Found: /indice.pl
+Not Found: /base.shtml
+Not Found: /menu.pl
+Not Found: /base.php
+Not Found: /index.cgi
+Not Found: /robots.txt
+Not Found: /main.asp
+Not Found: /localstart.jsa
+Not Found: /home.cgi
+Not Found: /base.jhtml
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /Telerik.Web.UI.WebResource.axd
+Not Found: /
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: ///.env
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /stalker_portal/server/tools/auth_simple.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /showLogin.cc
+Not Found: /.env
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.aws/credentials
+Not Found: /favicon.ico
+Internal Server Error: /admin/userApp/user/add/
+Traceback (most recent call last):
+  File "/var/www/Location/phoneApp/models.py", line 50, in sendRequiredCode
+    service.sendCode(int(instance.user.phone), MESSAGE_SEND)
+  File "/var/www/Location/phoneApp/service.py", line 36, in sendCode
+    raise PhoneException(content['result']['status']['description'])
+phoneApp.service.PhoneException: Отправка в данный регион недоступна для данной компании
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1586, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1099, in save_model
+    obj.save()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/var/www/Location/phoneApp/models.py", line 41, in createPhoneVerifier
+    PhoneVerifier.objects.create(user=instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/Location/phoneApp/models.py", line 21, in save
+    return super(PhoneVerifier, self).save(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 774, in save_base
+    post_save.send(
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 180, in send
+    return [
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 181, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/var/www/Location/phoneApp/models.py", line 52, in sendRequiredCode
+    raise serializers.ValidationError(detail={"phone_sms": e.args[0]})
+rest_framework.exceptions.ValidationError: {'phone_sms': ErrorDetail(string='Отправка в данный регион недоступна для данной компании', code='invalid')}
+Not Found: /console/
+Unauthorized: /common/app/
+Bad Request: /auth/api-token/
+Bad Request: /auth/api-token/
+Not Found: /favicon.ico
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /favicon.ico
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /configuracion/phpmyadmin/scripts/setup.php
+Not Found: /~phpmyadmin/scripts/setup.php
+Not Found: /MySQL/scripts/setup.php
+Not Found: /phpmyadmin_/scripts/setup.php
+Not Found: /php/scripts/setup.php
+Not Found: /wp-phpmyadmin/phpmyadmin/scripts/setup.php
+Not Found: /phpmy/scripts/setup.php
+Not Found: /scripts/setup.php
+Not Found: /db/scripts/setup.php
+Not Found: /dbadmin/scripts/setup.php
+Not Found: /mysql/scripts/setup.php
+Not Found: /mysqladmin/scripts/setup.php
+Not Found: /typo3/phpmyadmin/scripts/setup.php
+Not Found: /phpadmin/scripts/setup.php
+Not Found: /web/phpMyAdmin/scripts/setup.php
+Not Found: /xampp/phpmyadmin/scripts/setup.php
+Not Found: /web/scripts/setup.php
+Not Found: /php-my-admin/scripts/setup.php
+Not Found: /websql/scripts/setup.php
+Not Found: /phpMyAdmin-2/scripts/setup.php
+Not Found: /_phpmyadmin/scripts/setup.php
+Not Found: /administrator/components/com_joommyadmin/phpmyadmin/scripts/setup.php
+Not Found: /apache-default/phpmyadmin/scripts/setup.php
+Not Found: /blog/phpmyadmin/scripts/setup.php
+Not Found: /cpanelphpmyadmin/scripts/setup.php
+Not Found: /cpphpmyadmin/scripts/setup.php
+Not Found: /forum/phpmyadmin/scripts/setup.php
+Not Found: /php/phpmyadmin/scripts/setup.php
+Not Found: /
+Not Found: /shell
+Not Found: /_profiler/phpinfo
+Not Found: /
+Not Found: /debug/default/view
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /cmd0/
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /shell
+Not Found: /c/
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+Not Found: /
+Not Found: /.DS_Store
+Not Found: /info.php
+Not Found: /s/33312e34342e342e3237/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Not Found: /telescope/requests
+Not Found: /.env
+Not Found: /
+Not Found: /server-status
+Not Found: /login.action
+Not Found: /config.json
+Not Found: /boaform/admin/formLogin
+Not Found: /boaform/admin/formLogin
+Not Found: /config/getuser
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Forbidden (CSRF cookie not set.): /admin/login/login.html
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /editBlackAndWhiteList
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /editBlackAndWhiteList
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /.env
+Not Found: /
+Not Found: /.env
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /solr/
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /portal/redlion
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /hudson
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /sdk
+Not Found: /nmaplowercheck1654802511
+Not Found: /
+Not Found: /evox/about
+Not Found: /
+Not Found: /HNAP1
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /conf/.env
+Not Found: /wp-content/.env
+Not Found: /wp-admin/.env
+Not Found: /library/.env
+Not Found: /new/.env
+Not Found: /vendor/.env
+Not Found: /old/.env
+Not Found: /local/.env
+Not Found: /api/.env
+Not Found: /blog/.env
+Not Found: /crm/.env
+Not Found: /laravel/.env
+Not Found: /app/.env
+Not Found: /app/config/.env
+Not Found: /apps/.env
+Not Found: /audio/.env
+Not Found: /cgi-bin/.env
+Not Found: /backend/.env
+Not Found: /src/.env
+Not Found: /base/.env
+Not Found: /core/.env
+Not Found: /vendor/laravel/.env
+Not Found: /storage/.env
+Not Found: /protected/.env
+Not Found: /newsite/.env
+Not Found: /www/.env
+Not Found: /sites/all/libraries/mailchimp/.env
+Not Found: /database/.env
+Not Found: /public/.env
+Not Found: /31.44.4.27/.env
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /stalker_portal/server/tools/auth_simple.php
+Bad Request: /auth/api-token/
+Not Found: /favicon.ico
+[2022-06-10 00:14:08 +0000] [274882] [INFO] Handling signal: term
+[2022-06-10 00:14:08 +0000] [274884] [INFO] Worker exiting (pid: 274884)
+[2022-06-10 00:14:08 +0000] [274886] [INFO] Worker exiting (pid: 274886)
+[2022-06-10 00:14:08 +0000] [274885] [INFO] Worker exiting (pid: 274885)
+[2022-06-10 00:14:09 +0000] [274882] [INFO] Shutting down: Master
+[2022-06-10 00:14:10 +0000] [364504] [INFO] Starting gunicorn 20.1.0
+[2022-06-10 00:14:10 +0000] [364504] [INFO] Listening at: http://127.0.0.1:8000 (364504)
+[2022-06-10 00:14:10 +0000] [364504] [INFO] Using worker: sync
+[2022-06-10 00:14:10 +0000] [364506] [INFO] Booting worker with pid: 364506
+[2022-06-10 00:14:10 +0000] [364507] [INFO] Booting worker with pid: 364507
+[2022-06-10 00:14:10 +0000] [364508] [INFO] Booting worker with pid: 364508
+[2022-06-10 00:14:39 +0000] [364504] [INFO] Handling signal: term
+[2022-06-10 00:14:39 +0000] [364506] [INFO] Worker exiting (pid: 364506)
+[2022-06-10 00:14:39 +0000] [364507] [INFO] Worker exiting (pid: 364507)
+[2022-06-10 00:14:39 +0000] [364508] [INFO] Worker exiting (pid: 364508)
+[2022-06-10 00:14:40 +0000] [364504] [INFO] Shutting down: Master
+[2022-06-10 00:14:41 +0000] [364532] [INFO] Starting gunicorn 20.1.0
+[2022-06-10 00:14:41 +0000] [364532] [INFO] Listening at: http://127.0.0.1:8000 (364532)
+[2022-06-10 00:14:41 +0000] [364532] [INFO] Using worker: sync
+[2022-06-10 00:14:41 +0000] [364534] [INFO] Booting worker with pid: 364534
+[2022-06-10 00:14:41 +0000] [364535] [INFO] Booting worker with pid: 364535
+[2022-06-10 00:14:41 +0000] [364536] [INFO] Booting worker with pid: 364536
+[2022-06-10 00:15:25 +0000] [364532] [INFO] Handling signal: term
+[2022-06-10 00:15:25 +0000] [364534] [INFO] Worker exiting (pid: 364534)
+[2022-06-10 00:15:25 +0000] [364535] [INFO] Worker exiting (pid: 364535)
+[2022-06-10 00:15:25 +0000] [364536] [INFO] Worker exiting (pid: 364536)
+[2022-06-10 00:15:26 +0000] [364532] [INFO] Shutting down: Master
+[2022-06-10 00:15:27 +0000] [364574] [INFO] Starting gunicorn 20.1.0
+[2022-06-10 00:15:27 +0000] [364574] [INFO] Listening at: http://127.0.0.1:8000 (364574)
+[2022-06-10 00:15:27 +0000] [364574] [INFO] Using worker: sync
+[2022-06-10 00:15:27 +0000] [364576] [INFO] Booting worker with pid: 364576
+[2022-06-10 00:15:27 +0000] [364577] [INFO] Booting worker with pid: 364577
+[2022-06-10 00:15:27 +0000] [364578] [INFO] Booting worker with pid: 364578
+Bad Request: /auth/api-token/
+Bad Request: /auth/api-token/
+Bad Request: /auth/api-token/
+Unauthorized: /common/app/
+[2022-06-10 00:36:25 +0000] [364574] [INFO] Handling signal: term
+[2022-06-10 00:36:25 +0000] [364576] [INFO] Worker exiting (pid: 364576)
+[2022-06-10 00:36:25 +0000] [364577] [INFO] Worker exiting (pid: 364577)
+[2022-06-10 00:36:25 +0000] [364578] [INFO] Worker exiting (pid: 364578)
+[2022-06-10 00:36:26 +0000] [364574] [INFO] Shutting down: Master
+[2022-06-10 00:36:27 +0000] [364859] [INFO] Starting gunicorn 20.1.0
+[2022-06-10 00:36:27 +0000] [364859] [INFO] Listening at: http://127.0.0.1:8000 (364859)
+[2022-06-10 00:36:27 +0000] [364859] [INFO] Using worker: sync
+[2022-06-10 00:36:27 +0000] [364861] [INFO] Booting worker with pid: 364861
+[2022-06-10 00:36:27 +0000] [364862] [INFO] Booting worker with pid: 364862
+[2022-06-10 00:36:27 +0000] [364863] [INFO] Booting worker with pid: 364863
+Not Found: /
+Not Found: /.env
+[2022-06-10 00:37:30 +0000] [364859] [INFO] Handling signal: term
+[2022-06-10 00:37:30 +0000] [364861] [INFO] Worker exiting (pid: 364861)
+[2022-06-10 00:37:30 +0000] [364863] [INFO] Worker exiting (pid: 364863)
+[2022-06-10 00:37:30 +0000] [364862] [INFO] Worker exiting (pid: 364862)
+[2022-06-10 00:37:31 +0000] [364859] [INFO] Shutting down: Master
+[2022-06-10 00:37:32 +0000] [364914] [INFO] Starting gunicorn 20.1.0
+[2022-06-10 00:37:32 +0000] [364914] [INFO] Listening at: http://127.0.0.1:8000 (364914)
+[2022-06-10 00:37:32 +0000] [364914] [INFO] Using worker: sync
+[2022-06-10 00:37:32 +0000] [364916] [INFO] Booting worker with pid: 364916
+[2022-06-10 00:37:32 +0000] [364917] [INFO] Booting worker with pid: 364917
+[2022-06-10 00:37:32 +0000] [364918] [INFO] Booting worker with pid: 364918
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.DS_Store
+Not Found: /server-status
+Not Found: /telescope/requests
+Not Found: /api/geojson
+Not Found: /api/search
+Not Found: /s/lkx/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Not Found: /config.json
+Not Found: /idx_config/
+Not Found: /info.php
+Not Found: /.json
+Not Found: /
+Not Found: /debug/default/view
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /cgi-bin/index2.asp
+Not Found: /robots.txt
+Not Found: /xmlrpc.php
+Not Found: /
+Not Found: /blog/robots.txt
+Not Found: /blog/
+Not Found: /wordpress/
+Not Found: /wp/
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /server-status
+Not Found: /
+Not Found: /.DS_Store
+Not Found: /
+Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+Not Found: /telescope/requests
+Not Found: /.env
+Not Found: /info.php
+Not Found: /s/33312e34342e342e3237/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Not Found: /login.action
+Not Found: /config.json
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /c/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Bad Request: /auth/user/code/99/
+Not Found: /
+Not Found: /mysql/dbadmin/index.php
+Not Found: /administrator/pma/index.php
+Not Found: /mysql/index.php
+Not Found: /
+Not Found: /mysql/index.php
+Not Found: /dbadmin/index.php
+Not Found: /mysql-admin/index.php
+Not Found: /sql/phpmanager/index.php
+Not Found: /mysql-admin/index.php
+Not Found: /sql/phpmanager/index.php
+Not Found: /sql/myadmin/index.php
+Not Found: /administrator/phpmyadmin/index.php
+Not Found: /mysql/dbadmin/index.php
+Not Found: /administrator/pma/index.php
+Not Found: /phpmyadmin2011/index.php
+Not Found: /sql/phpMyAdmin2/index.php
+Not Found: /phpmyadmin2011/index.php
+Not Found: /administrator/phpmyadmin/index.php
+Not Found: /sql/myadmin/index.php
+Not Found: /
+Not Found: /
+Not Found: /sql/phpMyAdmin2/index.php
+Not Found: /dbadmin/index.php
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /admin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /mgmt/tm/util/bash
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /.env
+Not Found: /vendor/.env
+Not Found: /31.44.4.27/.env
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /.aws/credentials
+Not Found: /boaform/admin/formLogin
+Not Found: /shell
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /shell
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /index.php
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /commands.txt
+Not Found: /
+Not Found: /.env
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /showLogin.cc
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /.env
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /shell
+Not Found: /mgmt/tm/util/bash
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /robots.txt
+Not Found: /xmlrpc.php
+Not Found: /
+Not Found: /blog/robots.txt
+Not Found: /blog/
+Not Found: /wordpress/
+Not Found: /wp/
+Not Found: /hunmj_serverApi/test.php
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /db/dbadmin/index.php
+Not Found: /db/phpMyAdmin3/index.php
+Not Found: /
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /console/
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /editBlackAndWhiteList
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /portal/redlion
+Not Found: /mysql/db/index.php
+Not Found: /phpMyAdmin5/index.php
+Not Found: /actuator/health
+Not Found: /
+Not Found: /hudson
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /administrator/admin/index.php
+Not Found: /sql/webdb/index.php
+Not Found: /phpMyAdmin-5.2.0/index.php
+Not Found: /shell
+Not Found: /shell
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: //pv/000000000000.cfg
+Not Found: //pv/spa112.cfg
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /ReportServer
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /manager/text/list
+Not Found: /manager/html
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Bad Request: /auth/api-token/
+Bad Request: /common/temp_store/
+Bad Request: /common/temp_store/
+Not Found: /favicon.ico
+Not Found: /image/lgbg.jpg
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /cgi-bin/index2.asp
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /favicon.ico
+Not Found: /image/lgbg.jpg
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Forbidden (CSRF token missing or incorrect.): /admin/login/
+Not Found: /favicon.ico
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /index.php
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+[2022-06-14 00:39:16 +0000] [364914] [INFO] Handling signal: term
+[2022-06-14 00:39:16 +0000] [364916] [INFO] Worker exiting (pid: 364916)
+[2022-06-14 00:39:16 +0000] [364917] [INFO] Worker exiting (pid: 364917)
+[2022-06-14 00:39:16 +0000] [364918] [INFO] Worker exiting (pid: 364918)
+[2022-06-14 00:39:17 +0000] [364914] [INFO] Shutting down: Master
+[2022-06-14 00:39:18 +0000] [471634] [INFO] Starting gunicorn 20.1.0
+[2022-06-14 00:39:18 +0000] [471634] [INFO] Listening at: http://127.0.0.1:8000 (471634)
+[2022-06-14 00:39:18 +0000] [471634] [INFO] Using worker: sync
+[2022-06-14 00:39:18 +0000] [471636] [INFO] Booting worker with pid: 471636
+[2022-06-14 00:39:18 +0000] [471637] [INFO] Booting worker with pid: 471637
+[2022-06-14 00:39:18 +0000] [471638] [INFO] Booting worker with pid: 471638
+[2022-06-14 00:39:20 +0000] [471634] [INFO] Handling signal: term
+[2022-06-14 00:39:20 +0000] [471636] [INFO] Worker exiting (pid: 471636)
+[2022-06-14 00:39:20 +0000] [471638] [INFO] Worker exiting (pid: 471638)
+[2022-06-14 00:39:20 +0000] [471637] [INFO] Worker exiting (pid: 471637)
+[2022-06-14 00:39:21 +0000] [471634] [INFO] Shutting down: Master
+[2022-06-14 00:39:22 +0000] [471655] [INFO] Starting gunicorn 20.1.0
+[2022-06-14 00:39:22 +0000] [471655] [INFO] Listening at: http://127.0.0.1:8000 (471655)
+[2022-06-14 00:39:22 +0000] [471655] [INFO] Using worker: sync
+[2022-06-14 00:39:22 +0000] [471657] [INFO] Booting worker with pid: 471657
+[2022-06-14 00:39:22 +0000] [471658] [INFO] Booting worker with pid: 471658
+[2022-06-14 00:39:22 +0000] [471659] [INFO] Booting worker with pid: 471659
+[2022-06-14 00:40:44 +0000] [471655] [INFO] Handling signal: term
+[2022-06-14 00:40:44 +0000] [471657] [INFO] Worker exiting (pid: 471657)
+[2022-06-14 00:40:44 +0000] [471658] [INFO] Worker exiting (pid: 471658)
+[2022-06-14 00:40:44 +0000] [471659] [INFO] Worker exiting (pid: 471659)
+[2022-06-14 00:40:45 +0000] [471655] [INFO] Shutting down: Master
+[2022-06-14 00:40:46 +0000] [471706] [INFO] Starting gunicorn 20.1.0
+[2022-06-14 00:40:46 +0000] [471706] [INFO] Listening at: http://127.0.0.1:8000 (471706)
+[2022-06-14 00:40:46 +0000] [471706] [INFO] Using worker: sync
+[2022-06-14 00:40:46 +0000] [471708] [INFO] Booting worker with pid: 471708
+[2022-06-14 00:40:46 +0000] [471709] [INFO] Booting worker with pid: 471709
+[2022-06-14 00:40:46 +0000] [471710] [INFO] Booting worker with pid: 471710
+Not Found: /favicon.ico
+Internal Server Error: /admin/specialistApp/specialist/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+Internal Server Error: /admin/specialistApp/specialist/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+Internal Server Error: /admin/specialistApp/specialist/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+Internal Server Error: /admin/specialistApp/specialist/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+Internal Server Error: /admin/planApp/plan/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "planApp_plan" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "planApp_plan"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1697, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 736, in get_changelist_instance
+    return ChangeList(
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 100, in __init__
+    self.get_results(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 235, in get_results
+    result_count = paginator.count
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/paginator.py", line 97, in count
+    return c()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 412, in count
+    return self.query.get_count(using=self.db)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 519, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 504, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "planApp_plan" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "planApp_plan"
+                                          ^
+
+Internal Server Error: /admin/specialistApp/specialist/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+Internal Server Error: /admin/specialistApp/specialist/add/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "planApp_plan" does not exist
+LINE 1: ...plan"."description", "planApp_plan"."amount" FROM "planApp_p...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "planApp_plan" does not exist
+LINE 1: ...plan"."description", "planApp_plan"."amount" FROM "planApp_p...
+                                                             ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 195, in render
+    return template.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 994, in render
+    return render_value_in_context(output, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/template/base.py", line 973, in render_value_in_context
+    value = str(value)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/html.py", line 376, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/forms/boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/forms/boundfield.py", line 93, in as_widget
+    return widget.render(
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/forms/widgets.py", line 246, in render
+    context = self.get_context(name, value, attrs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/widgets.py", line 283, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/forms/widgets.py", line 246, in render
+    context = self.get_context(name, value, attrs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/forms/widgets.py", line 683, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/forms/widgets.py", line 644, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/forms/widgets.py", line 592, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/forms/models.py", line 1169, in __iter__
+    for obj in queryset:
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 353, in _iterator
+    yield from self._iterable_class(self, chunked_fetch=use_chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1178, in execute_sql
+    cursor.close()
+psycopg2.errors.InvalidCursorName: cursor "_django_curs_140532474095424_sync_2" does not exist
+
+Internal Server Error: /admin/specialistApp/specialist/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+Internal Server Error: /admin/specialistApp/specialist/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column specialistApp_specialist.plan_id does not exist
+LINE 1: ...scription", "specialistApp_specialist"."user_id", "specialis...
+                                                             ^
+
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.DS_Store
+Not Found: /.json
+Not Found: /frontend_dev.php/$
+Not Found: /v2/_catalog
+Not Found: /api/search
+Not Found: /s/lkx/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Not Found: /telescope/requests
+Not Found: /idx_config/
+Not Found: /hardhat.config.js
+Not Found: /api/geojson
+Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+Not Found: /login.action
+Not Found: /server-status
+Not Found: /debug/default/view
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /config.json
+Not Found: /
+Not Found: /
+Not Found: /mgmt/tm/util/bash
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /robots.txt
+Not Found: /xmlrpc.php
+Not Found: /
+Not Found: /blog/robots.txt
+Not Found: /blog/
+Not Found: /wordpress/
+Not Found: /wp/
+Not Found: /
+Not Found: /sendgrid.env
+Not Found: /.env
+Not Found: /.sendgrid
+Bad Request: /auth/register/
+Forbidden: /auth/check/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /.env.production
+Not Found: /.env.production
+Not Found: /.env.prod
+Not Found: /.env.prod
+Not Found: /.env.development.local
+Not Found: /.env.development.local
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env.save
+Not Found: /.env.save
+Not Found: /.env.old
+Not Found: /.env.old
+Not Found: /.env.development
+Not Found: /.env.development
+Not Found: /.env.production.local
+Not Found: /.env.production.local
+Not Found: /.env
+Not Found: /frontend_dev.php/$
+Not Found: /debug/default/view
+Not Found: /config.json
+Not Found: /.json
+Not Found: /phpinfo.php
+Not Found: /
+Not Found: /info.php
+Not Found: /_profiler/phpinfo
+Not Found: /
+Not Found: /index.php
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /.env
+Not Found: /
+Forbidden: /auth/check/
+Not Found: /
+Not Found: /
+Not Found: /stalker_portal/server/tools/auth_simple.php
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /shell
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /actuator/health
+Not Found: /hudson
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /c/
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /index.php
+Not Found: /
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /.git/
+Not Found: /.git/hooks/post-receive.sample
+Not Found: /.git/hooks/post-commit.sample
+Not Found: /.git/objects/info/packs
+Not Found: /.git/info/refs
+Not Found: /.git/refs/wip/wtree/refs/heads/master
+Not Found: /.git/refs/wip/index/refs/heads/master
+Not Found: /.git/objects/48/8b01d5bf1806c5ab3347ce3162f503b915da1d
+Not Found: /.git/objects/7c/e503c2dd97ba78597f6ff6e4393132753573f6
+Not Found: /.git/objects/8c/85f6d46c731268c83260e0269180f71d35527c
+Not Found: /.git/objects/db/57ffd9f8640129f0583539f5ddfe4f07c83bff
+Not Found: /.git/objects/87/8c3ed5c196539c4e2da35b7787ab08e98b9cca
+Not Found: /.git/objects/72/ebdcf5d89cf647a1333f22a3533832194a45aa
+Not Found: /.git/objects/30/69c6f27bfdec0b246d21311f50951e5ed6c356
+Not Found: /.git/objects/cb/7b84a263419cabde0aa38ddad00e79b4db68ab
+Not Found: /.git/objects/2d/17b9d8e057659eba3730ad1917efd98ef89a5c
+Not Found: /.git/objects/13/9597f9cb07c5d48bed18984ec4747f4b4f3438
+Not Found: /.git/objects/63/a7d66c3b4f012f0ad58856eef58708ffde6c5b
+Not Found: /.git/objects/5d/0ce66ba06134d5818fba2e612503cf0eb1a5e1
+Not Found: /.git/objects/d0/839d9e1d761460c79f06f222ac9befb5c3e430
+Not Found: /.git/objects/17/b2c5d983c9b13b29af3fa0f30bc0c6dc1ae44c
+Not Found: /.git/objects/1c/39f672103d721b9e82e3d98f35f2f5051a7a9f
+Not Found: /.git/objects/bc/088a1148c9f4133928ae6f3096e85da3846c61
+Not Found: /.git/objects/4b/2226d6910bb6a6ffeb1369836d2706576d23d4
+Not Found: /.git/objects/d0/18a08bf3d1a3cfc328302e45edbcef211e4135
+Not Found: /.git/objects/b4/9880bc578716d40fe515c2daf4b6fff7a488f3
+Not Found: /.git/objects/ce/e993cc832540960b4a75e03b717203c45fda19
+Not Found: /.git/objects/a5/818dfb2fc8fdbc582d65fc1ca4c20ebeb532c1
+Not Found: /.git/objects/6d/f1ae95b5fca397f10e4d1cee1b932ae7babd47
+Not Found: /.git/objects/b9/3a4953fff68df523aa7656497ee339d6026d64
+Not Found: /.git/objects/c6/c7b0f68a2d96cbbcbe783498dd9b2bb5e7e064
+Not Found: /.git/objects/cb/3268db161cc71a12a034c8b0b90296bb5436ac
+Not Found: /.git/objects/a8/7d1a0af53861c0fefacdcb83640f47b09d213b
+Not Found: /.git/objects/22/8854f3b00be502dbb2deed17020bbfe915556d
+Not Found: /.git/objects/5e/a6b2dbae155be20768958b1c188e24e40496af
+Not Found: /.git/objects/3a/2e4aa728e9362cba4cf2326f4bcfb27789ac5e
+Not Found: /.git/objects/14/13fc609ab6f21774de0cb7e01360095584f65b
+Not Found: /.git/objects/a7/31b06befbeeec2aba84ed70545a9d81c9bcada
+Not Found: /.git/objects/d7/c23e3fc61e8488275ddc165525f8965e34c9a3
+Not Found: /.git/objects/c5/edd6a01a43f1aac8ada9dea887d509830b4de6
+Not Found: /.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+Not Found: /.git/objects/3b/19285734251bd44ba90495f3edf1429417937f
+Not Found: /.git/objects/4a/49d2cec3d11e171b5865462c74166dbe2e03d0
+Not Found: /.git/objects/64/e1caad34d1ced8f681e3ba7722cfefde077fde
+Not Found: /.git/objects/cd/a32c34aaa0424f4d45504c230e02a4dc7ffb58
+Not Found: /.git/objects/ca/9033ddf46b2e6a14357c3713248258a472dcff
+Not Found: /.git/objects/1c/6b99fc0946c3f41df99174e3621eb88d3c23e7
+Not Found: /.git/objects/bb/b137aa0866379ef81fd5a0e8a6d3207628b0ac
+Not Found: /.git/objects/cc/a5bbecf021a598719b9050cc796f6a50a3c44b
+Not Found: /.git/objects/4c/a5748c3867383a078312e5200b6cb12d40af20
+Not Found: /.git/objects/05/078dedde3a1063ac58053693c87bcd4234f6a1
+Not Found: /.git/objects/6d/56b1bd887af1ce0c943668641675f2ad514fe4
+Not Found: /.git/objects/91/d6efde8021985f5e92b7e6219411d27b65acc5
+Not Found: /.git/objects/2b/74058d23746b6aa789693573283ed969821274
+Not Found: /.git/objects/d1/d9b4d2c8aa5768014c90e35c030b208429ee7f
+Not Found: /.git/objects/3e/d608654111002aa9bf87467a31181151080a71
+Not Found: /.git/objects/97/910a9949126a13793506efed884f378fc8449a
+Not Found: /.git/objects/3d/5bf09dbd5b041381511a5c0becbdf6cc9c16ac
+Not Found: /.git/objects/a6/2d10a75980b7a73e79542b0da2b6f3c66ea829
+Not Found: /.git/objects/32/e5ac7de893370dfbbffa11a373a9c3b3662d12
+Not Found: /.git/objects/8c/b8a2b12cb7207f971f93f5e3f6fcfff8863d4c
+Not Found: /.git/objects/f5/decffa9e0c615479c562c974e96a34c6c9dbb7
+Not Found: /.git/objects/b1/85eaea8b5f09a0164058bcfcd47c09b4bf8181
+Not Found: /.git/objects/56/eb8a92da5e70e345912864311ac90b314f2a9b
+Not Found: /.git/objects/48/93aa2f70d916528dfc3a1a7cd44e45439e26b6
+Not Found: /.git/objects/96/c1986f01459bc3b7ca8e18fc06785e5e35dc45
+Not Found: /.git/objects/8d/c650d2f493490a01c3c5c8175b926dee29b625
+Not Found: /.git/objects/66/d3c2f9b369c92f971d97933704a9681bdec5e1
+Not Found: /.git/objects/7b/04647c2574b144d1eb962934bd7a88390ae03c
+Not Found: /.git/objects/7c/31ec91145538b8f985d8991489b076daec514c
+Not Found: /.git/objects/be/df38b8f142920db535f5912fa2d752d7b8db98
+Not Found: /.git/objects/69/c94e73477467d7a9376ebbdf20955c2defb9cb
+Not Found: /.git/objects/13/604130ee7b1cc6d038ed447f214b91a2e428fd
+Not Found: /.git/objects/e6/9d7add4719b6cf335d551b647d309f4744561b
+Not Found: /.git/objects/57/0a5669374963a6ed9120aa784b8aaf15bceacc
+Not Found: /.git/objects/b6/64d61937be6fa51d59453a7c21228b5d2ace7a
+Not Found: /.git/objects/ef/aa7214b8dee2402e6ff760f17efcf69a244cce
+Not Found: /.git/objects/dd/407a06dc4becc6cf55bfa023e2b114d5013138
+Not Found: /.git/objects/63/697e38849c6c1876ad8bfe8d8d1e3dd15be0bd
+Not Found: /.git/objects/3c/48ea93bee68d365fc529317376d02f69cf9853
+Not Found: /.git/objects/94/1aff79a5b8c30549eb8049d4b9bbd9b1200ed0
+Not Found: /.git/objects/51/ca3ba19ee8d350fe44c5dd6b427c942b25fb7b
+Not Found: /.git/objects/73/b730a705ad39f9a44edf4f9bc1590b8d1e0502
+Not Found: /.git/objects/60/c593b705d7331a443f1843fdd633e61adc1a05
+Not Found: /.git/objects/03/754534f81f1d5b9a6505953836890c679c6502
+Not Found: /.git/objects/c7/d64566d96e5c9bed7c6ce88823a6bf50ba1314
+Not Found: /.git/objects/1b/c8724a79a21465291b3c0424f1280dd4eda9ac
+Not Found: /.git/objects/00/00000000000000000000000000000000000000
+Not Found: /.git/objects/d4/37aff62bbbaabb783fa7acd89c9850287f1f6a
+Not Found: /.git/objects/2e/0d3832c9299c3994f627cd64ed0341a5da7b14
+Not Found: /.git/objects/8f/2cc31278caf68974a62e5bb584ed2454e2f636
+Not Found: /.git/objects/41/2891b6ba8a65c269049fadb4c2b6d466e1c163
+Not Found: /.git/objects/bf/9985d3f44610bd43d9daada9876db12100d504
+Not Found: /.git/objects/0e/6924ab5e4da76a02d5967bed02a168402de7ac
+Not Found: /.git/objects/07/0b61a26dd6fdd1e1d468b391ab37ac8eff4c57
+Not Found: /.git/objects/7f/f10184a6c40c3e157ce9e62752f96e9d3fe481
+Not Found: /.git/objects/94/a25f7f4cb416c083d265558da75d457237d671
+Not Found: /.git/objects/6b/d7eaa3e02c80d0cbb01f64869b56e304ec9d5f
+Not Found: /.git/objects/1d/91601e7233359598abaf94b2984e9ae7d02977
+Not Found: /.git/objects/28/9e1cee26eaaf1721b8fb5ba21d673fba70ce6e
+Not Found: /.git/objects/a0/756813668f880b1666181cbb32b22e58bbc012
+Not Found: /.git/objects/5a/21a785533cddb20bd270f43b09ed5cc06ab123
+Not Found: /.git/objects/d4/922a1df5b3c8604a1f8ad3e0aa1b7623340b7e
+Not Found: /.git/objects/30/1270ca34f034eafb160e12d20589d8c143eefb
+Not Found: /.git/objects/3c/5a2be29da5619509f8969a1ebe3ac0e1e3cc69
+Not Found: /.git/objects/5a/71180e01028e2a00b5b8e25c7cfac7bac5bda9
+Not Found: /.git/objects/25/a8805aa025a301edc5b224614e2d1b77658952
+Not Found: /.git/objects/7c/18ad59dfc37f537cfd158e9222062fa9196e37
+Not Found: /.git/objects/89/e95ab44dc74c5be08339a937908a73c15c86ab
+Not Found: /.git/objects/ac/e6d9dfb864d88eb81593a39f8b0e961dbbaba9
+Not Found: /.git/objects/4e/7baedf8964dced298657ea3a7c0461d26f09db
+Not Found: /.git/objects/06/0b5dcd3db7c726c5d7f540aea581edb27f3214
+Not Found: /.git/objects/a8/6fc0df920752640ea709f13cc3d52a62642084
+Not Found: /.git/objects/fc/4c0bf05126d2cbac929bb11752173305462fd8
+Not Found: /.git/objects/87/b7328d800de09a16a76d6c43648a9b809995fe
+Not Found: /.git/objects/7f/8f966d55d1d708deeb4ae9f08d18929fac5810
+Not Found: /.git/objects/c1/ad5019cd3e82495549d29d839f1da64f6498bc
+Not Found: /.git/objects/b0/614034ad3a95e4ae9f53c2b015eeb3e8d68bde
+Not Found: /.git/objects/e5/1ea83f5bb0e420a11f6b91c18654d0a227da97
+Not Found: /.git/objects/3a/9730618fef1333ae0aed0628c1ef7b4cc7a4fb
+Not Found: /.git/objects/2b/1d3dd31d7acba2456e79bd3430c7e075883676
+Not Found: /.git/objects/07/6b80bc652e370bd81366a662ce12d2b9d64fd2
+Not Found: /.git/objects/8b/419e231c70fd7c8adac8400f51b9cfa3096acd
+Not Found: /.git/objects/9b/008e4c145a5eafcd355b21fd6233448589a54b
+Not Found: /.git/objects/49/f5fdee7a2e1563ddc6c7d58fe1e8e6ed3739b3
+Not Found: /.git/objects/68/afd6d2592395509b829dc3f4cb7091116999af
+Not Found: /.git/objects/20/8a00570578b507081cb1e77ff8bb75e3f13b22
+Not Found: /.git/objects/82/30007141a7e0d6d361b097f47b8e281c91c878
+Not Found: /.git/objects/25/3e3ac1247b48c0646f8b4af6dcdc9513352dbf
+Not Found: /.git/objects/8c/1748aab7a790d510fb3f42a8a8971d96efa79d
+Not Found: /.git/objects/b3/854b05682df20cf629e79465f33be22a417c00
+Not Found: /.git/objects/04/8cff973981e8dd4ed8e73c4ca532ffcf02e1e8
+Not Found: /.git/objects/5b/3430fa54df39a99b5745fafe2614227d9fd251
+Not Found: /.git/objects/80/6dc5c4339db0a8769f475b4b7dddf1b38cff5c
+Not Found: /.git/objects/92/6b8e21b524c4bdd8a2f094d7f8b3043196112a
+Not Found: /.git/objects/10/5ce2da2d6447d11dfe32bfb846c3d5b199fc99
+Not Found: /.git/objects/a4/7f2ea3cbb1546b16c3e0da76d550998a74bc77
+Not Found: /.git/objects/eb/0a8b410f59eb8abcd21e588f1a7b718db3eebd
+Not Found: /.git/objects/6b/02e07b1f0a2183919b6ec03ecd21d312f0f8d7
+Not Found: /.git/objects/c2/fcb303d919997fa47ed13606c3411d11b9927b
+Not Found: /.git/objects/75/65dfd0967122186efef2c9e1eccce620b2d680
+Not Found: /.git/objects/29/f56c35973c8fed49029d772441e4f831091f19
+Not Found: /.git/objects/89/b22701705b00412704804daee462560f9567d0
+Not Found: /.git/objects/1d/52c260f2987b63385bf9aa4e04eb7a410a0202
+Not Found: /.git/objects/25/d89c6870401d398e81d5cb6dfeca6a25dee4fd
+Not Found: /.git/objects/59/162024ed384536040f0bda730abc91bc9658a3
+Not Found: /.git/objects/e5/369b923e3acf7827fba140046dac16731b5e9b
+Not Found: /.git/objects/40/f72c53b385ee9f8867b7c72ef8ec1c1b3c6c51
+Not Found: /.git/objects/ce/3a60435e2da5a986f8c24458c1f2b0d837022c
+Not Found: /.git/objects/40/59b15544994e5e73e9b219c31627055dfa17bc
+Not Found: /.git/objects/6c/709a08c2e58337a58a878e8cf36faa9318b3f5
+Not Found: /.git/objects/6e/4bf39a7902965f4b4c04b60bdbae48944aef30
+Not Found: /.git/objects/7f/3562ec2da266134c658a692321938e7e3bacb7
+Not Found: /.git/objects/9e/612858f802245ddcbf59788a0db942224bab35
+Not Found: /.git/objects/d0/65e0d9153b82355ce4b23553da4cd3be3737ff
+Not Found: /.git/objects/3b/f6484a29d8da269f9bc874b25493a45fae3bae
+Not Found: /.git/objects/f3/c2fd804278e134047f90dfeb0961710b16bc5b
+Not Found: /.git/objects/1b/a7b40bef7ef1f6efbe0718d3d00ac3f9f3910e
+Not Found: /.git/objects/50/937333b99a5e168ac9e8292b22edd7e96c3e6a
+Not Found: /.git/objects/0b/e2bafa91694b53c19f57f0bfdd3f3403c478d4
+Not Found: /.git/objects/71/8073c0ee42763ef6381ba5f6dfdfaf273e61ce
+Not Found: /.git/objects/6e/0f56267035c2321ca6b590adcfc0fc93b7dc51
+Not Found: /.git/objects/2f/32d8b43fe93941ca0bd2c2e4e11f1f86f98625
+Not Found: /.git/objects/e3/dbacb999cef3718b1c4cc83d9aa45f869256a6
+Not Found: /.git/objects/de/d6f6faa274657b65b444356ee78ad914595bc5
+Not Found: /.git/objects/f3/ed798434baac41fa8eacbfa48eded2308812c4
+Not Found: /.git/objects/22/dab900190d7e5e141586e23a41bd2176e0805b
+Not Found: /.git/objects/75/0b3207aeb800f8e76420253229bd1c5c135d0d
+Not Found: /.git/objects/be/c2e4f9eb69a0f873dc411f240275be115d2291
+Not Found: /.git/objects/f5/71181fa1816353d8cdba255a6280890447eb25
+Not Found: /.git/objects/4e/b2e492a9be5f85a3b2cf039257b500273c2bc0
+Not Found: /.git/objects/db/df94184f0607d982f294b9b115513a028e6f5c
+Not Found: /.git/objects/be/5f430b1654ac01f9b878d6d217350275d820fc
+Not Found: /.git/objects/a7/36d23ec3974450a7ca884bc6a177e45cc50f61
+Not Found: /.git/objects/45/1025e2c7d24e9e02a2042025b688da7e0b9265
+Not Found: /.git/objects/4a/0b3bf009dc8aa9634681bd11b863924457c5e3
+Not Found: /.git/objects/28/30e91156a5a6726d3217eed4e12eba858b7c76
+Not Found: /.git/objects/b9/e99185c8300c786fa77a0490fefdd26ab2e99e
+Not Found: /.git/objects/ce/13ce8f9a17c05fe671b9b7ad7fa434cd495f68
+Not Found: /.git/objects/70/e47d2aca0d34c00483645ecfbc56d3080fa19b
+Not Found: /.git/objects/4d/ca94f414ee9fdfa596cf9cc0148b7673353d90
+Not Found: /.git/objects/7d/00a69e748a241d3e67ea38d10abc457eaae8eb
+Not Found: /.git/objects/a1/ca1d3f4e246eb6b7bc4bc078b0cce37cc27e42
+Not Found: /.git/objects/c2/e61e5800bbd8c07d848c0d5ec8deb4b4fe03fd
+Not Found: /.git/objects/e0/04fb162633a3cab16d650492698785194cb66f
+Not Found: /.git/objects/8c/6dd810ca286c2e3fcece63c2b846c2a62164d5
+Not Found: /.git/objects/47/c5c20006eb9146bb340dff024e9c768e3f624b
+Not Found: /.git/objects/69/86ac4d6af3ebbf9bec5c509e6a84bee057254f
+Not Found: /.git/objects/ed/de1f0e66a46abce43df8f73730dd6fd4bb6c18
+Not Found: /.git/objects/43/8b9b56a58506728715952c2503e7b57a215e7b
+Not Found: /.git/objects/4f/c92551c1047742612d60dcab662f9777840f1c
+Not Found: /.git/objects/c8/c69b2acc1cd0104aa9fbcd61893d9eeace8f25
+Not Found: /.git/objects/71/16d6c1dfdf05c6a3c0d2a372fb992a03e4d25b
+Not Found: /.git/objects/1c/b3acdbe775ec4f57f58f32a7fecb26806aff7c
+Not Found: /.git/objects/30/c85f627fa99653164641938198ab57a4887458
+Not Found: /.git/objects/1c/a64ae5b08ed18efda27c9a58a8496d31afac2a
+Not Found: /.git/objects/b5/da1a6b496e342398ceb1845b1bd186e95fdfbf
+Not Found: /.git/objects/11/75b58f47c9e18f32900b09c544ca3e7860b255
+Not Found: /.git/objects/10/d9d2204a5fc869d17d76590dadb140c1b8f2bc
+Not Found: /.git/objects/04/47f89382140af05d4e00a036e551538991d880
+Not Found: /.git/objects/2a/59f0462d7a5b40d45df61e724eacd658566e79
+Not Found: /.git/objects/63/eab7114b0b2c0629514996dcae2dd267cb5e1a
+Not Found: /.git/objects/30/255ff377719751d344db5ffb76e5979bac077c
+Not Found: /.git/objects/82/dbbb7a212113654ec2da3da4b7b1dad3a7e160
+Not Found: /.git/objects/dd/02f973ffac9248294c499ec7cbdedb5991162a
+Not Found: /.git/objects/d3/b0ec1862237c2f9247a3675c38961005c2e343
+Not Found: /.git/objects/e4/3f49103c4b8ea133ce98ab7fcc201d7d57e976
+Not Found: /.git/objects/4d/0b7d3e345cd5b1119ee1868ab826d9a1c87fd5
+Not Found: /.git/objects/f4/0b27f47da411062930b3758fc7b242e932f91e
+Not Found: /.git/objects/02/f283abada802aa2dc4fab5181c166ab711b75a
+Not Found: /.git/objects/58/83d877e89b89d42fa121725ae7b726dbfa5f50
+Not Found: /.git/objects/38/d2beb1bcc8d4e6df0a29ed25f2d02761bd81b3
+Not Found: /.git/objects/e8/9738de5eaf8fca33a2f2cdc5cb4929caa62b71
+Not Found: /.git/objects/96/a4c62ef4c353109f22c5d4c7bf7827fe74597b
+Not Found: /.git/objects/36/c3b1ed9e71dce20dca9e35c36c97fd8afd718c
+Not Found: /.git/objects/db/f21c39d238c60288c0206a3969eb8a50d3a278
+Not Found: /.git/objects/91/92a4854ad47932b1e388eac43713c29da04a30
+Not Found: /.git/objects/18/7805af66929715b59e8d408c88b0542c85d608
+Not Found: /.git/objects/c2/44fdc7ccb29ac17c8caf3ee66d0668494897ec
+Not Found: /.git/objects/2a/c81ecca8a7d5f3be534916995f43da7b1910fb
+Not Found: /.git/objects/d6/45695673349e3947e8e5ae42332d0ac3164cd7
+Not Found: /.git/objects/a4/faaa1dfa226ac68c6a7898f7161d0e2956dcb3
+Not Found: /.git/objects/44/49c2fa9c4b699a43088c0352e322513d6015b7
+Not Found: /.git/objects/82/ec02723705de21f9b0e0c7e9aa9b118195da8e
+Not Found: /.git/objects/fa/781916e8b571323735773d423a0f06f56d9787
+Not Found: /.git/objects/50/7c7d9f293deb442690a3cc1d91a6367c38119e
+Not Found: /.git/objects/f2/139bf55e38fa8776e229269c42ad8999733489
+Not Found: /.git/objects/35/8572a6576bb33f5a4a16763803c2769d48f278
+Not Found: /.git/objects/a3/9e6653c44d8c888c14af70fe3561ee83363a0e
+Not Found: /.git/objects/a6/e59bf1f5236944e9ca8a87c4cb769813b6b1da
+Not Found: /.git/objects/ee/f5ad7e6a07676b3919146d583d1c190bf1e163
+Not Found: /.git/objects/7c/79c6a6bc9a128a2a8eaffbe49a4338625fdbc2
+Not Found: /.git/objects/17/d1ad67cdcca17f6ddcdbb4edf062a9f2b49b60
+Not Found: /.git/objects/f2/880fb0043b8dabc9f83fe5fe73223e4499eccb
+Not Found: /.git/objects/ef/446c7bd1fd4c879963c0356d671c77657515d1
+Not Found: /.git/objects/0f/3b52e546db7e06e85df125511368d7dc189069
+Not Found: /.git/objects/9b/f5e72db76f1112b43bc4ce95a475fbc8e55d42
+Not Found: /.git/objects/43/f08b4c3d0882b9b5bd64169a3480650b84cefe
+Not Found: /.git/objects/b2/47bef33cc5f35a351bc5935ec0b137f1a94011
+Not Found: /.git/objects/06/c1257e72eb7f34b1b2a95bc2ddc683ef2fcaf0
+Not Found: /.git/objects/2c/5649d31089b222143ad84b00aac9c4136905c5
+Not Found: /.git/objects/50/b4f97276b46f2d3cd7102aaede3c526d3887b6
+Not Found: /.git/objects/91/ea44a218fbd2f408430959283f0419c921093e
+Not Found: /.git/objects/90/d5e73f8a88fe13161b2c2b763e83411ee06b02
+Not Found: /.git/objects/ec/8e4b6cdca531a61376fccfa650ceaefba67650
+Not Found: /.git/objects/d4/da690f3675bb1e9df30574e1b0345549f4f4ae
+Not Found: /.git/objects/c8/37e017c7f66dfc2ba8819f7e96ef0e4f09fb50
+Not Found: /.git/objects/9b/ad0f54cba39bd997b2ff3c6cd84c281fdcfc8b
+Not Found: /.git/objects/c9/91e2550ae4f276c4269b3314b7fc127460ed87
+Not Found: /.git/objects/61/dedb23e9895dcb79ac5499ce456860d08891d7
+Not Found: /.git/objects/83/a458f8db7c11101f36bf52da4f95ca9214ab17
+Not Found: /.git/objects/c5/5eee1fa67799ba8ba89f1da5b16236259f21fb
+Not Found: /.git/objects/ff/ed1247dd05d8b081bc89e944a190e6848e6ff6
+Not Found: /.git/objects/f7/a6d9d9b019ad4a5efd7092519fc0b8606cc20d
+Not Found: /.git/objects/20/cbb61d97e078add931f68bf05e2bffcddcf0ee
+Not Found: /.git/objects/07/7bd1481d3df83dfeba6eb75a15813077c0f3f7
+Not Found: /.git/objects/29/885945c7bd88c2d04e53f09e5bfea9256ff2bd
+Not Found: /.git/objects/e6/120cd8eb50e9efc1e32bd1c0c1221af5bb8f3c
+Not Found: /.git/objects/14/83305ff95fbb97393d68b94f5b341029fd3f65
+Not Found: /.git/objects/f6/a42155ad81f648ca22e06d250f39e4ef718924
+Not Found: /.git/objects/96/b87fdd708ef19fc3c6e466c44d7c212efa1d14
+Not Found: /.git/objects/73/f69e0958611ac6e00bde95641f6699030ad235
+Not Found: /.git/objects/54/bb1ce98d085affb3e9417808fdc1b2e49823b3
+Not Found: /.git/objects/e1/ffdbed0d8ca663cfcab21818bb3f9c6938c7a2
+Not Found: /.git/objects/24/f3bc2d61addd21f3d6c65f603e647ab8480fe0
+Not Found: /.git/objects/64/539b54c3751a6d9adb44c8e3a45ba5a73b77f0
+Not Found: /.git/objects/ff/e32843793e019b3626c98f71b0750664a36668
+Not Found: /.git/objects/bd/52cf4559f0c92a2fc554182cfcba633b999c80
+Not Found: /.git/objects/34/a4f18d6b72ab800d3411c09c46a48256067a0e
+Not Found: /.git/objects/46/b084d7583aaa6d35ee5c7bf2621f9b8ba66ce9
+Not Found: /.git/objects/50/49528ad0d5901a3499e71a88a36853c19e5639
+Not Found: /.git/objects/3f/a8352f2652e0f9e63958f9069fb31db7c6a31c
+Not Found: /.git/objects/9b/821eac477b312656f752d1e146ede287b0fd02
+Not Found: /.git/objects/d2/0f1c4e6fe39a748ca4eba27b3a985c96efb39f
+Not Found: /.git/objects/8a/7c10b55ed6ddac8f32d51cbfac0851d043780c
+Not Found: /.git/objects/e3/a58df4373be3a3e9e557a0f121999bf1d0a444
+Not Found: /.git/objects/65/645cb549810de9ddacfb582e7b4c09f122ab9e
+Not Found: /.git/objects/e8/5b23689f9b3a639751257d85570a04baa1e875
+Not Found: /.git/objects/2c/58d5d8171c5c17f60441d34cbcb93b653f86ff
+Not Found: /.git/objects/59/36234a9d464e41ab73519113020d84a4db4342
+Not Found: /.git/objects/97/c9885d12144640606d580c7bc7686962f7d584
+Not Found: /.git/objects/1a/959e6b55e8f68df420da9a41114bff4c201978
+Not Found: /.git/objects/b8/380490f8ba72596e0ac2beb87ba58897a699fc
+Not Found: /.git/objects/f5/e96dbfaec8bd23554e839a582259cf17837f26
+Not Found: /.git/objects/19/a544522eab5886f190898ebd6c888cb0e4b7d8
+Not Found: /.git/objects/2e/329d9bc288164b8affdd7b33407417f8403048
+Not Found: /.git/objects/9c/957a6e31fb73dad9295fa5fc45ed38cee75336
+Not Found: /.git/objects/9d/4a3cf750c9cde453c0a9a338e5b9e2fc888aef
+Not Found: /.git/objects/47/7850479e0e6d30e171a5b31fc2baad8d0e04b3
+Not Found: /.git/objects/f5/c055a83363f660a3d71b96defa029226a38ab5
+Not Found: /.git/objects/50/c6bddd4a508bedf5526810031f36c4f3ce5c5d
+Not Found: /.git/objects/97/824ec9b0149e48c91dce4fee530335b327c686
+Not Found: /.git/objects/8d/38950146b2d1a11bee781e19fa370b1de6d746
+Not Found: /.git/objects/88/f68c9ffeaccbbcc21c889440cee85f293f89ed
+Not Found: /.git/objects/56/907f54a2d87b786d54b280001bbe75481ea7e9
+Not Found: /.git/objects/f6/5e7675fff1370ea579c32011b25aead3338854
+Not Found: /.git/objects/18/bb23b09fddc36ee0293d17aeec6dda0d7db1a1
+Not Found: /.git/objects/db/f342db2722f5173e1474e6effd0ebb4a25fc01
+Not Found: /.git/objects/98/e0ebe9a3792f56013ae29acf4aab8ccf719474
+Not Found: /.git/objects/76/d55b6a32a85a5662165ba44dc43b405a29496f
+Not Found: /.git/objects/fb/cc39d5956c2e581fc21714d5a76f62070a1870
+Not Found: /.git/objects/21/b510a2dfb4253fc27fea3d3f5f20ad68ca7d13
+Not Found: /.git/objects/0b/5970e62da61907ad254b9a2c0a8d647401cd5c
+Not Found: /.git/objects/5e/4732a01a300482f77998972ad8fdd5da72f4e8
+Not Found: /.git/objects/75/85ad27502c72f72c41b34bd2b28fb601b1b96a
+Not Found: /.git/objects/09/ac0776e654cf7ca4ba5e555b7ace697088aa05
+Not Found: /.git/objects/31/e9920a2811ce1272475f41d4d60c42146ff718
+Not Found: /.git/objects/b8/54296b7ef1dee867e0c8b5946a4284aee97c33
+Not Found: /.git/objects/d5/d049db8b4372032d222d29cadc867964c27b3a
+Not Found: /.git/objects/df/632bf18cb9a0f18190b6a04b53a5c19aa256e6
+Not Found: /.git/objects/57/b4a5f3b78a5a43fa4382db36f5e1da469f96b1
+Not Found: /.git/objects/8c/38f3f3dad51e4585f3984282c2a4bec5349c1e
+Not Found: /.git/objects/f8/26e2be20400e99951d2fe8a49656688f1e7f37
+Not Found: /.git/objects/91/5c347bb31b254658a98efe085352111b373bb0
+Not Found: /.git/objects/2c/16d06dfbd3da7e1751a4f2290e1f4c0f9ab690
+Not Found: /.git/objects/a3/a69228f6a7d4c774bdca528619274fef7cd127
+Not Found: /.git/objects/5f/06fc64f1e7a9e96103722bb59e31fc66000ac3
+Not Found: /.git/objects/60/7fac7e6f134850eb7e249de5d73537188d2f0d
+Not Found: /.git/objects/d5/7dbdb8a4e9512678b277f325b89553526d173f
+Not Found: /.git/objects/fd/1bb0b2f9720c081fcf2f2cbe4605714ea36569
+Not Found: /.git/objects/ab/57818d52539aff641620a67f4985c84d7ebb96
+Not Found: /.git/objects/dc/96a51ac995410e8a8ab28ab156cb97a593003e
+Not Found: /.git/objects/d7/8f3cb12a576209e909e00a016e91c32f920435
+Not Found: /.git/objects/eb/c99a957e9678b5d67eba3c85113e33da5fdab1
+Not Found: /.git/objects/e7/9f68e275e97943952100fc15ac7e745d1b6153
+Not Found: /.git/objects/55/7f1ce16a53c93bb3d6ca92c73a57374b69d6c4
+Not Found: /.git/objects/28/55a13674b0068799b3aa6054e536ca387da683
+Not Found: /.git/objects/66/59da8883b038c99c71034cfb277359b2eb39e1
+Not Found: /.git/objects/7e/b4722324cceb5fa24362bde8103589199aa390
+Not Found: /.git/objects/3f/7eccd171448f9256e1c3ec47dba61e1d302f87
+Not Found: /.git/objects/97/7cc2f78daf063e440cade611d3c813dd788f41
+Not Found: /.git/objects/18/77e98c8f52a34cebf48e2a4235bd66d2bc9774
+Not Found: /.git/objects/0d/8bc6b6acbcf0d18c677de715fcf30fabec78e2
+Not Found: /.git/objects/39/8baafc3d347c47567a8f5fea2cf73caed1810e
+Not Found: /.git/objects/5c/654d3c2ed6a45c3598954de29bf2e4648614b3
+Not Found: /.git/objects/d4/969c00f9093ca81f78547c0dbfa27cf6f83ae4
+Not Found: /.git/objects/e2/77ef906386c1e6e996a1ad6cd00b4ba697ac41
+Not Found: /.git/objects/f0/d9254695060e88ce5ede312f21f1a2dc14c808
+Not Found: /.git/objects/4d/89c546c87cd670983c4a11253dec1aa95b43f4
+Not Found: /.git/objects/62/8db5243a37a768c7366464db123aa7af93b85e
+Not Found: /.git/objects/50/054ed1796535beccce9969cf9ecbfa62affc38
+Not Found: /.git/objects/24/169fca73f4583fc008e595f96db27e3e716a57
+Not Found: /.git/objects/93/e78f46c9008d62fd2659c758815240bcbccd4b
+Not Found: /.git/objects/b0/80859835ef391379b453471d34df7874d5d1b8
+Not Found: /.git/objects/26/6c750bea04fc2198431d55d1bf28861328dfd9
+Not Found: /.git/objects/ea/c962ceb448e46c22226e93c1ef61f5c10f8037
+Not Found: /.git/objects/87/f7ce49d44b7c46d6c932cbdb018a1f105cbae3
+Not Found: /.git/objects/b0/4d93da806329822bff9d429419264aa7e12b6a
+Not Found: /.git/objects/80/33240fe301f802e56162b72f7a00faf0c6d7c4
+Not Found: /boaform/admin/formLogin
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /pv/000000000000.cfg
+Not Found: /pv/spa112.cfg
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Bad Request: /auth/api-token/
+Bad Request: /auth/api-token/
+Not Found: /
+Not Found: /PSIA/index
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /shell
+Not Found: /actuator/gateway/routes
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.aws/credentials
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /invoker/readonly
+Not Found: /_ignition/execute-solution
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /script
+Not Found: /login
+Not Found: /jenkins/login
+Not Found: /manager/html
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /onvif/index
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /phpmyadmin/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /image/lgbg.jpg
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /solr/admin/info/system
+Not Found: /mgmt/tm/util/bash
+Not Found: /
+Not Found: /index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /portal/redlion
+Not Found: /
+Not Found: /actuator/health
+Not Found: /
+Not Found: /
+Not Found: /hudson
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /boaform/admin/formLogin
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /.well-known/security.txt
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /muieblackcat
+Not Found: //phpMyAdmin/scripts/setup.php
+Not Found: //phpmyadmin/scripts/setup.php
+Not Found: //pma/scripts/setup.php
+Not Found: //myadmin/scripts/setup.php
+Not Found: //MyAdmin/scripts/setup.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /onvif/index
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /ReportServer
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.aws/credentials
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /.env
+Not Found: /
+Not Found: /manager/text/list
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /
+Not Found: /mgmt/tm/util/bash
+Not Found: /
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /.env
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Bad Request: /auth/api-token/
+Not Found: /
+Bad Request: /common/temp_store/
+Not Found: /
+Not Found: /actuator/health
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Forbidden: /add/list/
+Not Found: /favicon.ico
+Unauthorized: /auth/register/
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /shell
+Not Found: /.aws/credentials
+Not Found: /51028231
+Not Found: /shell
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /stalker_portal/server/tools/auth_simple.php
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Forbidden: /auth/check/
+Not Found: /cgi-bin/admin_console.cgi
+Not Found: /actuator/gateway/routes
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /auth/register/
+Not Found: /c/
+Not Found: /phpMyadmin/index.php
+Not Found: /phpmyAdmin/index.php
+Not Found: /mysql/web/index.php
+Not Found: /mysqladmin/index.php
+Not Found: /phpMyAdmin_/index.php
+Not Found: /
+Not Found: /
+Not Found: /Portal0000.htm
+Not Found: /
+Not Found: /scripts/WPnBr.dll
+Not Found: /sdk
+Not Found: /nmaplowercheck1655923045
+Not Found: /
+Not Found: /Portal/Portal.mwsl
+Not Found: /HLce
+Not Found: /CSS/Miniweb.css
+Not Found: /__Additional
+Not Found: /robots.txt
+Not Found: /
+Not Found: /
+Not Found: /HNAP1
+Not Found: /pools/default/buckets
+Not Found: /docs/cplugError.html/
+Not Found: /base.shtml
+Not Found: /pools
+Not Found: /favicon.ico
+Not Found: /admin.shtml
+Not Found: /inicio.aspx
+Not Found: /start.html
+Not Found: /base.cfm
+Not Found: /admin.php
+Not Found: /main.jsa
+Not Found: /menu.aspx
+Not Found: /admin.jsa
+Not Found: /admin.jhtml
+Not Found: /inicio.cgi
+Not Found: /admin.html
+Not Found: /admin.cgi
+Not Found: /base.pl
+Not Found: /admin.cfm
+Not Found: /start.pl
+Not Found: /indice.cgi
+Not Found: /main.cgi
+Not Found: /home.cgi
+Not Found: /start.shtml
+Not Found: /menu.cfm
+Not Found: /home.jsp
+Not Found: /admin.asp
+Not Found: /admin.aspx
+Not Found: /readme.txt
+Not Found: /home.html
+Not Found: /default.jsa
+Not Found: /base.php
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /boaform/admin/formLogin
+Forbidden: /auth/check/
+Not Found: /favicon.ico
+Unauthorized: /auth/register/
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /image/lgbg.jpg
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /actuator/gateway/routes
+Not Found: /phpmyadmin/index.php
+Not Found: /pmd/index.php
+Not Found: /phpmyadmin4.8.5/index.php
+Not Found: /sql/sql-admin/index.php
+Not Found: /db/phpmyadmin3/index.php
+Not Found: /dbadmin/index.php
+Not Found: /phpmyadmin_/index.php
+Not Found: /sql/websql/index.php
+Not Found: /phpmyadmin2020/index.php
+Not Found: /PMA/index.php
+Not Found: /sql/phpmyadmin5/index.php
+Not Found: /phpMyAdmin1/index.php
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /Telerik.Web.UI.WebResource.axd
+Not Found: /
+Forbidden: /auth/check/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /.well-known/security.txt
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /portal/redlion
+Not Found: /actuator/health
+Not Found: /hudson
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /php-myadmin/index.php
+Not Found: /sql/phpmyadmin5/index.php
+Not Found: /administrator/phpMyAdmin/index.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /cgi-bin/luci
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /console/
+Not Found: /config/getuser
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.aws/credentials
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /
+Not Found: /aaa9
+Not Found: /aab9
+Not Found: /index.php
+Not Found: /
+Not Found: /mgmt/tm/util/bash
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /config/getuser
+Not Found: /console/
+Not Found: /config/getuser
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /aaa9
+Not Found: /aab9
+Not Found: /php-my-admin/index.php
+Not Found: /phpmyAdmin/index.php
+Not Found: /mysql/web/index.php
+Not Found: /administrator/admin/index.php
+Not Found: /sql/myadmin/index.php
+Not Found: /phpmyadmin2022/index.php
+Not Found: /phpmyadmin3/index.php
+Not Found: /db/index.php
+Not Found: /phpMyAdmin-5.1.0/index.php
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /
+Not Found: /shell
+Not Found: /phpMyAdmin5.1/index.php
+Not Found: /
+Not Found: /.env.development
+Not Found: /.env.development
+Not Found: /.env.prod
+Not Found: /.env.prod
+Not Found: /development/.env
+Not Found: /development/.env
+Not Found: /.env.dist
+Not Found: /.env.dist
+Not Found: /private/.env
+Not Found: /private/.env
+Not Found: /local/.env
+Not Found: /local/.env
+Not Found: /cms/.env
+Not Found: /cms/.env
+Not Found: /app/.env
+Not Found: /app/.env
+Not Found: /.env.project
+Not Found: /.env.project
+Not Found: /fedex/.env
+Not Found: /fedex/.env
+Not Found: /script/.env
+Not Found: /script/.env
+Not Found: /shared/.env
+Not Found: /shared/.env
+Not Found: /cp/.env
+Not Found: /cp/.env
+Not Found: /api/.env
+Not Found: /api/.env
+Not Found: /system/.env
+Not Found: /system/.env
+Not Found: /apps/.env
+Not Found: /apps/.env
+Not Found: /back/.env
+Not Found: /back/.env
+Not Found: /core/.env
+Not Found: /core/.env
+Not Found: /rest/.env
+Not Found: /rest/.env
+Not Found: /.env.save
+Not Found: /.env.save
+Not Found: /docker/.env
+Not Found: /docker/.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /live_env
+Not Found: /live_env
+Not Found: /sources/.env
+Not Found: /sources/.env
+Not Found: /admin-app/.env
+Not Found: /admin-app/.env
+Not Found: /application/.env
+Not Found: /application/.env
+Not Found: /enviroments/.env
+Not Found: /enviroments/.env
+Not Found: /laravel/.env
+Not Found: /laravel/.env
+Not Found: /.env.production
+Not Found: /.env.production
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env.old
+Not Found: /.env.old
+Not Found: /enviroments/.env.production
+Not Found: /enviroments/.env.production
+Not Found: /frontend_dev.php/$
+Not Found: /debug/default/view
+Not Found: /.json
+Not Found: /config.json
+Not Found: /info.php
+Not Found: /phpinfo.php
+Not Found: /_profiler/phpinfo
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /.env
+Not Found: /index.php
+Not Found: /config/getuser
+Not Found: /
+Not Found: /
+Not Found: /solr/
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /.env
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /phpMyAdmin-4/index.php
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /image/lgbg.jpg
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /phpmyadmin2018/index.php
+Not Found: /sql/sqladmin/index.php
+Not Found: /sql/phpmyadmin3/index.php
+Not Found: /mysql/pma/index.php
+Not Found: /phpmyadmin2011/index.php
+Not Found: /mysql/pMA/index.php
+Not Found: /phpmyadmin1/index.php
+Not Found: /phpMyAdmin_/index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /ReportServer
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /manager/text/list
+Not Found: /manager/html
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /explore
+Not Found: /
+Not Found: /portal/redlion
+Not Found: /
+Not Found: /actuator/health
+Not Found: /console/
+Not Found: /hudson
+Not Found: /
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /config/getuser
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.aws/credentials
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /HNAP1/
+Not Found: /
+Not Found: /.DS_Store
+Not Found: /idx_config/
+Not Found: /telescope/requests
+Not Found: /api/geojson
+Not Found: /server-status
+Not Found: /config.json
+Not Found: /.env
+Not Found: /info.php
+Not Found: /.json
+Not Found: /login.action
+Not Found: /s/lkx/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Bad Request: /common/temp_store/
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /showLogin.cc
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /stalker_portal/server/tools/auth_simple.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /phpmyadmin/
+Not Found: /pmd/
+Not Found: /phpMyAdmin4.8.5/
+Not Found: /mysqladmin/
+Not Found: /console/
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /phpmyadmin/
+Not Found: /phpMyAdmin4.8.5/
+Not Found: /pmd/
+Not Found: /mysqladmin/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Forbidden: /auth/check/
+Bad Request: /auth/register/
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /.env
+Not Found: /boaform/admin/formLogin
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /c/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /boaform/admin/formLogin
+Not Found: /solr/admin/info/system
+Not Found: /
+Not Found: /index.php
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /console/
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /_ignition/execute-solution
+Not Found: /
+Not Found: /
+Not Found: /PSIA/index
+Not Found: /favicon.ico
+Not Found: /image/lgbg.jpg
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /actuator/health
+Not Found: /boaform/admin/formLogin
+Not Found: /hudson
+Not Found: /boaform/admin/formLogin
+Not Found: /boaform/admin/formLogin
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /system_api.php
+Not Found: /c/version.js
+Not Found: /streaming/clients_live.php
+Not Found: /stalker_portal/c/version.js
+Not Found: /stream/live.php
+Not Found: /flu/403.html
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /boaform/admin/formLogin
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
