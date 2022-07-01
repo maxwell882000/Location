@@ -43,8 +43,7 @@ def createPhoneVerifier(sender, instance, created, *args, **kwargs):
 
 @receiver(post_save, sender=PhoneVerifier)
 def sendRequiredCode(sender, instance, *args, **kwargs):
-    MESSAGE_SEND: str = "Код подтверждения {}".format(
-        instance.code)
+    MESSAGE_SEND: str = "Код подтверждения {}".format(instance.code)
     service = PhoneService()
     try:
         service.sendCode(int(instance.user.phone), MESSAGE_SEND)
