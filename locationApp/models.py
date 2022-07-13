@@ -59,7 +59,7 @@ class Location(models.Model, GeoItem):
         from_specialist = Category.objects.filter(specialist__location=self.id).distinct()
         own_category = self.category_location.distinct().all()
         result = from_specialist | own_category
-        return result
+        return own_category
 
     @property
     def geomap_longitude(self):
