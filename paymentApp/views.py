@@ -50,3 +50,6 @@ class StatusOrderView(views.APIView):
         status = OrderStatusObject(user)
         payment = PaymentService()
         return Response(payment.statusOrder(status))
+
+
+status_order_view = StatusOrderView.as_view()
