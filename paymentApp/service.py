@@ -42,7 +42,7 @@ class PaymentClasses(ABC):
         pass
 
     def checkOnError(self, response: dict):
-        if response['errorCode'] is not 0:
+        if response['errorCode'] != 0:
             raise PaymentError(message=response['errorMessage'], code=response['errorCode'])
 
 
@@ -89,7 +89,7 @@ class OrderStatusObject(PaymentClasses):
         orderStatus = response['orderStatus']
         if 'orderStatus' not in orderStatus:
             raise PaymentOrderError(message=PaymentOrderError.MAP['NOT_FOUND'], code=-1)
-        if orderStatus is not 2:
+        if orderStatus != 2:
             raise PaymentOrderError(message=PaymentOrderError.MAP[orderStatus], code=orderStatus)
 
     def finishTransaction(self, response: dict):
