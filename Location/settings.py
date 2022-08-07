@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'phoneApp',
     'confidentialApp',
     'planApp',
+    'paymentApp'
 ]
 AUTH_USER_MODEL = 'userApp.User'
 MIDDLEWARE = [
@@ -170,3 +171,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+PAYMENT = {
+    'LOGIN': 'location_specialist-api',
+    'PASSWORD': 'location_specialist*?1',
+    "MERCHANT": "location_specialist"
+}

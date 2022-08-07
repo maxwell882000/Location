@@ -13,7 +13,7 @@ class Specialist(models.Model):
     description = models.TextField(verbose_name="Описание")
 
     user = models.OneToOneField(AUTH_USER_MODEL, verbose_name="Аккаунт специалиста",
-                                related_name="user_specialist",
+                                    related_name="user_specialist",
                                 on_delete=models.CASCADE)
     plan = models.ForeignKey("planApp.Plan", related_name='specialist',
                              null=True,
