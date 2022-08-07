@@ -4,7 +4,7 @@ from rest_framework import views
 # Create your views here.
 from rest_framework.response import Response
 
-from paymentApp.models import OrderUser, OrderUnique
+from paymentApp.models import OrderUnique
 from paymentApp.service import UnBindingObject, PaymentService, ReBindingObject, RegisterObject, OrderStatusObject
 
 
@@ -34,8 +34,9 @@ class RegisterOrderView(views.APIView):
     def post(self, request, *args, **kwargs):
         client = request.user.user_specialist
         plan_id = request.data['plan_id']
-        order_user = OrderUser.objects.get_or_create(plan_id=plan_id, client_id=client.id)
-        order_unique = OrderUnique.objects.create(orderUser=order_user, amount=order_user.plan.amount)
+        client.plan_id = plan_id
+        client.save()
+        order_unique = OrderUnique.objects.create(orderUser=client, amount=client.plan.amount)
         register = RegisterObject(order_unique, client.id)
         payment = PaymentService()
         return Response(payment.registerOrder(register))
