@@ -36,7 +36,7 @@ class RegisterOrderView(views.APIView):
         plan_id = request.data['plan_id']
         client.plan_id = plan_id
         client.save()
-        order_unique = OrderUnique.objects.create(orderUser=client, amount=client.plan.amount)
+        order_unique = OrderUnique.objects.create(order_user=client, amount=client.plan.amount)
         register = RegisterObject(order_unique, client.id)
         payment = PaymentService()
         return Response(payment.registerOrder(register))
