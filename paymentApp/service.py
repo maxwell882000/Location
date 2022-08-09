@@ -166,7 +166,13 @@ class PaymentService:
         response = requests.post(url=self._url(payment_object), json=request_json)
         res_json = response.json()
         payment_object.checkOnError(res_json)
-        return payment_object.finishTransaction(res_json)
+        try:
+            return payment_object.finishTransaction(res_json)
+        except PaymentError as e:
+            print(e.message)
+            return {
+                "errors": e.message,
+            }
 
     def registerOrder(self, register: RegisterObject) -> str:
         return self._makeRequest(register)
