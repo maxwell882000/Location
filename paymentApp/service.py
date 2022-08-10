@@ -5,6 +5,7 @@ import requests
 from django.conf import settings
 
 from paymentApp.models import OrderStatus
+from specialistApp.models import Specialist
 
 
 class PaymentError(Exception):
@@ -82,15 +83,15 @@ class RegisterObject(PaymentClasses):
 class OrderStatusObject(PaymentClasses):
     URL = "getOrderStatus.do"
 
-    def __init__(self, user):
-        self.specialist = user.user_specialist
-        self.orderId = user.user_specialist.order_unique.last().orderId
+    def __init__(self, user_specialist):
+        self.specialist = user_specialist
+        self.orderId = user_specialist.order_unique.last().orderId
 
     def checkOnError(self, response: dict):
         super().checkOnError(response)
         if 'OrderStatus' not in response:
             raise PaymentOrderError(message=PaymentOrderError.MAP["NOT_FOUND"], code=-1)
-        else :
+        else:
             orderStatus = response['OrderStatus']
             if response['OrderStatus'] != 2:
                 raise PaymentOrderError(message=PaymentOrderError.MAP[orderStatus], code=orderStatus)
@@ -98,10 +99,11 @@ class OrderStatusObject(PaymentClasses):
     def finishTransaction(self, response: dict):
 
         OrderStatus.objects.update_or_create(order_id=self.specialist.id,
-                                   defaults={
-                                   'ip':response['Ip'],
-                                   'bindingId': response['bindingId'] if 'bindingId' in response else "",
-                                   })   
+                                             defaults={
+                                                 'ip': response['Ip'],
+                                                 'bindingId': response[
+                                                     'bindingId'] if 'bindingId' in response else None,
+                                             })
         self.specialist.days_activated += self.specialist.plan.days
         self.specialist.save()
         return {"status": True}
@@ -138,16 +140,20 @@ class ReBindingObject(BindingObject):
 class BindPaymentObject(PaymentClasses):
     URL = "paymentOrderBinding.do"
 
-    def __init__(self, mdOrder, bindingId, ip):
-        self.mdOrder = mdOrder,
-        self.bindingId = bindingId,
-        self.ip = ip
+    def __init__(self, specialist: Specialist):
+        self.mdOrder = specialist.order_unique.last().orderId,
+        self.bindingId = specialist.order_status.bindingId,
+        self.ip = specialist.order_status.ip
+        self.specialist = specialist
 
     def as_dict(self) -> dict:
-        return self.__dict__
+        as_dict = dict(self.__dict__)
+        del as_dict['specialist']
+        return as_dict
 
     def finishTransaction(self, response: dict):
-        pass
+        self.specialist.days_activated += self.specialist.plan.days
+        self.specialist.save()
 
 
 class PaymentService:
@@ -182,7 +188,7 @@ class PaymentService:
             print(e.message)
             return {
                 "errors": e.message,
-                "payment" : True,
+                "payment": True,
             }
 
     def registerOrder(self, register: RegisterObject) -> str:

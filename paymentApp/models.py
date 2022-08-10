@@ -11,7 +11,8 @@ class OrderUnique(models.Model):
     orderId = models.CharField(max_length=255, null=True, blank=True)  # store when
     amount = models.BigIntegerField()
 
+
 class OrderStatus(models.Model):
     order = models.OneToOneField(Specialist, on_delete=models.CASCADE, related_name="order_status")
     ip = models.CharField(max_length=255)
-    bindingId = models.CharField(max_length=255)
+    bindingId = models.CharField(max_length=255, blank=True, null=True)
