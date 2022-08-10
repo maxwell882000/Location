@@ -14,11 +14,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='SaleText',
             fields=[
-                ('confidential_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='confidentialApp.confidential')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('header', models.CharField(max_length=100, verbose_name='Загаловок')),
+                ('body', models.TextField(verbose_name='Описание правил')),
             ],
             options={
                 'verbose_name_plural': 'Правила покупки услуг',
             },
-            bases=('confidentialApp.confidential',),
         ),
     ]

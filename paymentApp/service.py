@@ -26,7 +26,7 @@ class PaymentOrderError(PaymentError):
         4: "По транзакции была проведена операция возврата",
         5: "Инициирована авторизация через ACS банка-эмитента",
         6: "Авторизация отклонена",
-        "NOT FOUND": "Заказ не был найден."
+        "NOT_FOUND": "Заказ не был найден."
     }
 
 
@@ -42,7 +42,8 @@ class PaymentClasses(ABC):
         pass
 
     def checkOnError(self, response: dict):
-        if response['errorCode'] != 0:
+        if 'errorCode' in response and response['errorCode'] != 0:
+            print(response)
             raise PaymentError(message=response['errorMessage'], code=response['errorCode'])
 
 
@@ -55,13 +56,13 @@ class RegisterObject(PaymentClasses):
         self.returnUrl = self.url("/success_payment")
         self.failUrl = self.url("/fail_payment")
         self.clientId = clientId
-        self.features = "AUTO_PAYMENT"
+        # self.features = "AUTO_PAYMENT"
         self.order_unique = order_unique
 
     def url(self, query):
         return "https://sportandthecity.page.link/?" \
-               "link=https://sportandthecity.page.com/?path=" + query + \
-               "path=&apn=com.location_specialist.location_specialist&isi=1619132873&" \
+               "link=https://sportandthecity.page.com/?route=" + query + \
+               "&path=&apn=com.location_specialist.location_specialist&isi=1619132873&" \
                "ibi=com.location.sportandthecity"
 
     def as_dict(self) -> dict:
@@ -74,6 +75,7 @@ class RegisterObject(PaymentClasses):
     def finishTransaction(self, response: dict) -> dict:
         # store orderId here
         self.order_unique.orderId = response['orderId']
+        self.order_unique.save()
         return {"formUrl": response['formUrl']}
 
 
@@ -81,27 +83,33 @@ class OrderStatusObject(PaymentClasses):
     URL = "getOrderStatus.do"
 
     def __init__(self, user):
-        self.orderId = user.user_specialist.order_user.order_unique.orderId
-        self.order_user = user.user_specialist.order_user
+        self.specialist = user.user_specialist
+        self.orderId = user.user_specialist.order_unique.last().orderId
 
     def checkOnError(self, response: dict):
         super().checkOnError(response)
-        orderStatus = response['orderStatus']
-        if 'orderStatus' not in orderStatus:
-            raise PaymentOrderError(message=PaymentOrderError.MAP['NOT_FOUND'], code=-1)
-        if orderStatus != 2:
-            raise PaymentOrderError(message=PaymentOrderError.MAP[orderStatus], code=orderStatus)
+        if 'OrderStatus' not in response:
+            raise PaymentOrderError(message=PaymentOrderError.MAP["NOT_FOUND"], code=-1)
+        else :
+            orderStatus = response['OrderStatus']
+            if response['OrderStatus'] != 2:
+                raise PaymentOrderError(message=PaymentOrderError.MAP[orderStatus], code=orderStatus)
 
     def finishTransaction(self, response: dict):
 
-        OrderStatus.objects.create(order_id=self.order_user.id,
-                                   ip=response['ip'],
-                                   bindingId=response['bindingId'])
+        OrderStatus.objects.update_or_create(order_id=self.specialist.id,
+                                   defaults={
+                                   'ip':response['Ip'],
+                                   'bindingId': response['bindingId'] if 'bindingId' in response else "",
+                                   })   
+        self.specialist.days_activated += self.specialist.plan.days
+        self.specialist.save()
         return {"status": True}
 
     def as_dict(self) -> dict:
         as_dict = dict(self.__dict__)
-        del as_dict['order_user']
+        del as_dict['specialist']
+        print(as_dict)
         return as_dict
 
 
@@ -162,16 +170,19 @@ class PaymentService:
 
     def _makeRequest(self, payment_object: PaymentClasses):
         conct_dict = self._toDict(payment_object)
+        print(conct_dict)
         request_json = json.dumps(conct_dict)
-        response = requests.post(url=self._url(payment_object), json=request_json)
+        response = requests.post(url=self._url(payment_object), params=conct_dict)
         res_json = response.json()
-        payment_object.checkOnError(res_json)
+        print(res_json)
         try:
+            payment_object.checkOnError(res_json)
             return payment_object.finishTransaction(res_json)
         except PaymentError as e:
             print(e.message)
             return {
                 "errors": e.message,
+                "payment" : True,
             }
 
     def registerOrder(self, register: RegisterObject) -> str:

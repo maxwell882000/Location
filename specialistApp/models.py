@@ -20,7 +20,7 @@ class Specialist(models.Model):
                              blank=True,
                              verbose_name="Тариф специалиста",
                              on_delete=models.CASCADE)
-    is_deactivated = models.BooleanField(default=True, verbose_name="Скрыть карточку специалиста")
+    days_activated = models.IntegerField(default=0, verbose_name="Количество дней про аккаунта")
     custom_location = models.TextField(verbose_name="Ручная локация",
                                        null=True,
                                        blank=True,
@@ -36,6 +36,10 @@ class Specialist(models.Model):
                                  )
     category = models.ManyToManyField('Category',
                                       verbose_name="Виды деятельности специалиста")
+
+    @property
+    def is_deactivated(self):
+        return self.days_activated == 0
 
     @property
     def review_avg(self):

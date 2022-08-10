@@ -43,7 +43,8 @@ class SpecialistSerializer(serializers.ModelSerializer):
     location = s.LocationSerializerCard()
     category = CategorySerializer(many=True)
     image = CustomImageField()
-
+    is_deactivated = serializers.BooleanField(default= False)
+    
     class Meta:
         model = Specialist
         exclude = ('user',)

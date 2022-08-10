@@ -8,3 +8,6 @@ class Plan(models.Model):
 
     class Meta:
         verbose_name_plural = "Тарифы"
+
+    def __str__(self):
+        return self.description

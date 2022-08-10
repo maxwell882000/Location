@@ -2,16 +2,19 @@ from django.contrib import admin
 
 
 class ActiveSpecialistFilter(admin.SimpleListFilter):
-    parameter_name = 'is_deactivated'
+    parameter_name = 'days_activated'
     title = "Активированные Специалисты"
 
     def lookups(self, request, model_admin):
         return (
-            (False, "Активированые"),
-            (True, "Не активированые"),
+            (True, "Активированые"),
+            (False, "Не активированые"),
         )
 
     def queryset(self, request, queryset):
         if self.value() is not None:
-            return queryset.filter(is_deactivated=self.value())
+            if self.value() == 'True':
+                return queryset.filter(days_activated__gt = 0)
+            else :
+                return queryset.filter(days_activated = 0)
         return queryset
