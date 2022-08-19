@@ -97,16 +97,15 @@ class OrderStatusObject(PaymentClasses):
                 raise PaymentOrderError(message=PaymentOrderError.MAP[orderStatus], code=orderStatus)
 
     def finishTransaction(self, response: dict):
-
+        bindingId = response['bindingId'] if 'bindingId' in response else None
         OrderStatus.objects.update_or_create(order_id=self.specialist.id,
                                              defaults={
                                                  'ip': response['Ip'],
-                                                 'bindingId': response[
-                                                     'bindingId'] if 'bindingId' in response else None,
+                                                 'bindingId': bindingId
                                              })
         self.specialist.days_activated += self.specialist.plan.days
         self.specialist.save()
-        return {"status": True}
+        return {"status": True, "is_auto_payment": bindingId is not None}
 
     def as_dict(self) -> dict:
         as_dict = dict(self.__dict__)
