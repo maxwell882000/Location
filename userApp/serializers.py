@@ -43,7 +43,7 @@ class SpecialistSerializer(serializers.ModelSerializer):
     location = s.LocationSerializerCard()
     category = CategorySerializer(many=True)
     image = CustomImageField()
-    is_deactivated = serializers.BooleanField(default=False)
+    is_deactivated = serializers.BooleanField(default=True)
     is_auto_payment = serializers.BooleanField(default=False)
 
     class Meta:
