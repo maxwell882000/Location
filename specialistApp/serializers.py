@@ -19,6 +19,8 @@ from commonApp.models import TempImage
 class SpecialistSerializer(SerializerWithUser):
     review_avg = serializers.FloatField(default=0.0)
     location = s.LocationSerializerCard()
+    is_deactivated = serializers.BooleanField(default=True)
+    is_auto_payment = serializers.BooleanField(default=False)
 
     class Meta:
         model = Specialist
@@ -34,6 +36,8 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
+    is_deactivated = serializers.BooleanField(default=True)
+    is_auto_payment = serializers.BooleanField(default=False)
 
     class Meta:
         model = Specialist
@@ -73,6 +77,8 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
     # category = CategoryField()
     image = CustomImageField()
+    is_deactivated = serializers.BooleanField(default=True)
+    is_auto_payment = serializers.BooleanField(default=False)
 
     class Meta:
         model = Specialist
