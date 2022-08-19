@@ -14,7 +14,7 @@ class ActiveSpecialistFilter(admin.SimpleListFilter):
     def queryset(self, request, queryset):
         if self.value() is not None:
             if self.value() == 'True':
-                return queryset.filter(days_activated__gt = 0)
-            else :
-                return queryset.filter(days_activated = 0)
+                return queryset.filter(days_activated__gt=0)
+            else:
+                return queryset.filter(days_activated=0)
         return queryset
