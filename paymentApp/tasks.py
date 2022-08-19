@@ -19,3 +19,10 @@ class AutoPayment(RegisterOrder):
 def auto_bind():
     payment = AutoPayment()
     payment.run()
+
+
+@shared_task(name="minus_days")
+def minus_days():
+    specialists = Specialist.objects.filter(days_activated__gt=0).get()
+    specialists.days_activated -= 1
+    specialists.save()

@@ -13,7 +13,7 @@ class Specialist(models.Model):
     description = models.TextField(verbose_name="Описание")
 
     user = models.OneToOneField(AUTH_USER_MODEL, verbose_name="Аккаунт специалиста",
-                                    related_name="user_specialist",
+                                related_name="user_specialist",
                                 on_delete=models.CASCADE)
     plan = models.ForeignKey("planApp.Plan", related_name='specialist',
                              null=True,
@@ -44,6 +44,10 @@ class Specialist(models.Model):
     @property
     def review_avg(self):
         return self.reviews.all().aggregate(Avg("review"))['review__avg']
+
+    @property
+    def is_auto_payment(self):
+        return self.order_status != None and self.order_status.bindingId != None
 
     class Meta:
         verbose_name_plural = "Специалист"
