@@ -32701,3 +32701,107 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'is_deactivated' into 
 [2022-08-19 07:34:27 +0000] [1967206] [INFO] Booting worker with pid: 1967206
 [2022-08-19 07:34:27 +0000] [1967207] [INFO] Booting worker with pid: 1967207
 [2022-08-19 07:34:27 +0000] [1967208] [INFO] Booting worker with pid: 1967208
+Internal Server Error: /administrator/PMA/index.php
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/Location/urls.py", line 27, in <module>
+    path('specialist/', include('specialistApp.urls')),
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/specialistApp/urls.py", line 3, in <module>
+    from specialistApp.views import *
+  File "/var/www/Location/specialistApp/views.py", line 13, in <module>
+    from specialistApp.serializers import *
+  File "/var/www/Location/specialistApp/serializers.py", line 39
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+Internal Server Error: /mysql/admin/index.php
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/Location/urls.py", line 27, in <module>
+    path('specialist/', include('specialistApp.urls')),
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/Location/specialistApp/urls.py", line 3, in <module>
+    from specialistApp.views import *
+  File "/var/www/Location/specialistApp/views.py", line 13, in <module>
+    from specialistApp.serializers import *
+  File "/var/www/Location/specialistApp/serializers.py", line 39
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
