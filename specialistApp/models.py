@@ -47,7 +47,7 @@ class Specialist(models.Model):
 
     @property
     def is_auto_payment(self):
-        return self.order_status != None and self.order_status.bindingId != None
+        return self.order_status is not None and self.order_status.bindingId is not None
 
     class Meta:
         verbose_name_plural = "Специалист"
