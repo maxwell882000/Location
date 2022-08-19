@@ -105,7 +105,7 @@ class OrderStatusObject(PaymentClasses):
                                              })
         self.specialist.days_activated += self.specialist.plan.days
         self.specialist.save()
-        return {"status": True, "is_auto_payment": bindingId is not None}
+        return {"is_auto_payment": bindingId is not None}
 
     def as_dict(self) -> dict:
         as_dict = dict(self.__dict__)
