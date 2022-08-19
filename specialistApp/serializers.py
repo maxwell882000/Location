@@ -36,12 +36,8 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
-<<<<<<< HEAD
-    is_deactivated = serializers.BooleanField(default= False)
-=======
     is_deactivated = serializers.BooleanField(default=True)
     is_auto_payment = serializers.BooleanField(default=False)
->>>>>>> 566423f452b844f835ff21de7b283171bffff044
 
     class Meta:
         model = Specialist
@@ -81,12 +77,8 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
     # category = CategoryField()
     image = CustomImageField()
-<<<<<<< HEAD
-    is_deactivated = serializers.BooleanField(default= False)
-=======
     is_deactivated = serializers.BooleanField(default=True)
     is_auto_payment = serializers.BooleanField(default=False)
->>>>>>> 566423f452b844f835ff21de7b283171bffff044
 
     class Meta:
         model = Specialist
