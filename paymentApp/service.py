@@ -117,16 +117,21 @@ class OrderStatusObject(PaymentClasses):
 
 class BindingObject(PaymentClasses, ABC):
     def __init__(self, user):
-        self.bindingId = user.user_specialist.order_user.order_status.bindingId
+        self.order_status = user.user_specialist.order_user.order_status
+        self.bindingId = self.order_status.bindingId
 
     def as_dict(self) -> dict:
-        return self.__dict__
+        as_dict = dict(self.__dict__)
+        del as_dict['order_status']
+        return as_dict
 
 
 class UnBindingObject(BindingObject):
     URL = 'unBindCard.do'
 
     def finishTransaction(self, response: dict):
+        self.order_status.bindingId = None
+        self.order_status.save()
         return response
 
 
