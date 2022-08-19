@@ -116,7 +116,7 @@ class OrderStatusObject(PaymentClasses):
 
 class BindingObject(PaymentClasses, ABC):
     def __init__(self, user):
-        self.order_status = user.user_specialist.order_user.order_status
+        self.order_status = user.user_specialist.order_status
         self.bindingId = self.order_status.bindingId
 
     def as_dict(self) -> dict:
