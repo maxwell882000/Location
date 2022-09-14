@@ -51,7 +51,7 @@ class SpecialistCreateView(generics.GenericAPIView,
 
 class SpecialistUpdateView(generics.GenericAPIView,
                            CustomCreateModelMixin,
-                           mixins.UpdateModelMixin,):
+                           mixins.UpdateModelMixin, ):
     queryset = Specialist.objects.all().order_by('-id')
     permission_classes = [AllowAny]
     serializer_class = SpecialistUpdateSerializer
@@ -66,7 +66,7 @@ specialist_update = SpecialistUpdateView.as_view()
 
 
 class CategoryListView(generics.ListAPIView):
-    queryset = Category.objects.all().order_by('-id')
+    queryset = Category.objects.all().filter(is_active=True).order_by('-id')
     serializer_class = CategorySerializer
     permission_classes = [AllowAny]
 

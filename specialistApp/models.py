@@ -61,6 +61,7 @@ class Category(models.Model):
     image = models.ImageField(verbose_name="Фото специалиста", upload_to=name_of_file)
     category_name = models.CharField(max_length=100, verbose_name="Названия вида деятельности")
     description = models.TextField(max_length=500, verbose_name="Описание для вида деятельности")
+    is_active = models.BooleanField(default=True, verbose_name="Актививация видов деятельности")
 
     def __str__(self):
         return self.category_name

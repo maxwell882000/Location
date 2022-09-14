@@ -57,7 +57,7 @@ class RegisterObject(PaymentClasses):
         self.returnUrl = self.url("/success_payment")
         self.failUrl = self.url("/fail_payment")
         self.clientId = clientId
-        # self.features = "AUTO_PAYMENT"
+        self.features = "AUTO_PAYMENT"
         self.order_unique = order_unique
 
     def url(self, query):
