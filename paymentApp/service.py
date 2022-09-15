@@ -1,6 +1,5 @@
 import json
 from abc import ABC, abstractmethod
-from msilib.schema import Patch
 
 import requests
 from django.conf import settings
