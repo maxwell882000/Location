@@ -27,4 +27,4 @@ class SpecialistAdmin(ModelAdmin):
 
 
 admin.site.register(Specialist, SpecialistAdmin)
-admin.site.register(Category,CategoryAdmin)
+admin.site.register(Category, CategoryAdmin)

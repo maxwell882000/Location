@@ -53,20 +53,24 @@ class PaymentClasses(ABC):
 class RegisterObject(PaymentClasses):
     URL = "register.do"
 
-    def __init__(self, order_unique, client):
-        self.orderNumber = order_unique.id
-        self.amount = order_unique.amount * 100
-        self.returnUrl = self.url("/success_payment")
-        self.failUrl = self.url("/fail_payment")
+    def __init__(self, args: dict):
+        self.order_unique = args['order_unique']
+        client = args['client']
+        self.orderNumber = self.order_unique.id
+        self.amount = args['amount']
+        self.features = args['features']
         self.clientId = client.id
-        if hasattr(client, 'order_status') and client.order_status.bindingId:
-            self.bindingId = client.bindingId
-            self.features = "AUTO_PAYMENT"
-        self.order_unique = order_unique
+        if hasattr(args, 'bindingId'):
+            self.bindingId = args['bindingId']
+        route = args['route']
+        args = client.user.plan_id
+        self.returnUrl = self.url(route, args)
+        self.failUrl = self.url("/fail_payment", args)
 
-    def url(self, query):
+    def url(self, query, args):
+        params = "route=" + query + "&args=" + args
         return "https://sportandthecity.page.link/?" \
-               "link=https://sportandthecity.page.com/?route=" + query + \
+               "link=https://sportandthecity.page.com/?" + params + \
                "&path=&apn=com.location_specialist.location_specialist&isi=1619132873&" \
                "ibi=com.location.sportandthecity"
 
@@ -135,6 +139,19 @@ class BindingObject(PaymentClasses, ABC):
 
 class GetBindingInfo(PaymentClasses):
     URL = "getBindings.do"
+
+    def __init__(self, specialist):
+        self.clientId = specialist.id
+        self.specialist = specialist
+
+    def finishTransaction(self, response: dict):
+        self.specialist.order_status.bindingId = response['bindingId']
+        self.specialist.order_status.save()
+
+    def as_dict(self) -> dict:
+        as_dict = dict(self.__dict__)
+        del as_dict['specialist']
+        return as_dict
 
 
 class UnBindingObject(BindingObject):
@@ -223,3 +240,6 @@ class PaymentService:
 
     def reBind(self, reBind: ReBindingObject):
         return self._makeRequest(reBind)
+
+    def getBind(self, bind: GetBindingInfo):
+        return self._makeRequest(bind)
