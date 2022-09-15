@@ -1,5 +1,6 @@
 import json
 from abc import ABC, abstractmethod
+from msilib.schema import Patch
 
 import requests
 from django.conf import settings
@@ -45,19 +46,22 @@ class PaymentClasses(ABC):
     def checkOnError(self, response: dict):
         if 'errorCode' in response and response['errorCode'] != 0:
             print(response)
-            raise PaymentError(message=response['errorMessage'], code=response['errorCode'])
+            raise PaymentError(
+                message=response['errorMessage'], code=response['errorCode'])
 
 
 class RegisterObject(PaymentClasses):
     URL = "register.do"
 
-    def __init__(self, order_unique, clientId):
+    def __init__(self, order_unique, client):
         self.orderNumber = order_unique.id
         self.amount = order_unique.amount * 100
         self.returnUrl = self.url("/success_payment")
         self.failUrl = self.url("/fail_payment")
-        self.clientId = clientId
-        self.features = "AUTO_PAYMENT"
+        self.clientId = client.id
+        if hasattr(client, 'order_status') and client.order_status.bindingId:
+            self.bindingId = client.bindingId
+            self.features = "AUTO_PAYMENT"
         self.order_unique = order_unique
 
     def url(self, query):
@@ -90,13 +94,17 @@ class OrderStatusObject(PaymentClasses):
     def checkOnError(self, response: dict):
         super().checkOnError(response)
         if 'OrderStatus' not in response:
-            raise PaymentOrderError(message=PaymentOrderError.MAP["NOT_FOUND"], code=-1)
+            raise PaymentOrderError(
+                message=PaymentOrderError.MAP["NOT_FOUND"], code=-1)
         else:
             orderStatus = response['OrderStatus']
             if response['OrderStatus'] != 2:
-                raise PaymentOrderError(message=PaymentOrderError.MAP[orderStatus], code=orderStatus)
+                raise PaymentOrderError(
+                    message=PaymentOrderError.MAP[orderStatus], code=orderStatus)
 
     def finishTransaction(self, response: dict):
+        print('bindingId')
+        print(response)
         bindingId = response['bindingId'] if 'bindingId' in response else None
         OrderStatus.objects.update_or_create(order_id=self.specialist.id,
                                              defaults={
@@ -123,6 +131,10 @@ class BindingObject(PaymentClasses, ABC):
         as_dict = dict(self.__dict__)
         del as_dict['order_status']
         return as_dict
+
+
+class GetBindingInfo(PaymentClasses):
+    URL = "getBindings.do"
 
 
 class UnBindingObject(BindingObject):
@@ -175,14 +187,16 @@ class PaymentService:
 
     def _url(self, obj: PaymentClasses):
         if obj.URL == "":
-            raise PaymentError(message=PaymentError.LOGICAL_MAP['URL_FORGET'], code=-1)
+            raise PaymentError(
+                message=PaymentError.LOGICAL_MAP['URL_FORGET'], code=-1)
         return self.URL + obj.URL
 
     def _makeRequest(self, payment_object: PaymentClasses):
         conct_dict = self._toDict(payment_object)
         print(conct_dict)
         request_json = json.dumps(conct_dict)
-        response = requests.post(url=self._url(payment_object), params=conct_dict)
+        response = requests.post(url=self._url(
+            payment_object), params=conct_dict)
         res_json = response.json()
         print(res_json)
         try:

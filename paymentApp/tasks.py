@@ -11,16 +11,22 @@ class AutoPayment(RegisterOrder):
 
     def run(self):
         for specialist in self.specialists.all():
+            self.pay(specialist)
+
+    def pay(self,specialist):
             self.order_register(specialist)
             self.auto_payment(specialist)
-
 
 @shared_task(name="auto_bind")
 def auto_bind():
     payment = AutoPayment()
     payment.run()
 
-
+def check():
+    specalist = Specialist.objects.filter(order_status__bindingId__isnull= True).first()
+    binding = Bind
+    pay = AutoPayment()
+    pay.pay(specialist=specalist)
 @shared_task(name="minus_days")
 def minus_days():
     specialists = Specialist.objects.filter(days_activated__gt=0).get()

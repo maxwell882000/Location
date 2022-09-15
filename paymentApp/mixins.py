@@ -5,7 +5,7 @@ from paymentApp.service import RegisterObject, PaymentService, OrderStatusObject
 class RegisterOrder:
     def order_register(self, specialist):
         order_unique = OrderUnique.objects.create(order_user=specialist, amount=specialist.plan.amount)
-        register = RegisterObject(order_unique, specialist.id)
+        register = RegisterObject(order_unique, specialist)
         payment = PaymentService()
         return payment.registerOrder(register)
 
