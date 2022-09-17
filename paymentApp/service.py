@@ -43,7 +43,7 @@ class PaymentClasses(ABC):
         pass
 
     def checkOnError(self, response: dict):
-        if 'errorCode' in response and response['errorCode'] != 0:
+        if 'errorCode' in response and response['errorCode'] != 0 or response['errorCode'] != '0':
             print(response)
             raise PaymentError(
                 message=response['errorMessage'], code=response['errorCode'])
@@ -57,17 +57,18 @@ class RegisterObject(PaymentClasses):
         client = args['client']
         self.orderNumber = self.order_unique.id
         self.amount = args['amount']
-        self.features = args['features']
+        if hasattr(args, 'features'):
+            self.features = args['features']
         self.clientId = client.id
         if hasattr(args, 'bindingId'):
             self.bindingId = args['bindingId']
         route = args['route']
-        args = client.user.plan_id
+        args = client.plan_id
         self.returnUrl = self.url(route, args)
         self.failUrl = self.url("/fail_payment", args)
 
     def url(self, query, args):
-        params = "route=" + query + "&args=" + args
+        params = "route=" + query + "&args=" + str(args)
         return "https://sportandthecity.page.link/?" \
                "link=https://sportandthecity.page.com/?" + params + \
                "&path=&apn=com.location_specialist.location_specialist&isi=1619132873&" \
@@ -146,6 +147,8 @@ class GetBindingInfo(PaymentClasses):
     def finishTransaction(self, response: dict):
         self.specialist.order_status.bindingId = response['bindingId']
         self.specialist.order_status.save()
+        print("GET BIND INFO")
+        print(response)
 
     def as_dict(self) -> dict:
         as_dict = dict(self.__dict__)

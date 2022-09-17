@@ -1052,3 +1052,77 @@ bindingId
 {'errorCode': '4', 'errorMessage': '[amount] не задан'}
 {'errorCode': '4', 'errorMessage': '[amount] не задан'}
 [amount] не задан
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 71, 'amount': 1200, 'features': 'AUTO_PAYMENT', 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=2&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=2&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+Мерчант не имеет привилегии выполнять AUTO платежи
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 72, 'amount': 2000000, 'features': 'AUTO_PAYMENT', 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+Мерчант не имеет привилегии выполнять AUTO платежи
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 73, 'amount': 1200, 'features': 'AUTO_PAYMENT', 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=2&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=2&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+Мерчант не имеет привилегии выполнять AUTO платежи
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '5', 'errorMessage': 'Доступ запрещён', 'bindings': []}
+{'errorCode': '5', 'errorMessage': 'Доступ запрещён', 'bindings': []}
+Доступ запрещён
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 74, 'amount': 2000000, 'features': 'AUTO_PAYMENT', 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+Мерчант не имеет привилегии выполнять AUTO платежи
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '5', 'errorMessage': 'Доступ запрещён', 'bindings': []}
+{'errorCode': '5', 'errorMessage': 'Доступ запрещён', 'bindings': []}
+Доступ запрещён
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 75, 'amount': 2000000, 'features': 'AUTO_PAYMENT', 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять AUTO платежи'}
+Мерчант не имеет привилегии выполнять AUTO платежи
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 76, 'amount': 0, 'features': 'VERIFY', 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять проверочные платежи'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять проверочные платежи'}
+Мерчант не имеет привилегии выполнять проверочные платежи
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 77, 'amount': 0, 'features': 'VERIFY', 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять проверочные платежи'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять проверочные платежи'}
+Мерчант не имеет привилегии выполнять проверочные платежи
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 78, 'amount': 0, 'features': 'VERIFY', 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять проверочные платежи'}
+{'errorCode': '13', 'errorMessage': 'Мерчант не имеет привилегии выполнять проверочные платежи'}
+Мерчант не имеет привилегии выполнять проверочные платежи
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 80, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '040ac852-ce38-72e0-bfd2-1b8002103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=040ac852-ce38-72e0-bfd2-1b8002103afb'}
+{'orderId': '040ac852-ce38-72e0-bfd2-1b8002103afb'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderId': '040ac852-ce38-72e0-bfd2-1b8002103afb'}
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '80', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+bindingId
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '80', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '5', 'errorMessage': 'Доступ запрещён', 'bindings': []}
+{'errorCode': '5', 'errorMessage': 'Доступ запрещён', 'bindings': []}
+Доступ запрещён
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 81, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '040acc81-0ba6-70c3-bd28-b42602103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=040acc81-0ba6-70c3-bd28-b42602103afb'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+Информация не найдена
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 82, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '040f9bde-d4fb-7748-943c-1fee02103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=040f9bde-d4fb-7748-943c-1fee02103afb'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+Информация не найдена
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 83, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '040f9e14-0882-7eaf-b352-725402103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=040f9e14-0882-7eaf-b352-725402103afb'}
+{'orderId': '040f9e14-0882-7eaf-b352-725402103afb'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderId': '040f9e14-0882-7eaf-b352-725402103afb'}
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'c9539f52-3ae7-7994-bb79-dd0e02103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '83', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.87'}
+bindingId
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'c9539f52-3ae7-7994-bb79-dd0e02103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '83', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.87'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'bindingId': 'c9539f52-3ae7-7994-bb79-dd0e02103afb'}
+{'errorCode': '0', 'errorMessage': 'Успешно'}
+{'errorCode': '0', 'errorMessage': 'Успешно'}
+Успешно

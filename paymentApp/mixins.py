@@ -11,9 +11,9 @@ class RegisterOrder:
             'order_unique': order_unique,
             'client': specialist,
         }
-        # I think this is wrong because a lot of logic happens in constructor
         if hasattr(specialist, 'order_status'):
-            if specialist.order_status.bindingId != None:
+            print("")
+            if specialist.order_status.bindingId == None:
                 get_bind = GetBindingInfo(specialist)
                 PaymentService().getBind(get_bind)
             register_params['bindingId'] = specialist.order_status.bindingId
