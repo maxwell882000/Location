@@ -1126,3 +1126,85 @@ bindingId
 {'errorCode': '0', 'errorMessage': 'Успешно'}
 {'errorCode': '0', 'errorMessage': 'Успешно'}
 Успешно
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'bindingId': 'c9539f52-3ae7-7994-bb79-dd0e02103afb'}
+{'errorCode': '2', 'errorMessage': 'Неверное состояние связки'}
+{'errorCode': '2', 'errorMessage': 'Неверное состояние связки'}
+Неверное состояние связки
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'bindingId': 'c9539f52-3ae7-7994-bb79-dd0e02103afb'}
+{'errorCode': '2', 'errorMessage': 'Неверное состояние связки'}
+{'errorCode': '2', 'errorMessage': 'Неверное состояние связки'}
+Неверное состояние связки
+
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+Информация не найдена
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 84, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '0425ce0e-aecb-73be-baf0-fe6d02103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=0425ce0e-aecb-73be-baf0-fe6d02103afb'}
+
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+Информация не найдена
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 85, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '0425cf98-a363-7112-b08f-b65e02103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=0425cf98-a363-7112-b08f-b65e02103afb'}
+
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+Информация не найдена
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 86, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '0425d297-eaf3-7f60-9a21-b2c802103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=0425d297-eaf3-7f60-9a21-b2c802103afb'}
+{'orderId': '0425d297-eaf3-7f60-9a21-b2c802103afb'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderId': '0425d297-eaf3-7f60-9a21-b2c802103afb'}
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'cad13bac-8e33-7e55-8e92-d60602103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '86', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+bindingId
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'cad13bac-8e33-7e55-8e92-d60602103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '86', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'bindingId': 'cad13bac-8e33-7e55-8e92-d60602103afb'}
+{'errorCode': '0', 'errorMessage': 'Успешно'}
+{'errorCode': '0', 'errorMessage': 'Успешно'}
+Успешно
+
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+Информация не найдена
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 87, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '0425d663-2391-7aec-86b5-896902103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=0425d663-2391-7aec-86b5-896902103afb'}
+{'orderId': '0425d663-2391-7aec-86b5-896902103afb'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderId': '0425d663-2391-7aec-86b5-896902103afb'}
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'cad7e386-5ff7-7c4c-afa4-e5f302103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '87', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+bindingId
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'cad7e386-5ff7-7c4c-afa4-e5f302103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '87', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'bindingId': 'cad7e386-5ff7-7c4c-afa4-e5f302103afb'}
+{'errorCode': '0', 'errorMessage': 'Успешно'}
+{'errorCode': '0', 'errorMessage': 'Успешно'}
+Успешно
+
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+Информация не найдена
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 88, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '0425d755-c9dc-7e1c-ae84-168602103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=0425d755-c9dc-7e1c-ae84-168602103afb'}
+{'orderId': '0425d755-c9dc-7e1c-ae84-168602103afb'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderId': '0425d755-c9dc-7e1c-ae84-168602103afb'}
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'cad8ff19-1d76-70d5-a720-1e9802103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '88', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+bindingId
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'cad8ff19-1d76-70d5-a720-1e9802103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '88', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'bindingId': 'cad8ff19-1d76-70d5-a720-1e9802103afb'}
+{'errorCode': '0', 'errorMessage': 'Успешно'}
+
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'clientId': 38}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+{'errorCode': '2', 'errorMessage': 'Информация не найдена', 'bindings': []}
+Информация не найдена
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderNumber': 89, 'amount': 2000000, 'clientId': 38, 'returnUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/success_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity', 'failUrl': 'https://sportandthecity.page.link/?link=https://sportandthecity.page.com/?route=/fail_payment&args=1&path=&apn=com.location_specialist.location_specialist&isi=1619132873&ibi=com.location.sportandthecity'}
+{'orderId': '0425d944-3257-7f81-a2d4-20f002103afb', 'formUrl': 'https://web.rbsuat.com/ab/merchants/typical/payment_ru.html?mdOrder=0425d944-3257-7f81-a2d4-20f002103afb'}
+{'orderId': '0425d944-3257-7f81-a2d4-20f002103afb'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'orderId': '0425d944-3257-7f81-a2d4-20f002103afb'}
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'cad5bc95-d75c-77fb-8217-6d6102103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '89', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+bindingId
+{'expiration': '202412', 'cardholderName': 'SUCCESSPAYMENT', 'depositAmount': 2000000, 'currency': '810', 'approvalCode': '123456', 'authCode': 2, 'clientId': '38', 'bindingId': 'cad5bc95-d75c-77fb-8217-6d6102103afb', 'ErrorCode': '0', 'ErrorMessage': 'Успешно', 'OrderStatus': 2, 'OrderNumber': '89', 'Pan': '411111**1111', 'Amount': 2000000, 'Ip': '94.158.59.93'}
+{'userName': 'location_specialist-api', 'password': 'location_specialist*?1', 'merchantLogin': 'location_specialist', 'bindingId': 'cad5bc95-d75c-77fb-8217-6d6102103afb'}
+{'errorCode': '0', 'errorMessage': 'Успешно'}

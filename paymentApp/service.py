@@ -43,7 +43,7 @@ class PaymentClasses(ABC):
         pass
 
     def checkOnError(self, response: dict):
-        if 'errorCode' in response and response['errorCode'] != 0 or response['errorCode'] != '0':
+        if 'errorCode' in response and int(response['errorCode']) != 0:
             print(response)
             raise PaymentError(
                 message=response['errorMessage'], code=response['errorCode'])
