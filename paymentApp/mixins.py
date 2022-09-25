@@ -19,7 +19,7 @@ class RegisterOrder:
             register_params['bindingId'] = specialist.order_status.bindingId
             register_params['features'] = "AUTO_PAYMENT"
         else:
-            route = "/waiting_payment"
+            register_params['route'] = "/waiting_payment"
             register_params['features'] = "VERIFY"
             register_params['amount'] = 0
 
