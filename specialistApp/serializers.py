@@ -1,3 +1,4 @@
+from asyncore import read
 from functools import partial
 from pkgutil import read_code
 from statistics import mode
@@ -5,6 +6,7 @@ from unicodedata import category
 from django.db import models
 from django.db.models import fields
 from django.forms import DateField
+from django.shortcuts import redirect
 from django.utils.functional import partition
 from rest_framework import serializers
 from Location.settings import SITE
@@ -36,12 +38,13 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
-    is_deactivated = serializers.BooleanField(default=True)
-    is_auto_payment = serializers.BooleanField(default=False)
+    is_deactivated = serializers.BooleanField(default=True, read_only=True)
+    is_auto_payment = serializers.BooleanField(default=False, read_only=True)
 
     class Meta:
         model = Specialist
         fields = '__all__'
+        
 
     def create(self, validated_data):
         user = validated_data.pop('user')
@@ -53,8 +56,9 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         render = super().to_representation(instance)
-        render['location'] = s.LocationSerializerCard(
-            Location.objects.get(id=render['location'])).data
+        if Location.objects.filter(id=render['location']).exists():
+            render['location'] = s.LocationSerializerCard(
+                Location.objects.get(id=render['location'])).data
         render['category'] = CategorySerializer(
             Category.objects.filter(id__in=render['category']), many=True).data
         return render
@@ -77,8 +81,8 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
     user = UserField()
     # category = CategoryField()
     image = CustomImageField()
-    is_deactivated = serializers.BooleanField(default=True)
-    is_auto_payment = serializers.BooleanField(default=False)
+    is_deactivated = serializers.BooleanField(default=True, read_only=True)
+    is_auto_payment = serializers.BooleanField(default=False, read_only=True)
 
     class Meta:
         model = Specialist

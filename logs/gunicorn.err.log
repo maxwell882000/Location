@@ -40419,3 +40419,182 @@ Not Found: /
 Not Found: /
 Not Found: /
 Not Found: /HNAP1/
+[2022-09-25 18:07:24 +0000] [637821] [INFO] Handling signal: term
+[2022-09-25 18:07:24 +0000] [637823] [INFO] Worker exiting (pid: 637823)
+[2022-09-25 18:07:24 +0000] [637824] [INFO] Worker exiting (pid: 637824)
+[2022-09-25 18:07:24 +0000] [637825] [INFO] Worker exiting (pid: 637825)
+[2022-09-25 18:07:26 +0000] [637821] [INFO] Shutting down: Master
+[2022-09-25 18:07:27 +0000] [732700] [INFO] Starting gunicorn 20.1.0
+[2022-09-25 18:07:27 +0000] [732700] [INFO] Listening at: http://127.0.0.1:8000 (732700)
+[2022-09-25 18:07:27 +0000] [732700] [INFO] Using worker: sync
+[2022-09-25 18:07:27 +0000] [732702] [INFO] Booting worker with pid: 732702
+[2022-09-25 18:07:27 +0000] [732703] [INFO] Booting worker with pid: 732703
+[2022-09-25 18:07:27 +0000] [732704] [INFO] Booting worker with pid: 732704
+Internal Server Error: /specialist/create/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: Specialist() got an unexpected keyword argument 'is_deactivated'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/Location/specialistApp/views.py", line 49, in post
+    return self.create_temp(request, 'image', *args, **kwargs)
+  File "/var/www/Location/Location/mixin.py", line 28, in create_temp
+    return self.create(new_request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/Location/specialistApp/serializers.py", line 52, in create
+    return super(SpecialistCreateSerializer, self).create(validated_data)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 958, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Specialist.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Specialist.objects.create()`. You may need to make the field read-only, or override the SpecialistCreateSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: Specialist() got an unexpected keyword argument 'is_deactivated'
+
+[2022-09-25 18:11:56 +0000] [732700] [INFO] Handling signal: term
+[2022-09-25 18:11:56 +0000] [732702] [INFO] Worker exiting (pid: 732702)
+[2022-09-25 18:11:56 +0000] [732703] [INFO] Worker exiting (pid: 732703)
+[2022-09-25 18:11:56 +0000] [732704] [INFO] Worker exiting (pid: 732704)
+[2022-09-25 18:11:58 +0000] [732700] [INFO] Shutting down: Master
+[2022-09-25 18:11:59 +0000] [732964] [INFO] Starting gunicorn 20.1.0
+[2022-09-25 18:11:59 +0000] [732964] [INFO] Listening at: http://127.0.0.1:8000 (732964)
+[2022-09-25 18:11:59 +0000] [732964] [INFO] Using worker: sync
+[2022-09-25 18:11:59 +0000] [732966] [INFO] Booting worker with pid: 732966
+[2022-09-25 18:11:59 +0000] [732967] [INFO] Booting worker with pid: 732967
+[2022-09-25 18:11:59 +0000] [732968] [INFO] Booting worker with pid: 732968
+Internal Server Error: /specialist/create/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/Location/specialistApp/views.py", line 49, in post
+    return self.create_temp(request, 'image', *args, **kwargs)
+  File "/var/www/Location/Location/mixin.py", line 28, in create_temp
+    return self.create(new_request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/var/www/Location/specialistApp/serializers.py", line 58, in to_representation
+    Location.objects.get(id=render['location'])).data
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+locationApp.models.Location.DoesNotExist: Location matching query does not exist.
+[2022-09-25 18:16:14 +0000] [732964] [INFO] Handling signal: term
+[2022-09-25 18:16:14 +0000] [732966] [INFO] Worker exiting (pid: 732966)
+[2022-09-25 18:16:14 +0000] [732967] [INFO] Worker exiting (pid: 732967)
+[2022-09-25 18:16:14 +0000] [732968] [INFO] Worker exiting (pid: 732968)
+[2022-09-25 18:16:15 +0000] [732964] [INFO] Shutting down: Master
+[2022-09-25 18:16:16 +0000] [733175] [INFO] Starting gunicorn 20.1.0
+[2022-09-25 18:16:16 +0000] [733175] [INFO] Listening at: http://127.0.0.1:8000 (733175)
+[2022-09-25 18:16:16 +0000] [733175] [INFO] Using worker: sync
+[2022-09-25 18:16:16 +0000] [733177] [INFO] Booting worker with pid: 733177
+[2022-09-25 18:16:16 +0000] [733178] [INFO] Booting worker with pid: 733178
+[2022-09-25 18:16:16 +0000] [733179] [INFO] Booting worker with pid: 733179
+Internal Server Error: /specialist/create/
+Traceback (most recent call last):
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.8/contextlib.py", line 75, in inner
+    return func(*args, **kwds)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/Location/specialistApp/views.py", line 49, in post
+    return self.create_temp(request, 'image', *args, **kwargs)
+  File "/var/www/Location/Location/mixin.py", line 28, in create_temp
+    return self.create(new_request, *args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/var/www/Location/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/var/www/Location/specialistApp/serializers.py", line 61, in to_representation
+    Location.objects.get(id=render['location'])).data
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/Location/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+locationApp.models.Location.DoesNotExist: Location matching query does not exist.
+[2022-09-25 18:18:28 +0000] [733175] [INFO] Handling signal: term
+[2022-09-25 18:18:28 +0000] [733177] [INFO] Worker exiting (pid: 733177)
+[2022-09-25 18:18:28 +0000] [733178] [INFO] Worker exiting (pid: 733178)
+[2022-09-25 18:18:28 +0000] [733179] [INFO] Worker exiting (pid: 733179)
+[2022-09-25 18:18:29 +0000] [733175] [INFO] Shutting down: Master
+[2022-09-25 18:18:30 +0000] [733337] [INFO] Starting gunicorn 20.1.0
+[2022-09-25 18:18:30 +0000] [733337] [INFO] Listening at: http://127.0.0.1:8000 (733337)
+[2022-09-25 18:18:30 +0000] [733337] [INFO] Using worker: sync
+[2022-09-25 18:18:30 +0000] [733339] [INFO] Booting worker with pid: 733339
+[2022-09-25 18:18:30 +0000] [733340] [INFO] Booting worker with pid: 733340
+[2022-09-25 18:18:30 +0000] [733341] [INFO] Booting worker with pid: 733341
+Not Found: /
