@@ -40598,3 +40598,75 @@ locationApp.models.Location.DoesNotExist: Location matching query does not exist
 [2022-09-25 18:18:30 +0000] [733340] [INFO] Booting worker with pid: 733340
 [2022-09-25 18:18:30 +0000] [733341] [INFO] Booting worker with pid: 733341
 Not Found: /
+[2022-09-25 18:29:59 +0000] [733337] [INFO] Handling signal: term
+[2022-09-25 18:29:59 +0000] [733339] [INFO] Worker exiting (pid: 733339)
+[2022-09-25 18:29:59 +0000] [733340] [INFO] Worker exiting (pid: 733340)
+[2022-09-25 18:29:59 +0000] [733341] [INFO] Worker exiting (pid: 733341)
+[2022-09-25 18:30:00 +0000] [733337] [INFO] Shutting down: Master
+[2022-09-25 18:30:01 +0000] [734193] [INFO] Starting gunicorn 20.1.0
+[2022-09-25 18:30:01 +0000] [734193] [INFO] Listening at: http://127.0.0.1:8000 (734193)
+[2022-09-25 18:30:01 +0000] [734193] [INFO] Using worker: sync
+[2022-09-25 18:30:01 +0000] [734195] [INFO] Booting worker with pid: 734195
+[2022-09-25 18:30:01 +0000] [734196] [INFO] Booting worker with pid: 734196
+[2022-09-25 18:30:01 +0000] [734197] [INFO] Booting worker with pid: 734197
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /actuator/gateway/routes
+Not Found: /
+Not Found: /Public/home/js/check.js
+Not Found: /.env
+Not Found: /
+Not Found: /
+Not Found: /wp-admin/install.php
+Not Found: /game/zhuce/index.php
+Not Found: /
+Not Found: /public/index.php
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /UFGz
+Not Found: /
+Not Found: /inicio.jhtml
+Not Found: /Portal/Portal.mwsl
+Not Found: /CSS/Miniweb.css
+Not Found: /sdk
+Not Found: /nmaplowercheck1664200028
+Not Found: /Portal0000.htm
+Not Found: /favicon.ico
+Not Found: /pools
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.DS_Store
+Not Found: /frontend_dev.php/$
+Not Found: /
+Not Found: /debug/default/view
+Not Found: /v2/_catalog
+Not Found: /config.json
+Not Found: /idx_config/
+Not Found: /.json
+Not Found: /s/lkx/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Not Found: /telescope/requests
+Not Found: /favicon.ico
+Not Found: /
