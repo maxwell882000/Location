@@ -21,6 +21,7 @@ class CategoryAdmin(ModelAdmin):
 
 class SpecialistAdmin(ModelAdmin):
     filter_horizontal = ["category"]
+    actions = [deactivate, acivate]
     list_filter = [
         ActiveSpecialistFilter
     ]
