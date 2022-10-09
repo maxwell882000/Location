@@ -30,9 +30,9 @@ class Specialist(models.Model):
                                                verbose_name="Категории клиентов")
     hieght = models.IntegerField(default=0, verbose_name="Ваш рост")
     wieght = models.IntegerField(default=0, verbose_name="Ваш вес")
-    date_of_birth = models.DateField(verbose_name="Год рождения", blank=True, null=True)
-    education = models.CharField(max_length=255, verbose_name="Образование")
-    experience = models.CharField(max_length=255, verbose_name="Опыт работы")
+    date_of_birth = models.DateField(verbose_name="Год рождения", blank=True, null=True, default=None)
+    education = models.CharField(max_length=255, verbose_name="Образование", default="")
+    experience = models.CharField(max_length=255, verbose_name="Опыт работы", default="")
     location = models.ForeignKey('locationApp.Location',
                                  related_name='specialist',
                                  null=True,
