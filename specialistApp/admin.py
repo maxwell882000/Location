@@ -20,7 +20,7 @@ class CategoryAdmin(ModelAdmin):
 
 
 class SpecialistAdmin(ModelAdmin):
-    filter_horizontal = ["category"]
+    filter_horizontal = ["category", "client_categories"]
 
     list_filter = [
         ActiveSpecialistFilter
