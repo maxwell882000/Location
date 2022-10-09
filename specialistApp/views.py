@@ -65,6 +65,13 @@ specialist_create = SpecialistCreateView.as_view()
 specialist_update = SpecialistUpdateView.as_view()
 
 
+class ClientCateogryListView(generics.ListAPIView):
+    queryset = ClientCategory.objects.filter(is_active=True).order_by("-id")
+    serializer_class = ClientCategorySerializer
+    permission_classes = [AllowAny]
+    pagination_class = None
+
+
 class CategoryListView(generics.ListAPIView):
     queryset = Category.objects.all().filter(is_active=True).order_by('-id')
     serializer_class = CategorySerializer
@@ -87,3 +94,4 @@ class CategoryView(generics.GenericAPIView, mixins.RetrieveModelMixin):
 category_list = CategoryListView.as_view()
 category = CategoryView.as_view()
 category_select_list = CategorySelectListView.as_view()
+client_category_list = ClientCateogryListView.as_view()

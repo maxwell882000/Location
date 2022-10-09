@@ -20,13 +20,19 @@ class Specialist(models.Model):
                              blank=True,
                              verbose_name="Тариф специалиста",
                              on_delete=models.CASCADE)
-    days_activated = models.IntegerField(default=0, verbose_name="Количество дней про аккаунта")
+    days_activated = models.IntegerField(default=0,
+                                         verbose_name="Количество дней про аккаунта")
     custom_location = models.TextField(verbose_name="Ручная локация",
                                        null=True,
                                        blank=True,
                                        max_length=255)
-    # location_many = models.ManyToManyField('locationApp.Location',
-    #                                        verbose_name="Локации")
+    client_categories = models.ManyToManyField('ClientCategory',
+                                               verbose_name="Категории клиентов")
+    hieght = models.IntegerField(default=0, verbose_name="Ваш рост")
+    wieght = models.IntegerField(default=0, verbose_name="Ваш вес")
+    date_of_birth = models.DateField(verbose_name="Год рождения", blank=True, null=True)
+    education = models.CharField(max_length=255, verbose_name="Образование")
+    experience = models.CharField(max_length=255, verbose_name="Опыт работы")
     location = models.ForeignKey('locationApp.Location',
                                  related_name='specialist',
                                  null=True,
@@ -73,3 +79,14 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = "Виды деятельности"
+
+
+class ClientCategory(models.Model):
+    name = models.CharField(max_length=200, verbose_name="Название")
+    is_active = models.BooleanField(default=True, verbose_name="Актививация категории клиентов")
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = "Категорией клиентов"

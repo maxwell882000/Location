@@ -12,7 +12,7 @@ from rest_framework import serializers
 from Location.settings import SITE
 from locationApp.models import Location
 import locationApp.serializers as s
-from specialistApp.models import Specialist, Category
+from specialistApp.models import Specialist, Category, ClientCategory
 from userApp.serializers import RegisterSerializer, SerializerWithUser, UserSerilalizer
 from userApp.models import User
 from commonApp.models import TempImage
@@ -36,6 +36,12 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class ClientCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ClientCategory
+        fields = '__all__'
+
+
 class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
     is_deactivated = serializers.BooleanField(default=True, read_only=True)
@@ -44,7 +50,6 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Specialist
         fields = '__all__'
-        
 
     def create(self, validated_data):
         user = validated_data.pop('user')
@@ -61,6 +66,10 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
                 Location.objects.get(id=render['location'])).data
         render['category'] = CategorySerializer(
             Category.objects.filter(id__in=render['category']), many=True).data
+        render['client_categories'] = ClientCategorySerializer(
+            ClientCategory.objects.filter(id__in=render['client_categories']),
+            many=True
+        ).data
         return render
 
     def get_image(self, specialist):
@@ -94,6 +103,10 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
             Location.objects.get(id=render['location'])).data
         render['category'] = CategorySerializer(
             Category.objects.filter(id__in=render['category']), many=True).data
+        render['client_categories'] = ClientCategorySerializer(
+            ClientCategory.objects.filter(id__in=render['client_categories']),
+            many=True
+        ).data
         return render
 
     def update(self, instance, validated_data):
@@ -103,12 +116,6 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
                 instance=instance.user, data=user, partial=True)
             serializer.is_valid(raise_exception=True)
             serializer.save()
-            # if validated_data['phone'] == instance.phone:
-            #     instance.user.phone = validated_data.pop('phone')
-            # instance.user.firstname = validated_data.pop('firstname')
-            # instance.user.lastname = validated_data.pop('lastname')
-            # instance.user.save()
-        # instance.category.clear()
         return super().update(instance, validated_data)
 
     def get_image(self, specialist):

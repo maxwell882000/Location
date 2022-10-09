@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.admin import ModelAdmin
 
 from specialistApp.filter import ActiveSpecialistFilter
-from specialistApp.models import Specialist, Category
+from specialistApp.models import Specialist, Category, ClientCategory
 
 
 @admin.action(description='Деактивировать виды деятельности')
@@ -29,3 +29,4 @@ class SpecialistAdmin(ModelAdmin):
 
 admin.site.register(Specialist, SpecialistAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(ClientCategory, CategoryAdmin)
