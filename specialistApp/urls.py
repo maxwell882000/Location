@@ -9,5 +9,5 @@ urlpatterns = [
     path('category/<int:pk>/', category),
     path('create/', specialist_create),
     path('update/<int:pk>/', specialist_update),
-    path("category/client/list/", client_category_list)
+    path("category/client/list/select/", client_category_list)
 ]
