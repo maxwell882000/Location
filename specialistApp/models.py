@@ -28,8 +28,8 @@ class Specialist(models.Model):
                                        max_length=255)
     client_categories = models.ManyToManyField('ClientCategory',
                                                verbose_name="Категории клиентов")
-    hieght = models.IntegerField(default=0, verbose_name="Ваш рост")
-    wieght = models.IntegerField(default=0, verbose_name="Ваш вес")
+    height = models.IntegerField(default=0, verbose_name="Ваш рост")
+    weight = models.IntegerField(default=0, verbose_name="Ваш вес")
     date_of_birth = models.DateField(verbose_name="Год рождения", blank=True, null=True, default=None)
     education = models.CharField(max_length=255, verbose_name="Образование", default="")
     experience = models.TextField(verbose_name="Опыт работы", default="")
