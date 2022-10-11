@@ -8,7 +8,7 @@ from rest_framework import serializers
 from django.utils.translation import gettext_lazy as _
 from rest_framework.exceptions import ValidationError
 import locationApp.serializers as s
-from specialistApp.models import Category, Specialist
+from specialistApp.models import Category, Specialist, ClientCategory
 from Location.settings import SITE
 
 from userApp.models import User
@@ -41,8 +41,8 @@ class CustomImageField(serializers.ImageField):
 
 class CategorySelectSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Category
-        fields = ['id', 'category_name']
+        model = ClientCategory
+        fields = ['id', 'name']
 
 
 class SpecialistSerializer(serializers.ModelSerializer):
