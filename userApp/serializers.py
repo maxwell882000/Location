@@ -10,6 +10,7 @@ from rest_framework.exceptions import ValidationError
 import locationApp.serializers as s
 from specialistApp.models import Category, Specialist
 from Location.settings import SITE
+
 from userApp.models import User
 import re
 
@@ -38,10 +39,17 @@ class CustomImageField(serializers.ImageField):
         return "{}{}".format(SITE, value.url)
 
 
+class CategorySelectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ['id', 'category_name']
+
+
 class SpecialistSerializer(serializers.ModelSerializer):
     review_avg = serializers.FloatField(default=0.0)
     location = s.LocationSerializerCard()
     category = CategorySerializer(many=True)
+    client_categories = CategorySelectSerializer(many=True)
     image = CustomImageField()
     is_deactivated = serializers.BooleanField(default=True)
     is_auto_payment = serializers.BooleanField(default=False)
