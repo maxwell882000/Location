@@ -34,6 +34,7 @@ class Specialist(models.Model):
     date_of_birth = models.DateField(verbose_name="Год рождения", blank=True, null=True, default=None)
     education = models.CharField(max_length=255, verbose_name="Образование", default="")
     experience = models.TextField(verbose_name="Опыт работы", default="")
+    locations = models.ManyToManyField('locationApp.Location', verbose_name="Локации специалиста")
     location = models.ForeignKey('locationApp.Location',
                                  related_name='specialist',
                                  null=True,
