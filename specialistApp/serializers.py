@@ -99,8 +99,8 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         render = super().to_representation(instance)
-        render['location'] = s.LocationSerializerCard(
-            Location.objects.get(id=render['location'])).data
+        render['many_location'] = s.LocationSerializerCard(
+            Location.objects.get(id__in=render['many_location']), many=True).data
         render['category'] = CategorySerializer(
             Category.objects.filter(id__in=render['category']), many=True).data
         render['client_categories'] = ClientCategorySerializer(
