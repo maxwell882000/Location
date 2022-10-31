@@ -22,7 +22,8 @@ class Specialist(models.Model):
                              on_delete=models.CASCADE)
     days_activated = models.IntegerField(default=0,
                                          verbose_name="Количество дней про аккаунта")
-    custom_location = models.TextField(verbose_name="Ручная локация",
+    custom_location = models.TextField(
+                                      verbose_name="Ручная локация",
                                        null=True,
                                        blank=True,
                                        max_length=255)

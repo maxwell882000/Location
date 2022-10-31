@@ -44,8 +44,8 @@ def createPhoneVerifier(sender, instance, created, *args, **kwargs):
 @receiver(post_save, sender=PhoneVerifier)
 def sendRequiredCode(sender, instance, *args, **kwargs):
     MESSAGE_SEND: str = "Код подтверждения {}".format(instance.code)
-    service = PhoneService()
-    try:
-        service.sendCode(int(instance.user.phone), MESSAGE_SEND)
-    except PhoneException as e:
-        raise serializers.ValidationError(detail={"phone_sms": e.args[0]})
+    # service = PhoneService()
+    # try:
+    #     service.sendCode(int(instance.user.phone), MESSAGE_SEND)
+    # except PhoneException as e:
+    #     raise serializers.ValidationError(detail={"phone_sms": e.args[0]})
