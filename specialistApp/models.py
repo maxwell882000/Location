@@ -23,10 +23,10 @@ class Specialist(models.Model):
     days_activated = models.IntegerField(default=0,
                                          verbose_name="Количество дней про аккаунта")
     custom_location = models.TextField(
-                                      verbose_name="Ручная локация",
-                                       null=True,
-                                       blank=True,
-                                       max_length=255)
+        verbose_name="Ручная локация",
+        null=True,
+        blank=True,
+        max_length=255)
     client_categories = models.ManyToManyField('ClientCategory',
                                                verbose_name="Категории клиентов")
     height = models.IntegerField(default=0, verbose_name="Ваш рост")
@@ -34,7 +34,8 @@ class Specialist(models.Model):
     date_of_birth = models.DateField(verbose_name="Год рождения", blank=True, null=True, default=None)
     education = models.CharField(max_length=255, verbose_name="Образование", default="")
     experience = models.TextField(verbose_name="Опыт работы", default="")
-    locations = models.ManyToManyField('locationApp.Location', verbose_name="Локации специалиста")
+    many_location = models.ManyToManyField('locationApp.Location',
+                                           verbose_name="Локации специалиста")
     location = models.ForeignKey('locationApp.Location',
                                  related_name='specialist',
                                  null=True,
