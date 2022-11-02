@@ -21,6 +21,7 @@ from commonApp.models import TempImage
 class SpecialistSerializer(SerializerWithUser):
     review_avg = serializers.FloatField(default=0.0)
     location = s.LocationSerializerCard()
+    many_location = s.LocationSerializerCard(many=True)
     is_deactivated = serializers.BooleanField(default=True)
     is_auto_payment = serializers.BooleanField(default=False)
 
