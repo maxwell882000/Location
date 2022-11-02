@@ -47,7 +47,7 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
     is_deactivated = serializers.BooleanField(default=True, read_only=True)
     is_auto_payment = serializers.BooleanField(default=False, read_only=True)
-    location_many = serializers.ListSerializer(default=[], required=False)
+    many_location = serializers.ListSerializer(default=[], required=False)
 
     class Meta:
         model = Specialist
