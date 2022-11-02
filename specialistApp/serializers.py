@@ -101,6 +101,11 @@ class SpecialistUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Specialist
         fields = '__all__'
+        extra_kwargs = {
+            'many_location': {
+                'required': False,
+            }
+        }
 
     def to_representation(self, instance):
         render = super().to_representation(instance)

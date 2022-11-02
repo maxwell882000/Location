@@ -4,5 +4,5 @@ from specialistApp.models import Specialist
 def specialist_builder(filter_by: dict):
     specialist = Specialist.objects
     if 'location' in filter_by:
-        specialist = specialist.filter(location_id=filter_by['location'])
+        specialist = specialist.filter(many_location__in=[filter_by['location']]).distinct()
     return specialist.filter(days_activated__gt=-1)
