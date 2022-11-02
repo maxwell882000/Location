@@ -47,11 +47,15 @@ class SpecialistCreateSerializer(serializers.ModelSerializer):
     user = RegisterSerializer()
     is_deactivated = serializers.BooleanField(default=True, read_only=True)
     is_auto_payment = serializers.BooleanField(default=False, read_only=True)
-    many_location = serializers.ListSerializer(default=[], required=False, many=True)
 
     class Meta:
         model = Specialist
         fields = '__all__'
+        extra_kwargs = {
+            'many_location': {
+                'required': False,
+            }
+        }
 
     def create(self, validated_data):
         user = validated_data.pop('user')
