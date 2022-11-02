@@ -36,7 +36,7 @@ class Specialist(models.Model):
     experience = models.TextField(verbose_name="Опыт работы", default="")
     many_location = models.ManyToManyField('locationApp.Location',
                                            related_name="spec_locations",
-                                           verbose_name="Локации специалиста")
+                                           verbose_name="Локации специалиста", blank=True, null=True)
     location = models.ForeignKey('locationApp.Location',
                                  related_name='specialist',
                                  null=True,
