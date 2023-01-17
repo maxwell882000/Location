@@ -25,5 +25,12 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1:5432/locationdb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="locationdb@localhost [2]" uuid="150ef34d-d55a-47d7-957a-040cf3240442">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/locationdb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-pr*4%ih^@99k7zy4@8_1rc_6@4el558-bgkziwzr$e0wd^iszd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['31.44.4.27', '127.0.0.1']
+ALLOWED_HOSTS = ['31.44.3.174', '127.0.0.1']
 
 # Application definition
 
@@ -120,8 +120,8 @@ DATABASES = {
         "ATOMIC_REQUESTS": True,
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'locationdb',
-        'USER': 'vid',
-        'PASSWORD': '123Aa123',
+        'USER': 'postgres',
+        'PASSWORD': '123123',
         'HOST': 'localhost',
         'PORT': '',
     }
