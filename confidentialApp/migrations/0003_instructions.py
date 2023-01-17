@@ -5,7 +5,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('confidentialApp', '0002_saletext'),
     ]
@@ -13,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.CreateModel(
             name='Instructions',
-           fields=[
+            fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('header', models.CharField(max_length=100, verbose_name='Загаловок')),
                 ('body', models.TextField(verbose_name='Описание правил')),
@@ -22,5 +21,5 @@ class Migration(migrations.Migration):
                 'verbose_name_plural': 'Инструкции',
             },
         ),
-      
+
     ]

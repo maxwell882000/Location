@@ -11,26 +11,26 @@ class Migration(migrations.Migration):
 
     operations = [
 
-        migrations.CreateModel(
-            name='Instructions',
-           fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('header', models.CharField(max_length=100, verbose_name='Загаловок')),
-                ('body', models.TextField(verbose_name='Описание правил')),
-            ],
-            options={
-                'verbose_name_plural': 'Инструкции',
-            },
-        ),
-           migrations.CreateModel(
-            name='SaleText',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('header', models.CharField(max_length=100, verbose_name='Загаловок')),
-                ('body', models.TextField(verbose_name='Описание правил')),
-            ],
-            options={
-                'verbose_name_plural': 'Правила покупки услуг',
-            },
-        ),
+        # migrations.CreateModel(
+        #     name='Instructions',
+        #    fields=[
+        #         ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        #         ('header', models.CharField(max_length=100, verbose_name='Загаловок')),
+        #         ('body', models.TextField(verbose_name='Описание правил')),
+        #     ],
+        #     options={
+        #         'verbose_name_plural': 'Инструкции',
+        #     },
+        # ),
+        #    migrations.CreateModel(
+        #     name='SaleText',
+        #     fields=[
+        #         ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        #         ('header', models.CharField(max_length=100, verbose_name='Загаловок')),
+        #         ('body', models.TextField(verbose_name='Описание правил')),
+        #     ],
+        #     options={
+        #         'verbose_name_plural': 'Правила покупки услуг',
+        #     },
+        # ),
     ]
